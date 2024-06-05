@@ -1,0 +1,53 @@
+1.2 Add Quests to DbContext
+
+Let's set up our Quest object to work with Entity Framework so that it will create and give us access to a Quests table.
+
+Models/Quest.cs
+
+using System.ComponentModel.DataAnnotations;
+
+namespace ForgingAhead.Models
+{
+  public class Quest
+  {
+    [Key]
+    public string Name { get; set; }
+    public bool IsActive { get; set; }
+  }
+}
+
+Models/ApplicationDbContext.cs
+
+using System;
+using Microsoft.EntityFrameworkCore;
+
+namespace ForgingAhead.Models
+{
+  public class ApplicationDbContext : DbContext
+  {
+    public DbSet<Character> Characters { get; set; }
+    public DbSet<Equipment> Equipment { get; set; }
+    //Add Quests Here
+    
+  }
+}
+
+
+We can tell Entity Framework to have a Quests table by adding a DbSet of Quest objects named "Quests" to our ApplicationDbContext.
+
+Answer:
+Models/ApplicationDbContext.cs
+
+using System;
+using Microsoft.EntityFrameworkCore;
+
+namespace ForgingAhead.Models
+{
+  public class ApplicationDbContext : DbContext
+  {
+    public DbSet<Character> Characters { get; set; }
+    public DbSet<Equipment> Equipment { get; set; }
+    //Add Quests Here
+    public DbSet<Quest> Quests { get; set; }
+  }
+}

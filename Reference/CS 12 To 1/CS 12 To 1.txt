@@ -1,0 +1,361 @@
+// CS 12
+/*
+1. Primary constructors
+2. Collection expressions
+3. ref readonly parameters
+4. Default lambda parameters
+5. Alias any type
+6. Inline arrays
+7. Experimental attribute
+8. Interceptors
+*/
+
+
+// CS 11
+/*
+1. Raw string literals
+2. Generic math support
+3. Generic attributes
+4. UTF-8 string literals
+5. Newlines in string interpolation expressions
+6. List patterns
+7. File-local types
+8. Required members
+9. Auto-default structs
+10. Pattern match Span<char> or ReadOnlySpan<char> on a constant string
+11. Extended nameof scope
+12. Numeric IntPtr and UIntPtr: nint and nuint types now alias System.IntPtr and System.UIntPtr, respectively
+13. ref fields and scoped ref
+14. Improved method group conversion to delegate
+15. Warning wave 7
+*/
+
+
+// CS 10
+/*
+1. Record structs
+2. Improvements of structure types
+3. Interpolated string handlers
+4. global using directives
+5. File-scoped namespace declaration
+6. Extended property patterns
+7. Improvements on lambda expressions
+8. Allow const interpolated strings
+9. Record types can seal ToString()
+10. Improved definite assignment
+11. Allow both assignment and declaration in the same deconstruction
+12. Allow AsyncMethodBuilder attribute on methods
+13. CallerArgumentExpression attribute
+14. Enhanced #line pragma
+15. Warning wave 6
+*/
+
+
+// CS 9
+/*
+1. Records
+2. Init only setters
+3. Top-level statements
+4. Pattern matching enhancements
+5. Native sized integers
+6. Function pointers
+7. Suppress emitting localsinit flag
+8. Target-typed new expressions
+9. static anonymous functions
+10. Target-typed conditional expressions
+11. Covariant return types
+12. Extension GetEnumerator support for foreach loops
+13. Lambda discard parameters
+14. Attributes on local functions
+15. Module initializers
+16. New features for partial methods
+17. Warning wave 5
+*/
+
+
+// CS 8
+/*
+1. Readonly members
+2. Default interface methods
+3. Pattern matching enhancements:
+// Switch expressions
+// Property patterns
+// Tuple patterns
+// Positional patterns
+4. Using declarations
+5. Static local functions
+6. Disposable ref structs
+7. Nullable reference types
+8. Asynchronous streams
+9. Indices and ranges
+10. Null-coalescing assignment
+11. Unmanaged constructed types
+12. Stackalloc in nested expressions
+13. Enhancement of interpolated verbatim strings
+14. Interface with member access specifiers and static members including fields
+*/
+
+
+// CS 7.3
+/*
+// New features
+9. Access fixed fields without pinning.
+10. Reassign ref local variables.
+11. Initializers on stackalloc arrays.
+12. Fixed statements with any type that supports a pattern.
+13. Additional generic constraints. // Unmanaged constraint // Delegate constraints // Enum constraints
+// Enhancements
+14. Test == and != with tuple types.
+15. Expression variables in more locations.
+16. Attach attributes to the backing field of auto-implemented properties.
+17. Method resolution when arguments differ by in has been improved.
+18. Overload resolution now has fewer ambiguous cases.
+// New compiler options
+19. -publicsign and -pathmap
+// -publicsign to enable Open Source Software (OSS) signing of assemblies.
+// The -publicsign compiler option instructs the compiler to sign the assembly using a public key. 
+// The assembly is marked as signed, but the signature is taken from the public key. 
+// This option enables you to build signed assemblies from open-source projects using a public key.
+// -pathmap to provide a mapping for source directories.
+// The -pathmap compiler option instructs the compiler to replace source paths from the build environment with mapped source paths. 
+// The -pathmap option controls the source path written by the compiler to PDB files or for the CallerFilePathAttribute.
+*/
+
+// CS 7.2
+/*
+5. Techniques for writing safe efficient code
+// A combination of syntax improvements that enable working with value types using reference semantics.
+6. Non-trailing named arguments
+// Named arguments can be followed by positional arguments.
+7. Leading underscores in numeric literals
+// Numeric literals can now have leading underscores before any printed digits.
+8. private protected access modifier
+// The private protected access modifier enables access for derived classes in the same assembly. // Not in different assembly.
+*/
+
+// CS 7.1
+/*
+1. async Main method
+// The entry point for an application can have the async modifier.
+2. default literal expressions
+// You can use default literal expressions in default value expressions when the target type can be inferred.
+3. Inferred tuple element names
+// The names of tuple elements can be inferred from tuple initialization in many cases.
+// Finally, the compiler has two options /refout and /refonly that control reference assembly generation.
+4. Reference assembly generation
+// There are two new compiler options that generate reference-only assemblies: /refout and /refonly. 
+// /refout a
+// The -refout option specifies a file path where the reference assembly should be output.
+// This translates to metadataPeStream in the Emit API.
+// /refonly
+// The -refonly option indicates that a reference assembly should be output instead of an implementation assembly, as the primary output.
+// The -refonly parameter silently disables outputting PDBs, as reference assemblies cannot be executed.
+*/
+
+// CS 7
+/*
+1. out variables
+2. Tuples
+3. Discards
+4. Pattern Matching
+5. ref locals and returns
+6. Local Functions
+7. Expression-bodied members
+8. Throw expressions
+9. Generalized async return types
+10. Numeric literal syntax improvements
+*/
+
+
+// CS 6
+/*
+1. Read-only Auto-properties
+2. Auto-Property Initializers
+3. Expression-bodied function members
+4. using static
+5. Null-conditional operators
+6. String Interpolation
+7. Exception filters
+8. nameof Expressions
+9. await in catch and finally blocks
+10. Index initializers
+11. Extension methods for collection initializers
+12. Improved overload resolution
+13. Deterministic compiler output
+*/
+
+
+// CS 5
+/*
+async
+await
+*/
+
+
+// CS 4
+/*
+1. Dynamic Binding
+2. Optional Parameters
+3. Named Arguments
+4. Variance - Covariance and Contravariance
+5. Tuple
+*/
+
+
+// CS 3
+/*
+1. Implicitly Typed Local Variables
+2. Implicitly Typed Arrays
+3. Query Expressions (LINQ)
+4. Anonymous Types
+5. Object and Collection Initializers
+6. Extension Methods
+7. Lambda Expressions
+8. Expression Trees
+9. Automatically Implemented Properties
+10. Partial Classes and Methods (Partial Classes, Structs, and Interfaces were available in CS 2)
+*/
+
+// Note
+// LINQ is supported by a set of interrelated features including the query syntax, Lambda Expressions, Anonymous Types, and Extension Methods
+// Anonymous Type directly relates to LINQ
+// Anonymous type is a class that has no name
+// The primary use of Anonymous Type is to create an object returned by the select clause
+// The primary use of the object 
+
+
+// CS 2
+/*
+1. Generics
+2. Nullable types
+3. Iterators
+4. yield Statement
+5. Partial Classes/Structs/Interfaces
+6. Anonymous methods
+7. The :: operator (Namespace Alias Qualifier)
+8. Static Classes
+9. Covariance and contravariance
+10. Fixed-size buffers
+Note: fixed keyword [only with built-in struct except decimal, only in unsafe, cannot be static]
+11. Friend assemblies
+12. Extern Aliases [extern keyword has been available since C# 1.0]
+13. Delegate Method Group Conversion
+14. Access Modifiers with Accessors [Note: For properties and indexers]
+15. #pragma directives
+16. ?? Operator or Null-Coalesce Operator
+17. System.Predicate
+18. System.Action
+*/
+
+
+// CS 1
+/*
+Unified Type System - Data Types
+|
+|`-Value Types
+| |
+| |`--Built-in Value Types
+| | |
+| |  `---Built-in Structs
+| |   |
+| |   |`----Numeric Types
+| |   | |
+| |   |  `-----Integral Types
+| |   |   |
+| |   |   |`------sbyte
+| |   |   |
+| |   |   |`------byte
+| |   |   |
+| |   |   |`------short
+| |   |   |
+| |   |   |`------ushort
+| |   |   |
+| |   |   |`------int
+| |   |   |
+| |   |   |`------uint
+| |   |   |
+| |   |   |`------long
+| |   |   |
+| |   |   |`------ulong
+| |   |   |
+| |   |   |`------char
+| |   |   |
+| |   |   |`-----Floating-point Types
+| |   |   |  |
+| |   |   |  |`------float
+| |   |   |  |
+| |   |   |   `------double
+| |   |   |
+| |   |    `-----decimal
+| |   |
+| |    `----bool
+| |
+|  `--User-defined Value Types
+|   |
+|   |`---User-defined Structs [Auto-default Structs (>= CS 11)]
+|   |    |
+|   |     `---readonly struct (>= CS 7.2)
+|   |    |
+|   |     `---ref struct (>= CS 7.2)
+|   |    |
+|   |     `---readonly ref struct (>= CS 7.2)
+|   |    |
+|   |     `---record struct (>= CS 10)
+|   |    |
+|   |     `---readonly record struct (>= CS 10)
+|   |
+|    `---Enums
+|     
+|`-Reference Types
+| |
+| |`--User-defined Reference Types
+| | |
+| | |`---class
+| | |
+| | |`---interface
+| | |
+| | |`---delegate
+| | |
+| |  `---Array
+| | |
+| |  `---record (>= CS 9)
+| |   |
+| |    `---positional record (>= CS 9)
+| |
+|  `--Built-in Reference Types
+|   |
+|   |`---object
+|   |
+|   |`---string
+|   |
+|    `---dynamic (>= CS 4)
+|
+ `-Pointer Types (Unsafe)
+
+
+Type Members
+|
+|`-data members (variables and consts can be local)
+| |
+| |`--consts
+| |
+| |`--static fields (including static volatile and static readonly) 
+| |
+|  `--instance fields (including instance volatile and instance readonly)
+|
+ `-function members
+  |
+  |`--methods (instance/static)
+  |
+  |`--construcutors (instance/static(which must be parameterless))
+  |
+  |`--destructors (called prior to garbage collection before program terminates [not called when object goes out of scope and differs from C++ destructors that are called when object goes out of scope]) 
+  |
+  |`--indexers (instance, cannot return void)
+  |
+  |`--properties (instance/static, cannot return void)
+  |
+  |`--events (instance/static)
+  |
+   `--operators (static)
+*/

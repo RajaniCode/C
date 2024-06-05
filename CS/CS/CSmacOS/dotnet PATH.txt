@@ -1,0 +1,61 @@
+Visual Studio 2022 - Preferences - Build and Debug - SDK Locations - .NET Core
+.NET Core Command Line
+Location: /usr/local/share/dotnet/dotnet
+# x64
+Location: /usr/local/share/dotnet/x64/dotnet
+
+
+% arch 
+% dotnet --version    
+% dotnet --list-sdks
+% dotnet --info
+% echo $PATH
+% pwd
+% cd /Users/rajaniapple/Desktop/Visual Studio Code/CS
+% pwd
+% mkdir -p CS11
+% cd CS11
+% pwd
+% dotnet new console 
+% dotnet new sln -n CS11
+% dotnet sln CS11.sln add CS11.csproj
+% dotnet build
+% dotnet clean
+% dotnet run
+% pwd
+% cd ..
+% pwd
+[
+% export PATH="/usr/local/share/dotnet/x64/:$PATH"
+]
+[
+# paths
+% sudo nano /etc/paths
+<password>
+Add path to the bottom of the file
+control+x (^X Exit)
+y (Save Y Yes)
+return
+
+/usr/local/share/dotnet/x64/:$PATH/
+]
+% exit
+% echo $PATH
+% dotnet --version
+% dotnet --list-sdks 
+% dotnet --info
+. . .
+.NET SDKs installed:
+  3.1.422 [/usr/local/share/dotnet/x64/sdk]
+  5.0.408 [/usr/local/share/dotnet/x64/sdk]
+. . .
+% pwd
+% mkdir -p CS9
+% cd CS9
+% pwd
+% dotnet new console 
+% dotnet new sln -n CS9 
+% dotnet sln CS9.sln add CS9.csproj
+% dotnet build
+% dotnet clean
+% dotnet run

@@ -1,0 +1,14 @@
+1.5 Running Our Application
+
+Now that we've created our application and resolved dependencies, let's use the dotnet command to run it and see what the output looks like.
+
+Type help to see the help menu.
+
+​
+> dotnet run
+
+Hello World!
+
+Success!
+
+> 

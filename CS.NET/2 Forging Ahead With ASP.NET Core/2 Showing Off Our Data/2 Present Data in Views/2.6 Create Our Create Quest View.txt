@@ -1,0 +1,108 @@
+2.6 Create Our Create Quest View
+
+Our users are going to need to be able to create new quests, and to accomplish that we'll need to set up our Create view so they can add the Name and IsActive properties of their quest and submit that data to our QuestController's Create action.
+
+Views/Quest/Create.cshtml
+
+@model ForgingAhead.Models.Quest
+<h2>
+  Create Quest
+</h2>
+
+<form  >
+  <div>
+    <h4>Quest</h4>
+    <hr/>
+    <div>
+      @* Add Name Label and Input Here *@
+    </div>
+    <div>
+      @* Add IsActive Label and Input Here *@
+    </div>
+    <div>
+      <input type="submit" value="Create" class="btn btn-default"/>
+    </div>
+  </div>
+</form>
+
+
+1. First, set up our form to properly target our QuestController's Create action on submit using Tag Helpers.
+
+Answer:
+Views/Quest/Create.cshtml
+
+@model ForgingAhead.Models.Quest
+<h2>
+  Create Quest
+</h2>
+
+<form asp-action="Create">
+  <div>
+    <h4>Quest</h4>
+    <hr/>
+    <div>
+      @* Add Name Label and Input Here *@
+    </div>
+    <div>
+      @* Add IsActive Label and Input Here *@
+    </div>
+    <div>
+      <input type="submit" value="Create" class="btn btn-default"/>
+    </div>
+  </div>
+</form>
+
+2. Next, add a label and input with Tag Helpers that will map up with our quest's Name property.
+
+Answer:
+Views/Quest/Create.cshtml
+
+@model ForgingAhead.Models.Quest
+<h2>
+  Create Quest
+</h2>
+
+<form  asp-action="Create">
+  <div>
+    <h4>Quest</h4>
+    <hr/>
+    <div>
+      <label asp-for="Name"></label>
+      <input asp-for="Name"/>
+    </div>
+    <div>
+      @* Add IsActive Label and Input Here *@
+    </div>
+    <div>
+      <input type="submit" value="Create" class="btn btn-default"/>
+    </div>
+  </div>
+</form>
+
+3. Finally, add another label and input with Tag Helpers that will map up with our quest's IsActive property.
+
+Answer:
+Views/Quest/Create.cshtml
+
+@model ForgingAhead.Models.Quest
+<h2>
+  Create Quest
+</h2>
+
+<form  asp-action="Create">
+  <div>
+    <h4>Quest</h4>
+    <hr/>
+    <div>
+      <label asp-for="Name"></label>
+      <input asp-for="Name"/>
+    </div>
+    <div>
+     <label asp-for="IsActive"></label>
+     <input asp-for="IsActive"/>
+    </div>
+    <div>
+      <input type="submit" value="Create" class="btn btn-default"/>
+    </div>
+  </div>
+</form>

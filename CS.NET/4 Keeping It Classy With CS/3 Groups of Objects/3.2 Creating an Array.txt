@@ -1,0 +1,92 @@
+3.2 Creating an Array
+
+Let's create an array called Bands.
+
+Band.cs
+using System;
+
+public class Band
+{
+    public string Name;
+
+    public void Announce()
+    {
+        Console.WriteLine("Welcome " + Name + " to the stage!");
+    }
+
+}
+
+Venue.cs
+using System;
+
+public class Venue
+{
+    public string Name;
+    
+    
+    public void AddBand(string name)
+    {
+        Band band = new Band();
+        band.Name = name;
+        
+    }
+
+    public void Announce()
+    {
+        Console.WriteLine(Name + " will have several bands playing tonight!");
+
+    }
+
+}
+
+1. Create a public array of type Band[] called Bands and instantiate it to contain 2 new Band objects.
+
+Answer
+Venue.cs
+using System;
+
+public class Venue
+{
+    public string Name;
+    public Band[] Bands = new Band [2];
+
+    public void AddBand(string name)
+    {
+        Band band = new Band();
+        band.Name = name;
+        
+    }
+
+    public void Announce()
+    {
+        Console.WriteLine(Name + " will have several bands playing tonight!");
+
+    }
+
+}
+
+2. Inside the AddBand method, set the first index in the Bands array to the band object. Remember, arrays start counting from 0.
+
+Answer
+Venue.cs
+using System;
+
+public class Venue
+{
+    public string Name;
+    public Band[] Bands = new Band [2];
+
+    public void AddBand(string name)
+    {
+        Band band = new Band();
+        band.Name = name;
+        Bands[0] = band;
+    }
+
+    public void Announce()
+    {
+        Console.WriteLine(Name + " will have several bands playing tonight!");
+
+    }
+
+}

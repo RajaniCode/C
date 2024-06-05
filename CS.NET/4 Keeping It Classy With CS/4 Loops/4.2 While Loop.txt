@@ -1,0 +1,14 @@
+4.2 While Loop
+
+Given the while loop while(repeat), which of the following options are proper ways to stop the loop from repeating?
+
+[Multiple Answers]
+
+return;
+break;
+stop;
+repeat = false;
+
+Answer
+break;
+repeat = false;

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <_PostProcessingItem Include="CocoaAppCS.app/Contents/MacOS/CocoaAppCS">
+      <BCSymbolMapName>CocoaAppCS.bcsymbolmap</BCSymbolMapName>
+      <NoDSymUtil>true</NoDSymUtil>
+      <dSYMSourcePathExists>false</dSYMSourcePathExists>
+      <NoSymbolStrip>true</NoSymbolStrip>
+      <dSYMInfoPlistRelativePath>CocoaAppCS.app.dSYM\Contents\Info.plist</dSYMInfoPlistRelativePath>
+      <SymbolFile>/Users/rajaniapple/Desktop/GitHub/CS/Xcode/CocoaAppCS/obj/Debug/mtouch-symbols.list</SymbolFile>
+      <DSymName>CocoaAppCS.app.dSYM</DSymName>
+      <SourceProjectPath>/Users/rajaniapple/Desktop/GitHub/CS/Xcode/CocoaAppCS</SourceProjectPath>
+    </_PostProcessingItem>
+  </ItemGroup>
+</Project>

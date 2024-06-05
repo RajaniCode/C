@@ -1,0 +1,171 @@
+3.5 Wiring Up Our Controller
+
+Now that we've got methods to set and retrieve the Equipment list in the GlobalVariables class, let's set up our controller to use our new Create and GetAll model methods.
+
+GlobalVariables.cs
+
+using System.Collections.Generic;
+using CharacterSheetApp.Models;
+
+namespace CharacterSheetApp
+{
+  public static class GlobalVariables
+  {
+    public static List<Equipment> Equipment { get; set; } = new List<Equipment>();
+  }
+}
+
+Models/Equipment.cs
+
+using System.Collections.Generic;
+
+namespace CharacterSheetApp.Models
+{
+  public class Equipment
+  {
+    public string Name;
+      
+    public static void Create(string EquipmentName)
+    {
+      var equipment = new Equipment();
+      equipment.Name = EquipmentName;
+      GlobalVariables.Equipment.Add(equipment);
+    }
+      
+    public static List<Equipment> GetAll()
+    {
+      return GlobalVariables.Equipment;
+    }
+  }
+}
+
+Views/Home/Index.cshtml
+
+@model List<CharacterSheetApp.Models.Equipment>
+<h2>Equipment:</h2>
+
+<form asp-controller="Home" asp-action="Create" class="form-inline mbm">
+  <div class="form-group">
+    <input class="form-control" name="EquipmentName" />
+    <input class="btn" type="submit" value="Add Equipment" />
+  </div>
+</form>
+
+<h4>Equipment:</h4>
+
+<div>
+  <ul>
+    @foreach(var item in Model)
+    {
+      <li>
+        <label>@item.Name</label>
+        </li>
+    }
+  </ul>
+</div>
+
+Controllers/HomeController.cs
+
+using Microsoft.AspNet.Mvc;
+using CharacterSheetApp.Models;
+using System;
+
+namespace CharacterSheetApp.Controllers
+{
+  public class HomeController : Controller
+  {
+    public IActionResult Index()
+    {
+      var name = "Shield";
+      
+      return View("Index", name);
+    }
+
+    public IActionResult Create(string EquipmentName)
+    {
+      var model = new CharacterSheetApp.Models.Equipment();
+      model.Name = EquipmentName;
+      return View("Index",model);
+    }
+  }
+}
+
+
+1. Start out by updating the Index action to use our Equipment.GetAll() method and pass the result of that method through to our Index view.
+
+Answer:
+Controllers/HomeController.cs
+
+using Microsoft.AspNet.Mvc;
+using CharacterSheetApp.Models;
+using System;
+
+namespace CharacterSheetApp.Controllers
+{
+  public class HomeController : Controller
+  {
+    public IActionResult Index()
+    {
+      return View(Equipment.GetAll());
+    }
+
+    public IActionResult Create(string EquipmentName)
+    {
+      var model = new CharacterSheetApp.Models.Equipment();
+      model.Name = EquipmentName;
+      return View("Index",model);
+    }
+  }
+}
+
+2. Next, in the Create action, call Equipment.Create() and pass in the EquipmentName as a parameter.
+
+Answer:
+Controllers/HomeController.cs
+
+using Microsoft.AspNet.Mvc;
+using CharacterSheetApp.Models;
+using System;
+
+namespace CharacterSheetApp.Controllers
+{
+  public class HomeController : Controller
+  {
+    public IActionResult Index()
+    {
+      return View(Equipment.GetAll());
+    }
+
+    public IActionResult Create(string EquipmentName)
+    {
+      Equipment.Create(EquipmentName);
+      return View();
+    }
+  }
+}
+
+3. Finally, redirect to the Index action in the return statement of the Create method.
+
+Answer:
+Controllers/HomeController.cs
+
+using Microsoft.AspNet.Mvc;
+using CharacterSheetApp.Models;
+using System;
+
+namespace CharacterSheetApp.Controllers
+{
+  public class HomeController : Controller
+  {
+    public IActionResult Index()
+    {
+      return View(Equipment.GetAll());
+    }
+
+    public IActionResult Create(string EquipmentName)
+    {
+      Equipment.Create(EquipmentName);
+      return RedirectToAction("Index");
+    }
+  }
+}

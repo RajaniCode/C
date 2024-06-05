@@ -1,0 +1,54 @@
+% dotnet --version
+% dotnet --help
+% dotnet --list-runtimes
+% dotnet --list-sdks    
+% csc -version
+% csc -help
+% csc Program.cs
+% mono --version
+% mono --help
+% mono Program.exe
+# mcs # C# Version is not the latest # new()
+% mcs --version
+% mcs --help
+% mcs Program.cs
+% mono Program.exe
+% nuget help
+
+[
+# Microsoft.Net.Compilers
+# Note: This package is deprecated. Please use Microsoft.Net.Compilers.Toolset instead
+% nuget install Microsoft.Net.Compilers -Version 4.2.0
+% mono Microsoft.Net.Compilers.4.2.0/tools/csc.exe -version
+% mono Microsoft.Net.Compilers.4.2.0/tools/csc.exe -help
+]
+
+# Microsoft.Net.Compilers.Toolset 
+% nuget install Microsoft.Net.Compilers.Toolset -Version 4.9.2
+% mono Microsoft.Net.Compilers.Toolset.4.9.2/tasks/net472/csi.exe -version
+% mono Microsoft.Net.Compilers.Toolset.4.9.2/tasks/net472/csi.exe -help
+
+[
+% mono Program.exe
+% csi -version
+% csi -help
+% csi
+csi> using System.Runtime.InteropServices;
+csi> Console.WriteLine($"Environment.Version: {Environment.Version}");
+csi> Console.WriteLine($"RuntimeInformation.FrameworkDescription: {RuntimeInformation.FrameworkDescription}");
+csi> class Sandbox { public void Print() { Console.WriteLine("Hello World!"); } }
+csi> Sandbox box = new(); // mono // mcs // Sandbox box = new Sandbox();
+csi> box. Print();
+Ctrl-C
+]
+
+% mono Microsoft.Net.Compilers.Toolset.4.9.2/tasks/net472/csi.exe
+csi> #help
+csi> using System.Runtime.InteropServices;
+csi> Environment.Version
+csi> RuntimeInformation.FrameworkDescription
+csi> "Hello World!"
+csi> class Sandbox { public void Print() { Console.WriteLine("Hello World!"); } }
+csi> Sandbox box = new(); // mono // mcs // Sandbox box = new Sandbox();
+csi> box. Print()
+Ctrl-C

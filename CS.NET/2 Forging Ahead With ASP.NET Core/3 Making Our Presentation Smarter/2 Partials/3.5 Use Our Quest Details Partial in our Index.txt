@@ -1,0 +1,58 @@
+3.5 Use Our Quest Details Partial in our Index
+
+We've taken the time to create a _QuestDetails partial to be reusable throughout our application, and now we need to update our Details view to utilize that new partial.
+
+Views/Shared/_QuestDetails.cshtml
+
+@model ForgingAhead.Models.Quest
+
+<div class="col-md-5 bordered-div">
+  <h4>
+    @Model.Name
+  </h4>
+  <hr/>
+  <div class="col-md-12">
+    <table class="table table-bordered table-striped table-condensed">
+      <thead class="table-header">
+        <tr>
+          <th>Name</th>
+          <th>Level</th>
+        </tr>
+      </thead>
+      <tbody>
+        @foreach(var item in Model.Characters)
+        {
+          <tr>
+            <td>@item.Name</td>
+            <td>@item.Level</td>
+          </tr>
+        }
+      </tbody>
+    </table>
+  </div>
+</div>
+<div class="col-md-1"></div>
+
+Views/Quest/Details.cshtml
+
+@model ForgingAhead.Models.Quest
+</br>
+@* Use _QuestDetails Partial here *@
+
+<div style="clear:both;">
+</div>
+
+
+Provide the quest's details in our Detail.cshtml view using the _QuestDetails partial.
+
+We'll want to make sure to pass our model into the Partial helper, too.
+
+Answer:
+Views/Quest/Details.cshtml
+
+@model ForgingAhead.Models.Quest
+</br>
+@Html.Partial("_QuestDetails", Model)
+<div style="clear:both;">
+</div>
+

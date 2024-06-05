@@ -1,0 +1,28 @@
+/Users/rajaniapple/Desktop/GitHub/CS/CS/CS/CS8/null-forgiving operator/macOSarm64/CS8.NET8NullForgivingOperator/bin/Debug/net8.0/CS8.NET8NullForgivingOperator
+/Users/rajaniapple/Desktop/GitHub/CS/CS/CS/CS8/null-forgiving operator/macOSarm64/CS8.NET8NullForgivingOperator/bin/Debug/net8.0/CS8.NET8NullForgivingOperator.deps.json
+/Users/rajaniapple/Desktop/GitHub/CS/CS/CS/CS8/null-forgiving operator/macOSarm64/CS8.NET8NullForgivingOperator/bin/Debug/net8.0/CS8.NET8NullForgivingOperator.runtimeconfig.json
+/Users/rajaniapple/Desktop/GitHub/CS/CS/CS/CS8/null-forgiving operator/macOSarm64/CS8.NET8NullForgivingOperator/bin/Debug/net8.0/CS8.NET8NullForgivingOperator.dll
+/Users/rajaniapple/Desktop/GitHub/CS/CS/CS/CS8/null-forgiving operator/macOSarm64/CS8.NET8NullForgivingOperator/bin/Debug/net8.0/CS8.NET8NullForgivingOperator.pdb
+/Users/rajaniapple/Desktop/GitHub/CS/CS/CS/CS8/null-forgiving operator/macOSarm64/CS8.NET8NullForgivingOperator/obj/Debug/net8.0/CS8.NET8NullForgivingOperator.GeneratedMSBuildEditorConfig.editorconfig
+/Users/rajaniapple/Desktop/GitHub/CS/CS/CS/CS8/null-forgiving operator/macOSarm64/CS8.NET8NullForgivingOperator/obj/Debug/net8.0/CS8.NET8NullForgivingOperator.AssemblyInfoInputs.cache
+/Users/rajaniapple/Desktop/GitHub/CS/CS/CS/CS8/null-forgiving operator/macOSarm64/CS8.NET8NullForgivingOperator/obj/Debug/net8.0/CS8.NET8NullForgivingOperator.AssemblyInfo.cs
+/Users/rajaniapple/Desktop/GitHub/CS/CS/CS/CS8/null-forgiving operator/macOSarm64/CS8.NET8NullForgivingOperator/obj/Debug/net8.0/CS8.NET8NullForgivingOperator.csproj.CoreCompileInputs.cache
+/Users/rajaniapple/Desktop/GitHub/CS/CS/CS/CS8/null-forgiving operator/macOSarm64/CS8.NET8NullForgivingOperator/obj/Debug/net8.0/CS8.NET8NullForgivingOperator.dll
+/Users/rajaniapple/Desktop/GitHub/CS/CS/CS/CS8/null-forgiving operator/macOSarm64/CS8.NET8NullForgivingOperator/obj/Debug/net8.0/refint/CS8.NET8NullForgivingOperator.dll
+/Users/rajaniapple/Desktop/GitHub/CS/CS/CS/CS8/null-forgiving operator/macOSarm64/CS8.NET8NullForgivingOperator/obj/Debug/net8.0/CS8.NET8NullForgivingOperator.pdb
+/Users/rajaniapple/Desktop/GitHub/CS/CS/CS/CS8/null-forgiving operator/macOSarm64/CS8.NET8NullForgivingOperator/obj/Debug/net8.0/CS8.NET8NullForgivingOperator.genruntimeconfig.cache
+/Users/rajaniapple/Desktop/GitHub/CS/CS/CS/CS8/null-forgiving operator/macOSarm64/CS8.NET8NullForgivingOperator/obj/Debug/net8.0/ref/CS8.NET8NullForgivingOperator.dll
+/Users/rajaniapple/Desktop/GitHub/CS/CS/CS/CS8/macOSarm64/CS8.NET8NullForgivingOperator/bin/Debug/net8.0/CS8.NET8NullForgivingOperator
+/Users/rajaniapple/Desktop/GitHub/CS/CS/CS/CS8/macOSarm64/CS8.NET8NullForgivingOperator/bin/Debug/net8.0/CS8.NET8NullForgivingOperator.deps.json
+/Users/rajaniapple/Desktop/GitHub/CS/CS/CS/CS8/macOSarm64/CS8.NET8NullForgivingOperator/bin/Debug/net8.0/CS8.NET8NullForgivingOperator.runtimeconfig.json
+/Users/rajaniapple/Desktop/GitHub/CS/CS/CS/CS8/macOSarm64/CS8.NET8NullForgivingOperator/bin/Debug/net8.0/CS8.NET8NullForgivingOperator.dll
+/Users/rajaniapple/Desktop/GitHub/CS/CS/CS/CS8/macOSarm64/CS8.NET8NullForgivingOperator/bin/Debug/net8.0/CS8.NET8NullForgivingOperator.pdb
+/Users/rajaniapple/Desktop/GitHub/CS/CS/CS/CS8/macOSarm64/CS8.NET8NullForgivingOperator/obj/Debug/net8.0/CS8.NET8NullForgivingOperator.GeneratedMSBuildEditorConfig.editorconfig
+/Users/rajaniapple/Desktop/GitHub/CS/CS/CS/CS8/macOSarm64/CS8.NET8NullForgivingOperator/obj/Debug/net8.0/CS8.NET8NullForgivingOperator.AssemblyInfoInputs.cache
+/Users/rajaniapple/Desktop/GitHub/CS/CS/CS/CS8/macOSarm64/CS8.NET8NullForgivingOperator/obj/Debug/net8.0/CS8.NET8NullForgivingOperator.AssemblyInfo.cs
+/Users/rajaniapple/Desktop/GitHub/CS/CS/CS/CS8/macOSarm64/CS8.NET8NullForgivingOperator/obj/Debug/net8.0/CS8.NET8NullForgivingOperator.csproj.CoreCompileInputs.cache
+/Users/rajaniapple/Desktop/GitHub/CS/CS/CS/CS8/macOSarm64/CS8.NET8NullForgivingOperator/obj/Debug/net8.0/CS8.NET8NullForgivingOperator.dll
+/Users/rajaniapple/Desktop/GitHub/CS/CS/CS/CS8/macOSarm64/CS8.NET8NullForgivingOperator/obj/Debug/net8.0/refint/CS8.NET8NullForgivingOperator.dll
+/Users/rajaniapple/Desktop/GitHub/CS/CS/CS/CS8/macOSarm64/CS8.NET8NullForgivingOperator/obj/Debug/net8.0/CS8.NET8NullForgivingOperator.pdb
+/Users/rajaniapple/Desktop/GitHub/CS/CS/CS/CS8/macOSarm64/CS8.NET8NullForgivingOperator/obj/Debug/net8.0/CS8.NET8NullForgivingOperator.genruntimeconfig.cache
+/Users/rajaniapple/Desktop/GitHub/CS/CS/CS/CS8/macOSarm64/CS8.NET8NullForgivingOperator/obj/Debug/net8.0/ref/CS8.NET8NullForgivingOperator.dll

@@ -1,0 +1,13 @@
+1.5 Default Route
+
+If we attempted to access our website at http://domain, where in our site would we end up?
+
+[Single Answer]
+
+We would reach a blank page
+We would receive a 404 "Not Found" error
+We would reach the Index page in our Home directory
+We would reach the Index page in the Root directory
+
+
+Answer: We would reach the Index page in our Home directory

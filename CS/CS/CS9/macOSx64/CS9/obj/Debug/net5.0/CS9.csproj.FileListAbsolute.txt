@@ -1,0 +1,16 @@
+/Users/rajaniapple/Desktop/GitHub/CS/CS/CS/CS9/macOSx64/CS9/obj/Debug/net5.0/CS9.GeneratedMSBuildEditorConfig.editorconfig
+/Users/rajaniapple/Desktop/GitHub/CS/CS/CS/CS9/macOSx64/CS9/obj/Debug/net5.0/CS9.AssemblyInfoInputs.cache
+/Users/rajaniapple/Desktop/GitHub/CS/CS/CS/CS9/macOSx64/CS9/obj/Debug/net5.0/CS9.AssemblyInfo.cs
+/Users/rajaniapple/Desktop/GitHub/CS/CS/CS/CS9/macOSx64/CS9/obj/Debug/net5.0/CS9.csproj.CoreCompileInputs.cache
+/Users/rajaniapple/Desktop/GitHub/CS/CS/CS/CS9/macOSx64/CS9/bin/Debug/net5.0/CS9.deps.json
+/Users/rajaniapple/Desktop/GitHub/CS/CS/CS/CS9/macOSx64/CS9/bin/Debug/net5.0/CS9.runtimeconfig.json
+/Users/rajaniapple/Desktop/GitHub/CS/CS/CS/CS9/macOSx64/CS9/bin/Debug/net5.0/CS9.runtimeconfig.dev.json
+/Users/rajaniapple/Desktop/GitHub/CS/CS/CS/CS9/macOSx64/CS9/bin/Debug/net5.0/CS9.dll
+/Users/rajaniapple/Desktop/GitHub/CS/CS/CS/CS9/macOSx64/CS9/bin/Debug/net5.0/CS9.pdb
+/Users/rajaniapple/Desktop/GitHub/CS/CS/CS/CS9/macOSx64/CS9/obj/Debug/net5.0/CS9.dll
+/Users/rajaniapple/Desktop/GitHub/CS/CS/CS/CS9/macOSx64/CS9/obj/Debug/net5.0/ref/CS9.dll
+/Users/rajaniapple/Desktop/GitHub/CS/CS/CS/CS9/macOSx64/CS9/obj/Debug/net5.0/CS9.pdb
+/Users/rajaniapple/Desktop/GitHub/CS/CS/CS/CS9/macOSx64/CS9/obj/Debug/net5.0/CS9.genruntimeconfig.cache
+/Users/rajaniapple/Desktop/GitHub/CS/CS/CS/CS9/macOSx64/CS9/obj/Debug/net5.0/CS9.csproj.AssemblyReference.cache
+/Users/rajaniapple/Desktop/GitHub/CS/CS/CS/CS9/macOSx64/CS9/bin/Debug/net5.0/CS9
+/Users/rajaniapple/Desktop/GitHub/CS/CS/CS/CS9/macOSx64/CS9/obj/Debug/net5.0/refint/CS9.dll

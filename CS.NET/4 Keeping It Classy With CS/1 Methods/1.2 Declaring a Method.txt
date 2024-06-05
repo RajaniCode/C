@@ -1,0 +1,66 @@
+1.2 Declaring a Method
+
+Let's create a new method at the bottom of the Program class that takes the name of a venue as a string argument and returns a formatted announcement.
+
+Program.cs
+using System;
+
+public class Program
+{
+    static void Main(string[] args)
+    {
+        Console.WriteLine("What is the name of your venue?");
+
+        string venue = args[0]; // Sets the venue based on the command-line argument. We'll cover arrays in Level 3!
+
+    }
+
+}
+
+1. Below the Main method, create a new static string method called Announce. This method should accept a single string parameter named venue.
+
+Inside the method, return the provided venue parameter concatenated with " will have bands performing tonight." appended to the end.
+
+Answer
+Program.cs
+using System;
+
+public class Program
+{
+    static void Main(string[] args)
+    {
+        Console.WriteLine("What is the name of your venue?");
+
+        string venue = args[0]; // Sets the venue based on the command-line argument. We'll cover arrays in Level 3!
+
+    }
+    
+    static string Announce(string venue)
+    {
+        return venue + " will have bands performing tonight.";
+    }
+}
+
+2. At the end of the Main method, create another call to Console.WriteLine. The argument for this should be the string returned by calling Announce with the variable venue as its argument.
+
+Answer
+Program.cs
+using System;
+
+public class Program
+{
+    static void Main(string[] args)
+    {
+        Console.WriteLine("What is the name of your venue?");
+
+        string venue = args[0]; // Sets the venue based on the command-line argument. We'll cover arrays in Level 3!
+
+        Console.WriteLine(Announce(venue);
+    }
+
+    static string Announce(string venue)
+    {
+        return venue + " will have bands performing tonight.";
+    }
+
+}

@@ -1,0 +1,166 @@
+3.4 Set Up Our Model
+
+Let's add methods to Create and GetAll in our Equipment model that will store and retrieve the list of equipment in our GlobalVariables Equipment property.
+
+Controllers/HomeController.cs
+
+using Microsoft.AspNet.Mvc;
+using CharacterSheetApp.Models;
+
+namespace CharacterSheetApp.Controllers
+{
+  public class HomeController : Controller
+  {
+    public IActionResult Index()
+    {
+      Equipment equipment = new Equipment();
+      equipment.Name = "Shield";
+       
+      return View("Index", equipment);
+    }
+
+    public IActionResult Create(string EquipmentName)
+    {
+      var model = new CharacterSheetApp.Models.Equipment();
+      model.Name = EquipmentName;
+      return View("Index",model);
+    }
+  }
+}
+
+GlobalVariables.cs
+
+using System.Collections.Generic;
+using CharacterSheetApp.Models;
+
+namespace CharacterSheetApp
+{
+  public static class GlobalVariables
+  {
+    public static List<Equipment> Equipment { get; set; } = new List<Equipment>();
+  }
+}
+
+Views/Home/Index.cshtml
+
+@model CharacterSheetApp.Models.Equipment
+<h2>Equipment:</h2>
+
+<form asp-action="Create" class="form-inline mbm">
+  <div class="form-group">
+    <input name="EquipmentName" class="form-control" />
+    <input type="submit" value="Add Equipment" class="btn" />
+  </div>
+</form>
+
+<h4>Equipment:</h4>
+
+<div>
+  <ul>
+    <li>
+      <label>@Model.Name</label>
+    </li>
+  </ul>
+</div>
+
+Models/Equipment.cs
+
+using System.Collections.Generic;
+using System;
+
+namespace CharacterSheetApp.Models
+{
+  public class Equipment
+  {
+    public string Name;
+    
+  }
+}
+
+
+1. In Equipment.cs, set up a public static method named Create that accepts a string named EquipmentName and returns nothing.
+
+Answer:
+Models/Equipment.cs
+
+using System.Collections.Generic;
+using System;
+
+namespace CharacterSheetApp.Models
+{
+  public class Equipment
+  {
+    public string Name;
+    public static void Create(string EquipmentName) { }
+  }
+}
+
+2. Inside of that new Create method, instantiate a new Equipment object, and set its Name field to the value passed in through our EquipmentName parameter.
+
+Answer:
+Models/Equipment.cs
+
+using System.Collections.Generic;
+using System;
+
+namespace CharacterSheetApp.Models
+{
+  public class Equipment
+  {
+    public string Name;
+    public static void Create(string EquipmentName) 
+    {
+      var model = new Equipment();
+      model.Name = EquipmentName;
+    }
+  }
+}
+
+3. Next, add this new Equipment object to our GlobalVariables Equipment property.
+
+Answer:
+Models/Equipment.cs
+
+using System.Collections.Generic;
+using System;
+
+namespace CharacterSheetApp.Models
+{
+  public class Equipment
+  {
+    public string Name;
+    public static void Create(string EquipmentName) 
+    {
+      var model = new Equipment();
+      model.Name = EquipmentName;
+      GlobalVariables.Equipment.Add(model);
+    }
+  }
+}
+
+4. Set up a public static method named GetAll that returns the List of Equipment from our GlobalVariables Equipment property.
+
+Answer:
+Models/Equipment.cs
+
+using System.Collections.Generic;
+using System;
+
+namespace CharacterSheetApp.Models
+{
+  public class Equipment
+  {
+    public string Name;
+    public static void Create(string EquipmentName) 
+    {
+      var model = new Equipment();
+      model.Name = EquipmentName;
+      GlobalVariables.Equipment.Add(model);
+    }
+    public static List<Equipment> GetAll()
+    {
+       return GlobalVariables.Equipment;
+    }
+  }
+}
+

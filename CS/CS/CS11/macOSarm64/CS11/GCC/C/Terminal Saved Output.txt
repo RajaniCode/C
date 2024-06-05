@@ -1,0 +1,30 @@
+Last login: Tue Sep 12 18:28:16 on ttys097
+rajaniapple@Rajanis-MacBook-Pro ~ % arch
+arm64
+rajaniapple@Rajanis-MacBook-Pro ~ % gcc --version
+Apple clang version 14.0.3 (clang-1403.0.22.14.1)
+Target: arm64-apple-darwin22.6.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+rajaniapple@Rajanis-MacBook-Pro ~ % pwd
+/Users/rajaniapple
+rajaniapple@Rajanis-MacBook-Pro ~ % cd /Users/rajaniapple/Desktop/Working/CS/CS11/CS11/GCC/C 
+rajaniapple@Rajanis-MacBook-Pro C % pwd
+/Users/rajaniapple/Desktop/Working/CS/CS11/CS11/GCC/C
+rajaniapple@Rajanis-MacBook-Pro C % ls
+msys64-mingw64-gcc.c
+rajaniapple@Rajanis-MacBook-Pro C % gcc -c -fPIC msys64-mingw64-gcc.c
+rajaniapple@Rajanis-MacBook-Pro C % gcc -shared -o msys64-mingw64-gcc.so msys64-mingw64-gcc.o
+rajaniapple@Rajanis-MacBook-Pro C % 
+
+
+
+
+
+
+
+
+
+
+
+

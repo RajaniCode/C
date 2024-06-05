@@ -1,0 +1,12 @@
+2.4 DataType Int
+
+Which of the following statements about int is correct?
+
+[Single Answer]
+
+int can hold whole number values, but not negative values.
+int can hold whole number values, including both positive and negative values.
+int can hold whole number values, including both positive and negative values, but not zero.
+int can hold only positive whole number values, excluding zero.
+
+Answer: int can hold whole number values, including both positive and negative values.

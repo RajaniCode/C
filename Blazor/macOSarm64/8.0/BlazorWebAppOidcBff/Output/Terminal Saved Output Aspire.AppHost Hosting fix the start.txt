@@ -1,0 +1,105 @@
+Last login: Mon Apr 29 19:55:37 on ttys000
+rajaniapple@Rajanis-MacBook-Pro ~ % dotnet --version                                                                         
+8.0.204
+rajaniapple@Rajanis-MacBook-Pro ~ % cd /Users/rajaniapple/Desktop/GitHub/CS/macOSarm64/Blazor/Blazor/8.0/BlazorWebAppOidcBff 
+rajaniapple@Rajanis-MacBook-Pro BlazorWebAppOidcBff % cd Aspire/Aspire.AppHost                                                                 
+rajaniapple@Rajanis-MacBook-Pro Aspire.AppHost % dotnet run                                                                               
+Building...
+/usr/local/share/dotnet/sdk/8.0.204/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.ImportWorkloads.targets(38,5): error NETSDK1147: To build this project, the following workloads must be installed: aspire [/Users/rajaniapple/Desktop/GitHub/CS/macOSarm64/Blazor/Blazor/8.0/BlazorWebAppOidcBff/Aspire/Aspire.AppHost/Aspire.AppHost.csproj]
+/usr/local/share/dotnet/sdk/8.0.204/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.ImportWorkloads.targets(38,5): error NETSDK1147: To install these workloads, run the following command: dotnet workload restore [/Users/rajaniapple/Desktop/GitHub/CS/macOSarm64/Blazor/Blazor/8.0/BlazorWebAppOidcBff/Aspire/Aspire.AppHost/Aspire.AppHost.csproj]
+
+The build failed. Fix the build errors and run again.
+rajaniapple@Rajanis-MacBook-Pro Aspire.AppHost % dotnet workload restore
+Installing workloads: aspire
+Inadequate permissions. Run the command with elevated privileges.
+rajaniapple@Rajanis-MacBook-Pro Aspire.AppHost % sudo dotnet workload restore
+Password:
+
+Welcome to .NET 8.0!
+---------------------
+SDK Version: 8.0.204
+
+Telemetry
+---------
+The .NET tools collect usage data in order to help us improve your experience. It is collected by Microsoft and shared with the community. You can opt-out of telemetry by setting the DOTNET_CLI_TELEMETRY_OPTOUT environment variable to '1' or 'true' using your favorite shell.
+
+Read more about .NET CLI Tools telemetry: https://aka.ms/dotnet-cli-telemetry
+
+----------------
+Installed an ASP.NET Core HTTPS development certificate.
+To trust the certificate, run 'dotnet dev-certs https --trust'
+Learn about HTTPS: https://aka.ms/dotnet-https
+
+----------------
+Write your first app: https://aka.ms/dotnet-hello-world
+Find out what's new: https://aka.ms/dotnet-whats-new
+Explore documentation: https://aka.ms/dotnet-docs
+Report issues and find source on GitHub: https://github.com/dotnet/core
+Use 'dotnet --help' to see available commands or visit: https://aka.ms/dotnet-cli
+--------------------------------------------------------------------------------------
+Installing workloads: aspire
+
+Skipping NuGet package signature verification.
+Installing workload manifest microsoft.net.sdk.android version 34.0.95...
+Installing workload manifest microsoft.net.sdk.ios version 17.2.8053...
+Installing workload manifest microsoft.net.sdk.maccatalyst version 17.2.8053...
+Installing workload manifest microsoft.net.sdk.macos version 14.2.8053...
+Installing workload manifest microsoft.net.sdk.maui version 8.0.7...
+Installing workload manifest microsoft.net.sdk.tvos version 17.2.8053...
+Installing workload manifest microsoft.net.sdk.aspire version 8.0.0-preview.6.24214.1...
+Installing pack Aspire.Hosting.Sdk version 8.0.0-preview.6.24214.1...
+Writing workload pack installation record for Aspire.Hosting.Sdk version 8.0.0-preview.6.24214.1...
+Installing pack Aspire.ProjectTemplates version 8.0.0-preview.6.24214.1...
+Writing workload pack installation record for Aspire.ProjectTemplates version 8.0.0-preview.6.24214.1...
+Installing pack Aspire.Hosting.Orchestration.osx-arm64 version 8.0.0-preview.6.24214.1...
+Writing workload pack installation record for Aspire.Hosting.Orchestration version 8.0.0-preview.6.24214.1...
+Installing pack Aspire.Hosting version 8.0.0-preview.6.24214.1...
+Writing workload pack installation record for Aspire.Hosting version 8.0.0-preview.6.24214.1...
+Installing pack Aspire.Dashboard.Sdk.osx-arm64 version 8.0.0-preview.6.24214.1...
+Writing workload pack installation record for Aspire.Dashboard.Sdk version 8.0.0-preview.6.24214.1...
+Garbage collecting for SDK feature band(s) 6.0.400 7.0.100 7.0.200 7.0.300 8.0.100 8.0.200...
+
+Successfully installed workload(s) aspire.
+
+rajaniapple@Rajanis-MacBook-Pro Aspire.AppHost % dotnet run                  
+Building...
+/Users/rajaniapple/Desktop/GitHub/CS/macOSarm64/Blazor/Blazor/8.0/BlazorWebAppOidcBff/Aspire/Aspire.ServiceDefaults/Aspire.ServiceDefaults.csproj : warning NU1902: Package 'OpenTelemetry.Instrumentation.AspNetCore' 1.7.1 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-vh2m-22xx-q94f [/Users/rajaniapple/Desktop/GitHub/CS/macOSarm64/Blazor/Blazor/8.0/BlazorWebAppOidcBff/Aspire/Aspire.AppHost/Aspire.AppHost.csproj]
+/Users/rajaniapple/Desktop/GitHub/CS/macOSarm64/Blazor/Blazor/8.0/BlazorWebAppOidcBff/Aspire/Aspire.ServiceDefaults/Aspire.ServiceDefaults.csproj : warning NU1902: Package 'OpenTelemetry.Instrumentation.Http' 1.7.1 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-vh2m-22xx-q94f [/Users/rajaniapple/Desktop/GitHub/CS/macOSarm64/Blazor/Blazor/8.0/BlazorWebAppOidcBff/Aspire/Aspire.AppHost/Aspire.AppHost.csproj]
+/Users/rajaniapple/Desktop/GitHub/CS/macOSarm64/Blazor/Blazor/8.0/BlazorWebAppOidcBff/Aspire/Aspire.ServiceDefaults/Aspire.ServiceDefaults.csproj : warning NU1902: Package 'OpenTelemetry.Instrumentation.AspNetCore' 1.7.1 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-vh2m-22xx-q94f
+/Users/rajaniapple/Desktop/GitHub/CS/macOSarm64/Blazor/Blazor/8.0/BlazorWebAppOidcBff/Aspire/Aspire.ServiceDefaults/Aspire.ServiceDefaults.csproj : warning NU1902: Package 'OpenTelemetry.Instrumentation.Http' 1.7.1 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-vh2m-22xx-q94f
+info: Aspire.Hosting.DistributedApplication[0]
+      Aspire version: 8.0.0-preview.4.24156.9+692dc41a65da572a7df25d53a9f2880afe59fdd8
+info: Aspire.Hosting.DistributedApplication[0]
+      Distributed application starting.
+info: Aspire.Hosting.DistributedApplication[0]
+      Application host directory is: /Users/rajaniapple/Desktop/GitHub/CS/macOSarm64/Blazor/Blazor/8.0/BlazorWebAppOidcBff/Aspire/Aspire.AppHost
+fail: Microsoft.Extensions.Hosting.Internal.Host[11]
+      Hosting failed to start
+      Aspire.Hosting.DistributedApplicationException: Timed out after 00:01:00 while waiting for the dashboard to be responsive.
+         at Aspire.Hosting.Dcp.HttpPingDashboardAvailability.WaitForDashboardAvailabilityAsync(Uri url, TimeSpan timeout, CancellationToken cancellationToken) in /_/src/Aspire.Hosting/Dcp/HttpPingDashboardAvailability.cs:line 50
+         at Aspire.Hosting.Dcp.ApplicationExecutor.CheckDashboardAvailabilityAsync(String delimitedUrlList, CancellationToken cancellationToken) in /_/src/Aspire.Hosting/Dcp/ApplicationExecutor.cs:line 241
+         at Aspire.Hosting.Dcp.ApplicationExecutor.StartDashboardAsDcpExecutableAsync(CancellationToken cancellationToken) in /_/src/Aspire.Hosting/Dcp/ApplicationExecutor.cs:line 217
+         at Aspire.Hosting.Dcp.ApplicationExecutor.RunApplicationAsync(CancellationToken cancellationToken) in /_/src/Aspire.Hosting/Dcp/ApplicationExecutor.cs:line 86
+         at Aspire.Hosting.Dcp.DcpHostService.StartAsync(CancellationToken cancellationToken) in /_/src/Aspire.Hosting/Dcp/DcpHostService.cs:line 68
+         at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+         at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+Unhandled exception. System.AggregateException: One or more errors occurred. (Timed out after 00:01:00 while waiting for the dashboard to be responsive.)
+ ---> Aspire.Hosting.DistributedApplicationException: Timed out after 00:01:00 while waiting for the dashboard to be responsive.
+   at Aspire.Hosting.Dcp.HttpPingDashboardAvailability.WaitForDashboardAvailabilityAsync(Uri url, TimeSpan timeout, CancellationToken cancellationToken) in /_/src/Aspire.Hosting/Dcp/HttpPingDashboardAvailability.cs:line 50
+   at Aspire.Hosting.Dcp.ApplicationExecutor.CheckDashboardAvailabilityAsync(String delimitedUrlList, CancellationToken cancellationToken) in /_/src/Aspire.Hosting/Dcp/ApplicationExecutor.cs:line 241
+   at Aspire.Hosting.Dcp.ApplicationExecutor.StartDashboardAsDcpExecutableAsync(CancellationToken cancellationToken) in /_/src/Aspire.Hosting/Dcp/ApplicationExecutor.cs:line 217
+   at Aspire.Hosting.Dcp.ApplicationExecutor.RunApplicationAsync(CancellationToken cancellationToken) in /_/src/Aspire.Hosting/Dcp/ApplicationExecutor.cs:line 86
+   at Aspire.Hosting.Dcp.DcpHostService.StartAsync(CancellationToken cancellationToken) in /_/src/Aspire.Hosting/Dcp/DcpHostService.cs:line 68
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Aspire.Hosting.DistributedApplication.RunAsync(CancellationToken cancellationToken) in /_/src/Aspire.Hosting/DistributedApplication.cs:line 133
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at Aspire.Hosting.DistributedApplication.Run() in /_/src/Aspire.Hosting/DistributedApplication.cs:line 141
+   at Program.<Main>$(String[] args) in /Users/rajaniapple/Desktop/GitHub/CS/macOSarm64/Blazor/Blazor/8.0/BlazorWebAppOidcBff/Aspire/Aspire.AppHost/Program.cs:line 8
+rajaniapple@Rajanis-MacBook-Pro Aspire.AppHost % 

@@ -1,0 +1,274 @@
+1.9 Delete a Quest
+
+Next, we can work on a method that will update a record in the database.
+
+Controllers/QuestController.cs
+
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using System.Collections.Generic;
+using System.Linq;
+
+using ForgingAhead.Models;
+
+namespace ForgingAhead.Controllers
+{
+  public class QuestController : Controller
+  {
+    private readonly ApplicationDbContext _context;
+
+    public QuestController(ApplicationDbContext context)
+    {
+      _context = context;
+    }
+
+    [HttpGet]
+    public IActionResult Create()
+    {
+      return View();
+    }
+
+    [HttpPost]
+    public IActionResult Create(Quest quest)
+    {
+      _context.Quests.Add(quest);
+      _context.SaveChanges();
+
+      return RedirectToAction("Index");
+    }
+
+    public IActionResult Index()
+    {
+      var model = _context.Quests.ToList();
+      return View(model);
+    }
+
+    public IActionResult Details(string name)
+    {
+      var model = _context.Quests.FirstOrDefault(e => e.Name == name);
+      return View(model);
+    }
+
+    public IActionResult Update(Quest quest)
+    {
+      _context.Entry(quest).State = EntityState.Modified;
+      _context.SaveChanges();
+      return RedirectToAction("Index");
+    }
+
+    public IActionResult Delete(string name)
+    {
+      // delete record from database here
+      
+      return RedirectToAction("Index");
+    }
+  }
+}
+
+
+1. Start by getting the Quest that we intend to delete by using the FirstOrDefault() method, a lambda, and the name parameter that was passed into the method.
+
+Answer:
+Controllers/QuestController.cs
+
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using System.Collections.Generic;
+using System.Linq;
+
+using ForgingAhead.Models;
+
+namespace ForgingAhead.Controllers
+{
+  public class QuestController : Controller
+  {
+    private readonly ApplicationDbContext _context;
+
+    public QuestController(ApplicationDbContext context)
+    {
+      _context = context;
+    }
+
+    [HttpGet]
+    public IActionResult Create()
+    {
+      return View();
+    }
+
+    [HttpPost]
+    public IActionResult Create(Quest quest)
+    {
+      _context.Quests.Add(quest);
+      _context.SaveChanges();
+
+      return RedirectToAction("Index");
+    }
+
+    public IActionResult Index()
+    {
+      var model = _context.Quests.ToList();
+      return View(model);
+    }
+
+    public IActionResult Details(string name)
+    {
+      var model = _context.Quests.FirstOrDefault(e => e.Name == name);
+      return View(model);
+    }
+
+    public IActionResult Update(Quest quest)
+    {
+      _context.Entry(quest).State = EntityState.Modified;
+      _context.SaveChanges();
+      return RedirectToAction("Index");
+    }
+
+    public IActionResult Delete(string name)
+    {
+      // delete record from database here
+      var original = _context.Quests.FirstOrDefault(e => e.Name == name);
+      return RedirectToAction("Index");
+    }
+  }
+}
+
+2. Next, access the database context and Remove() the quest from the Quests collection.
+
+Answer:
+Controllers/QuestController.cs
+
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using System.Collections.Generic;
+using System.Linq;
+
+using ForgingAhead.Models;
+
+namespace ForgingAhead.Controllers
+{
+  public class QuestController : Controller
+  {
+    private readonly ApplicationDbContext _context;
+
+    public QuestController(ApplicationDbContext context)
+    {
+      _context = context;
+    }
+
+    [HttpGet]
+    public IActionResult Create()
+    {
+      return View();
+    }
+
+    [HttpPost]
+    public IActionResult Create(Quest quest)
+    {
+      _context.Quests.Add(quest);
+      _context.SaveChanges();
+
+      return RedirectToAction("Index");
+    }
+
+    public IActionResult Index()
+    {
+      var model = _context.Quests.ToList();
+      return View(model);
+    }
+
+    public IActionResult Details(string name)
+    {
+      var model = _context.Quests.FirstOrDefault(e => e.Name == name);
+      return View(model);
+    }
+
+    public IActionResult Update(Quest quest)
+    {
+      _context.Entry(quest).State = EntityState.Modified;
+      _context.SaveChanges();
+      return RedirectToAction("Index");
+    }
+
+    public IActionResult Delete(string name)
+    {
+      // delete record from database here
+      var original = _context.Quests.FirstOrDefault(e => e.Name == name);
+      if (original != null)
+      {
+        _context.Quests.Remove(original);       
+      }
+      return RedirectToAction("Index");
+    }
+  }
+}
+
+3. Finally, write the changes to the database with the SaveChanges() method.
+
+Answer:
+Controllers/QuestController.cs
+
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using System.Collections.Generic;
+using System.Linq;
+
+using ForgingAhead.Models;
+
+namespace ForgingAhead.Controllers
+{
+  public class QuestController : Controller
+  {
+    private readonly ApplicationDbContext _context;
+
+    public QuestController(ApplicationDbContext context)
+    {
+      _context = context;
+    }
+
+    [HttpGet]
+    public IActionResult Create()
+    {
+      return View();
+    }
+
+    [HttpPost]
+    public IActionResult Create(Quest quest)
+    {
+      _context.Quests.Add(quest);
+      _context.SaveChanges();
+
+      return RedirectToAction("Index");
+    }
+
+    public IActionResult Index()
+    {
+      var model = _context.Quests.ToList();
+      return View(model);
+    }
+
+    public IActionResult Details(string name)
+    {
+      var model = _context.Quests.FirstOrDefault(e => e.Name == name);
+      return View(model);
+    }
+
+    public IActionResult Update(Quest quest)
+    {
+      _context.Entry(quest).State = EntityState.Modified;
+      _context.SaveChanges();
+      return RedirectToAction("Index");
+    }
+
+    public IActionResult Delete(string name)
+    {
+      // delete record from database here
+      var original = _context.Quests.FirstOrDefault(e => e.Name == name);
+      if (original != null)
+      {
+        _context.Quests.Remove(original);
+        _context.SaveChanges();
+      }
+      return RedirectToAction("Index");
+    }
+  }
+}

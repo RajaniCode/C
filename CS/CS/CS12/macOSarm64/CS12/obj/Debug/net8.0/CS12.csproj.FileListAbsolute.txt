@@ -1,0 +1,14 @@
+/Users/rajaniapple/Desktop/Working/CS/CS12/macOS/CS12/bin/Debug/net8.0/CS12
+/Users/rajaniapple/Desktop/Working/CS/CS12/macOS/CS12/bin/Debug/net8.0/CS12.deps.json
+/Users/rajaniapple/Desktop/Working/CS/CS12/macOS/CS12/bin/Debug/net8.0/CS12.runtimeconfig.json
+/Users/rajaniapple/Desktop/Working/CS/CS12/macOS/CS12/bin/Debug/net8.0/CS12.dll
+/Users/rajaniapple/Desktop/Working/CS/CS12/macOS/CS12/bin/Debug/net8.0/CS12.pdb
+/Users/rajaniapple/Desktop/Working/CS/CS12/macOS/CS12/obj/Debug/net8.0/CS12.GeneratedMSBuildEditorConfig.editorconfig
+/Users/rajaniapple/Desktop/Working/CS/CS12/macOS/CS12/obj/Debug/net8.0/CS12.AssemblyInfoInputs.cache
+/Users/rajaniapple/Desktop/Working/CS/CS12/macOS/CS12/obj/Debug/net8.0/CS12.AssemblyInfo.cs
+/Users/rajaniapple/Desktop/Working/CS/CS12/macOS/CS12/obj/Debug/net8.0/CS12.csproj.CoreCompileInputs.cache
+/Users/rajaniapple/Desktop/Working/CS/CS12/macOS/CS12/obj/Debug/net8.0/CS12.dll
+/Users/rajaniapple/Desktop/Working/CS/CS12/macOS/CS12/obj/Debug/net8.0/refint/CS12.dll
+/Users/rajaniapple/Desktop/Working/CS/CS12/macOS/CS12/obj/Debug/net8.0/CS12.pdb
+/Users/rajaniapple/Desktop/Working/CS/CS12/macOS/CS12/obj/Debug/net8.0/CS12.genruntimeconfig.cache
+/Users/rajaniapple/Desktop/Working/CS/CS12/macOS/CS12/obj/Debug/net8.0/ref/CS12.dll

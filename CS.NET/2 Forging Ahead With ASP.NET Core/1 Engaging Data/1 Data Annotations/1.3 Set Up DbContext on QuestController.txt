@@ -1,0 +1,121 @@
+1.3 Set Up DbContext on QuestController
+
+Let's use constructor injection to give QuestController access to our ApplicationDbContext so we don't need to instantiate it every time we want to access our database.
+
+Controllers/QuestController.cs
+
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+
+using ForgingAhead.Models;
+
+namespace ForgingAhead.Controllers
+{
+  public class QuestController : Controller
+  {
+    //Add Context Property Here
+    
+
+    public QuestController( )
+    {
+      //Inject ApplicationDbContext here
+
+    }
+
+    public IActionResult Index()
+    {
+      return View();
+    }
+  }
+}
+
+
+1. Create an ApplicationDbContext variable named _context that is readonly, and only accessible in our QuestController class.
+
+Answer:
+Controllers/QuestController.cs
+
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+
+using ForgingAhead.Models;
+
+namespace ForgingAhead.Controllers
+{
+  public class QuestController : Controller
+  {
+    //Add Context Property Here
+    private readonly ApplicationDbContext _context;
+
+    public QuestController( )
+    {
+      //Inject ApplicationDbContext here
+
+    }
+
+    public IActionResult Index()
+    {
+      return View();
+    }
+  }
+}
+
+2. Inject our ApplicationDbContext into our QuestController. The input parameter should be named context.
+
+Answer:
+Controllers/QuestController.cs
+
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+
+using ForgingAhead.Models;
+
+namespace ForgingAhead.Controllers
+{
+  public class QuestController : Controller
+  {
+    //Add Context Property Here
+    private readonly ApplicationDbContext _context;
+
+    public QuestController(ApplicationDbContext context)
+    {
+      //Inject ApplicationDbContext here
+      
+    }
+
+    public IActionResult Index()
+    {
+      return View();
+    }
+  }
+}
+
+3. Set our _context variable to be our injected ApplicationDbContext local variable.
+
+Answer:
+Controllers/QuestController.cs
+
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+
+using ForgingAhead.Models;
+
+namespace ForgingAhead.Controllers
+{
+  public class QuestController : Controller
+  {
+    //Add Context Property Here
+    private readonly ApplicationDbContext _context;
+
+    public QuestController(ApplicationDbContext context)
+    {
+      //Inject ApplicationDbContext here
+      _context = context;
+    }
+
+    public IActionResult Index()
+    {
+      return View();
+    }
+  }
+}

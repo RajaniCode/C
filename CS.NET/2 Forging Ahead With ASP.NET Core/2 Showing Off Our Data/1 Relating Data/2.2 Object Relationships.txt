@@ -1,0 +1,12 @@
+2.2 Object Relationships
+
+Multiple characters will be allowed to participate in a quest, and characters may participate in multiple quests at a time. What type of relationship is this?
+
+[Single Answer]
+
+One-to-One
+One-to-Many
+Many-to-Many
+
+
+Answer: Many-to-Many

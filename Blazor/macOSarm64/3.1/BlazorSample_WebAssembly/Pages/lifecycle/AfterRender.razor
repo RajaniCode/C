@@ -1,0 +1,23 @@
+@page "/after-render"
+@using Microsoft.Extensions.Logging
+@inject ILogger<AfterRender> Logger
+
+<h1>After Render Example</h1>
+
+<p>
+    <button @onclick="HandleClick">Log information (and trigger a render)</button>
+</p>
+
+<p>Study logged messages in the console.</p>
+
+@code {
+    protected override void OnAfterRender(bool firstRender)
+    {
+        Logger.LogInformation("OnAfterRender: firstRender = {FirstRender}", firstRender);
+    }
+
+    private void HandleClick()
+    {
+        Logger.LogInformation("HandleClick called");
+    }
+}

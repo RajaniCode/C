@@ -1,0 +1,15 @@
+/Users/rajaniapple/Desktop/Working/CS/CS11RandomLogic/bin/Debug/net7.0/CS11RandomLogic
+/Users/rajaniapple/Desktop/Working/CS/CS11RandomLogic/bin/Debug/net7.0/CS11RandomLogic.deps.json
+/Users/rajaniapple/Desktop/Working/CS/CS11RandomLogic/bin/Debug/net7.0/CS11RandomLogic.runtimeconfig.json
+/Users/rajaniapple/Desktop/Working/CS/CS11RandomLogic/bin/Debug/net7.0/CS11RandomLogic.dll
+/Users/rajaniapple/Desktop/Working/CS/CS11RandomLogic/bin/Debug/net7.0/CS11RandomLogic.pdb
+/Users/rajaniapple/Desktop/Working/CS/CS11RandomLogic/obj/Debug/net7.0/CS11RandomLogic.csproj.AssemblyReference.cache
+/Users/rajaniapple/Desktop/Working/CS/CS11RandomLogic/obj/Debug/net7.0/CS11RandomLogic.GeneratedMSBuildEditorConfig.editorconfig
+/Users/rajaniapple/Desktop/Working/CS/CS11RandomLogic/obj/Debug/net7.0/CS11RandomLogic.AssemblyInfoInputs.cache
+/Users/rajaniapple/Desktop/Working/CS/CS11RandomLogic/obj/Debug/net7.0/CS11RandomLogic.AssemblyInfo.cs
+/Users/rajaniapple/Desktop/Working/CS/CS11RandomLogic/obj/Debug/net7.0/CS11RandomLogic.csproj.CoreCompileInputs.cache
+/Users/rajaniapple/Desktop/Working/CS/CS11RandomLogic/obj/Debug/net7.0/CS11RandomLogic.dll
+/Users/rajaniapple/Desktop/Working/CS/CS11RandomLogic/obj/Debug/net7.0/refint/CS11RandomLogic.dll
+/Users/rajaniapple/Desktop/Working/CS/CS11RandomLogic/obj/Debug/net7.0/CS11RandomLogic.pdb
+/Users/rajaniapple/Desktop/Working/CS/CS11RandomLogic/obj/Debug/net7.0/CS11RandomLogic.genruntimeconfig.cache
+/Users/rajaniapple/Desktop/Working/CS/CS11RandomLogic/obj/Debug/net7.0/ref/CS11RandomLogic.dll

@@ -1,0 +1,71 @@
+3.2 If Condition
+
+Using int.TryParse, set bands to the parsed value of bandArgument. Set up a condition to only announce
+
+Program.cs
+using System;
+
+public class Program
+{
+    static void Main(string[] args)
+    {
+        string venue = args[0];
+        string bandArgument = args[1];
+        int bands;
+        // First, create an if condition...
+        
+        Console.WriteLine(venue + " will have " + bands + " bands performing tonight!");
+        
+        // Also, create an else condition...
+        
+    }
+}
+
+1. Create an if condition that will only print our existing console announcement when TryParse returns true. Use int.TryParse to set bands to the value of bandArgument.
+
+Answer:
+Program.cs
+using System;
+
+public class Program
+{
+    static void Main(string[] args)
+    {
+        string venue = args[0];
+        string bandArgument = args[1];
+        int bands;
+        // First, create an if condition...
+        if (int.TryParse (bandArgument, out bands))
+        {
+            Console.WriteLine(venue + " will have " + bands + " bands performing tonight!");
+        }
+        // Also, create an else condition...
+        
+    }
+}
+
+2. In the event the first condition isn't met, create an else condition that instead announces "We were unable to determine the number of bands performing tonight, try again."
+
+Answer:
+Program.cs
+using System;
+
+public class Program
+{
+    static void Main(string[] args)
+    {
+        string venue = args[0];
+        string bandArgument = args[1];
+        int bands;
+        // First, create an if condition...
+        if (int.TryParse (bandArgument, out bands))
+        {
+            Console.WriteLine(venue + " will have " + bands + " bands performing tonight!");
+        }
+        // Also, create an else condition...
+        else
+        {
+            Console.WriteLine("We were unable to determine the number of bands performing tonight, try again.");
+        }
+    }
+}

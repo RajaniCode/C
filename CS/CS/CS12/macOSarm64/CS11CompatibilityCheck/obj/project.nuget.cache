@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "UO1Bq7EQqLQf4oaKg/vGZBJZHKsm/jr9+OoPnMTAPobvwz0f46AmCezHNbB2ZsyYHSYz6br8Xvp+rHoIHS56VQ==",
+  "success": true,
+  "projectFilePath": "/Users/rajaniapple/Desktop/Working/CS/CS12/macOS/CS11/CS11.csproj",
+  "expectedPackageFiles": [
+    "/Users/rajaniapple/.nuget/packages/microsoft.netcore.app.ref/7.0.18/microsoft.netcore.app.ref.7.0.18.nupkg.sha512",
+    "/Users/rajaniapple/.nuget/packages/microsoft.aspnetcore.app.ref/7.0.18/microsoft.aspnetcore.app.ref.7.0.18.nupkg.sha512",
+    "/Users/rajaniapple/.nuget/packages/microsoft.netcore.app.host.osx-arm64/7.0.18/microsoft.netcore.app.host.osx-arm64.7.0.18.nupkg.sha512"
+  ],
+  "logs": []
+}

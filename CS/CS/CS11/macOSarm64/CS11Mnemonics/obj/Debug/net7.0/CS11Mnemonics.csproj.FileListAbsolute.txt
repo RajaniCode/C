@@ -1,0 +1,15 @@
+/Users/rajaniapple/Desktop/Working/CS/CS11Mnemonics/bin/Debug/net7.0/CS11Mnemonics
+/Users/rajaniapple/Desktop/Working/CS/CS11Mnemonics/bin/Debug/net7.0/CS11Mnemonics.deps.json
+/Users/rajaniapple/Desktop/Working/CS/CS11Mnemonics/bin/Debug/net7.0/CS11Mnemonics.runtimeconfig.json
+/Users/rajaniapple/Desktop/Working/CS/CS11Mnemonics/bin/Debug/net7.0/CS11Mnemonics.dll
+/Users/rajaniapple/Desktop/Working/CS/CS11Mnemonics/bin/Debug/net7.0/CS11Mnemonics.pdb
+/Users/rajaniapple/Desktop/Working/CS/CS11Mnemonics/obj/Debug/net7.0/CS11Mnemonics.csproj.AssemblyReference.cache
+/Users/rajaniapple/Desktop/Working/CS/CS11Mnemonics/obj/Debug/net7.0/CS11Mnemonics.GeneratedMSBuildEditorConfig.editorconfig
+/Users/rajaniapple/Desktop/Working/CS/CS11Mnemonics/obj/Debug/net7.0/CS11Mnemonics.AssemblyInfoInputs.cache
+/Users/rajaniapple/Desktop/Working/CS/CS11Mnemonics/obj/Debug/net7.0/CS11Mnemonics.AssemblyInfo.cs
+/Users/rajaniapple/Desktop/Working/CS/CS11Mnemonics/obj/Debug/net7.0/CS11Mnemonics.csproj.CoreCompileInputs.cache
+/Users/rajaniapple/Desktop/Working/CS/CS11Mnemonics/obj/Debug/net7.0/CS11Mnemonics.dll
+/Users/rajaniapple/Desktop/Working/CS/CS11Mnemonics/obj/Debug/net7.0/refint/CS11Mnemonics.dll
+/Users/rajaniapple/Desktop/Working/CS/CS11Mnemonics/obj/Debug/net7.0/CS11Mnemonics.pdb
+/Users/rajaniapple/Desktop/Working/CS/CS11Mnemonics/obj/Debug/net7.0/CS11Mnemonics.genruntimeconfig.cache
+/Users/rajaniapple/Desktop/Working/CS/CS11Mnemonics/obj/Debug/net7.0/ref/CS11Mnemonics.dll

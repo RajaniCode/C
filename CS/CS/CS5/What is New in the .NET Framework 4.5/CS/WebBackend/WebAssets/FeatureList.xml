@@ -1,0 +1,791 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Features>
+  <Feature>
+    <Name>.NET for Windows Store Apps</Name>
+    <Version>4.5</Version>
+    <Icon>.NETforWindowsStoreApps.png</Icon>
+    <Image>.NETforWindowsStoreAppsDetails.png</Image>
+    <Rating>4</Rating>
+    <Description>Provides simple and light-weight base class library APIs to C# and Visual Basic developers programing Windows apps. No tools for creating interop assemblies are necessary to access all of the Windows 8 APIs from C# or Visual Basic. It's all done automatically at runtime by the CLR.</Description>
+  </Feature>
+  <Feature>
+    <Name>ADO.NET SecureString</Name>
+    <Version>4.5</Version>
+    <Icon>ADO.NETSecureString.png</Icon>
+    <Image></Image>
+    <Rating>3</Rating>
+    <Description>ADO.NET supports in memory password encryption with SecureString for text that should be kept confidential. The text is encrypted for privacy when being used, and deleted from computer memory when no longer needed.</Description>
+  </Feature>
+  <Feature>
+    <Name>Anonymous Methods</Name>
+    <Version>2.0</Version>
+    <Icon>AnonymousMethods.png</Icon>
+    <Image></Image>
+    <Rating>5</Rating>
+    <Description>By using anonymous methods, you can reduce the coding overhead of instantiating delegates by eliminating the need to write a separate method. Creating anonymous methods is essentially a way to pass a code block as a delegate parameter.</Description>
+  </Feature>
+  <Feature>
+    <Name>ARM Processor Support</Name>
+    <Version>4.5</Version>
+    <Icon>ARMProcessorSupport.png</Icon>
+    <Image></Image>
+    <Rating>3</Rating>
+    <Description>ARM processors are designed for low power usage which is great of small devices that are always connected. Writing Windows apps for ARM is as simple as targeting AnyCPUPrefer32 and your app will automatically run on ARM. There are very few differences that aren't abstracted away from you as a developer. On x86 it was easy to omit the volatile prefix because of the stronger memory model. ARM does more instruction reordering optimizations and depends on proper use of the volatile keyword when another memory barrier isn't in place for shared memory.</Description>
+  </Feature>
+  <Feature>
+    <Name>ASP.NET Mobile Controls</Name>
+    <Version>1.1</Version>
+    <Icon>ASP.NETMobileControls.png</Icon>
+    <Image></Image>
+    <Rating>3</Rating>
+    <Description>ASP.NET Mobile Controls (formerly the Microsoft Mobile Internet Toolkit) extends the .NET Framework and Visual Studio .NET by providing support for mobile (wireless) devices such as cell phones and personal data assistants (PDAs). The .NET Framework version 1.1 release incorporates the mobile controls into the .NET Framework and Visual Studio .NET distributions.</Description>
+  </Feature>
+  <Feature>
+    <Name>ASP.NET User Voice</Name>
+    <Version>4.5</Version>
+    <Icon>ASP.NETUserVoice.png</Icon>
+    <Image>ASP.NETUserVoiceDetails.png</Image>
+    <Rating>3</Rating>
+    <Description>You asked and we heard you. ASP.NET did over 20 of the top 25 User Voice requests!
+http://aspnet.uservoice.com</Description>
+  </Feature>
+  <Feature>
+    <Name>Await and Async</Name>
+    <Version>4.5</Version>
+    <Icon>AsyncAndAwait.png</Icon>
+    <Image>AsyncAndAwaitDetails.png</Image>
+    <Rating>4</Rating>
+    <Description>The complex act of turning your code inside out to make it asynchronous, is over! The new async and await keywords do the magic for you allowing you to write easy to read async code that looks almost exactly like the synchronous version.
+
+Client UI Code
+Easy to write client UI code that doesn't block
+
+Business logic
+Easy to write code that fetches data from multiple sources in parallel
+
+Server code
+Better scalability -- no need to have a thread per request.
+
+New APIs in BCL, ASP.NET, ADO.NET, WCF, XML, WPF make it even easier!</Description>
+  </Feature>
+  <Feature>
+    <Name>Background Client Garbage Collection</Name>
+    <Version>4.0</Version>
+    <Icon>BackgroundClientGC.png</Icon>
+    <Image></Image>
+    <Rating>3</Rating>
+    <Description>Until now, garbage collection paused your app while it cleaned up memory. With background garbage collection for the client mode, the largest segment of memory known as "Generation 2" can be collected while your app's code is running. This dramatically improves pause times while maintaining the same or better performance characteristics for your app.</Description>
+  </Feature>
+  <Feature>
+    <Name>Background Server Garbage Collection</Name>
+    <Version>4.5</Version>
+    <Icon>BackgroundServerGC.png</Icon>
+    <Image>BackgroundServerGCDetails.png</Image>
+    <Rating>3</Rating>
+    <Description>We introduced background garbage collection for client in the last release. Now it's available for the server mode. Adding background GC to the server isn't about responsiveness like it is for the client mode -- it is able maximizing resource utilization. Client GC is still the default, but if you do Server GC it now will automatically use the background features. You can turn it off. For legacy reasons the field that you set is called ConcurrentGC instead of background.
+
+"Upgrading to Windows Server 2012 can have this same positive impact for your managed applications. Less time spent garbage collecting is more time spent serving user requests. The end result is less latency and better throughput for your services." --Jeffrey Snover, Windows Server team</Description>
+  </Feature>
+  <Feature>
+    <Name>BigInteger</Name>
+    <Version>4.0</Version>
+    <Icon>BigInteger.png</Icon>
+    <Image></Image>
+    <Rating>3</Rating>
+    <Description>The bigger the better. BigInteger makes it easy to work with integers of limitless size. The BigInteger type, which can be found in System.Numerics, is an immutable type that represents an arbitrarily large integer whose value in theory has no upper or lower bounds. Out of memory condintions can be hit if the size grows beyond the available memory.</Description>
+  </Feature>
+  <Feature>
+    <Name>Boxing</Name>
+    <Version>1.0</Version>
+    <Icon>Boxing.png</Icon>
+    <Image></Image>
+    <Rating>5</Rating>
+    <Description>Boxing is the process of converting a value type to the type object or to any interface type implemented by this value type. When the CLR boxes a value type, it wraps the value inside a System.Object and stores it on the managed heap. Unboxing extracts the value type from the object. Boxing is implicit; unboxing is explicit. The concept of boxing and unboxing underlies the C# unified view of the type system, in which a value of any type can be treated as an object.</Description>
+  </Feature>
+  <Feature>
+    <Name>ClickOnce</Name>
+    <Version>2.0</Version>
+    <Icon>ClickOnce.png</Icon>
+    <Image></Image>
+    <Rating>3</Rating>
+    <Description>ClickOnce is a deployment technology that allows you to create self-updating Windows-based applications that can be installed and run with minimal user interaction. ClickOnce deployment overcomes three major issues inherent in deployment:
+
+1) Difficulties in updating applications. With Microsoft Windows Installer deployment, whenever an application is updated, the user must reinstall the entire application; with ClickOnce deployment, you can provide updates automatically. Only those portions of the application that have changed are downloaded, then the full, updated application is reinstalled from a new side-by-side folder.
+2) Impact to the user's computer. With Windows Installer deployment, applications often rely on shared components, with the potential for versioning conflicts; with ClickOnce deployment, each application is self-contained and cannot interfere with other applications.
+3) Security permissions. Windows Installer deployment requires administrative permissions and allows only limited user installation; ClickOnce deployment allows non-administrative users to install and grants only those Code Access Security permissions necessary for the application.
+
+In the past, these issues sometimes caused developers to decide to create Web applications rather than Windows-based applications, sacrificing the rich user interface and responsiveness of Windows Forms for ease of installation. With applications deployed using ClickOnce, you can have the best of both technologies.</Description>
+  </Feature>
+  <Feature>
+    <Name>Co &amp; Contra Variance</Name>
+    <Version>4.0</Version>
+    <Icon>CoAndContraVariance.png</Icon>
+    <Image></Image>
+    <Rating>3</Rating>
+    <Description>Covariance allows you to assign a child type to a parent type as long as the parent type is larger and has all of the child properties. In this case a triangle can be returned and put into a shape. This is done by marking it as an out parameter. Contravariance allows passing in a child type where a parent type is expected. In this case a triangle can be passed in where a shape is expected. To do this mark the parameter as in.</Description>
+  </Feature>
+  <Feature>
+    <Name>Code Contracts</Name>
+    <Version>4.0</Version>
+    <Icon>CodeContracts.png</Icon>
+    <Image></Image>
+    <Rating>3</Rating>
+    <Description>Code contracts provide a way to specify preconditions, post conditions, and object invariants in your code. Preconditions are requirements that must be met when entering a method or property. Post conditions describe expectations at the time the method or property code exits. Object invariants describe the expected state for a class that is in a good state.
+
+Code contracts include classes for marking your code, a static analyzer for compile-time analysis, and a runtime analyzer. The classes for code contracts can be found in the System.Diagnostics.Contracts namespace.
+
+The benefits of code contracts include the following:
+1) Improved testing: Code contracts provide static contract verification, runtime checking, and documentation generation.
+2) Automatic testing tools: You can use code contracts to generate more meaningful unit tests by filtering out meaningless test arguments that do not satisfy preconditions.
+3) Static verification: The static checker can decide whether there are any contract violations without running the program. It checks for implicit contracts, such as null dereferences and array bounds, and explicit contracts.
+4) Reference documentation: The documentation generator augments existing XML documentation files with contract information. There are also style sheets that can be used with Sandcastle so that the generated documentation pages have contract sections.
+
+All .NET Framework languages can immediately take advantage of contracts; you do not have to write a special parser or compiler. A Visual Studio add-in lets you specify the level of code contract analysis to be performed. The analyzers can confirm that the contracts are well-formed (type checking and name resolution) and can produce a compiled form of the contracts in Microsoft intermediate language (MSIL) format. Authoring contracts in Visual Studio lets you take advantage of the standard IntelliSense provided by the tool.
+
+Most methods in the contract class are conditionally compiled; that is, the compiler emits calls to these methods only when you define a special symbol, CONTRACTS FULL, by using the #define directive. CONTRACTS FULL lets you write contracts in your code without using #ifdef directives; you can produce different builds, some with contracts, and some without.
+
+For tools and detailed instructions for using code contracts, see Code Contracts on the MSDN DevLabs Web site.</Description>
+  </Feature>
+  <Feature>
+    <Name>Complex</Name>
+    <Version>4.0</Version>
+    <Icon>Complex.png</Icon>
+    <Image></Image>
+    <Rating>3</Rating>
+    <Description>Complex provides all of the operators and methods you need to make working with complex numbers easy.</Description>
+  </Feature>
+  <Feature>
+    <Name>Console</Name>
+    <Version>1.0</Version>
+    <Icon>Console.png</Icon>
+    <Image></Image>
+    <Rating>3</Rating>
+    <Description>The console is an operating system window where users interact with the operating system or a text-based console application by entering text input through the computer keyboard, and reading text output from the computer terminal. For example, in Windows the console is called the command prompt window and accepts MS-DOS commands. The Console class provides basic support for applications that read characters from, and write characters to, the console.
+
+When a console application starts, the operating system automatically associates three I/O streams with the console. Your application can read user input from the standard input stream; write normal data to the standard output stream; and write error data to the standard error output stream. These streams are presented to your application as the values of the In, Out, and Error properties.
+
+By default, the value of the In property is a System.IO.TextReader object, and the values of the Out and Error properties are System.IO.TextWriter objects. However, you can set these properties to streams that do not represent the console; for example, you can set these properties to streams that represent files. To redirect the standard input, standard output, or standard error stream, call the SetIn, SetOut, or SetError method, respectively. I/O operations using these streams are synchronized, which means multiple threads can read from, or write to, the streams.</Description>
+  </Feature>
+  <Feature>
+    <Name>Console support for Unicode</Name>
+    <Version>4.5</Version>
+    <Icon>ConsoleSupportforUnicode.png</Icon>
+    <Image></Image>
+    <Rating>3</Rating>
+    <Description>Even console continues to evolve with the times. Console now supports UTF-16 using the UnicodeEncoding class.</Description>
+  </Feature>
+  <Feature>
+    <Name>Delegate</Name>
+    <Version>1.0</Version>
+    <Icon>Delegate.png</Icon>
+    <Image></Image>
+    <Rating>4</Rating>
+    <Description>A delegate is a type-safe function pointer. A delegate object either has a reference to a static method or an instance method and the object to call the method on. Delegates are used to implement callbacks and event listeners.</Description>
+  </Feature>
+  <Feature>
+    <Name>Dynamic </Name>
+    <Version>4.0</Version>
+    <Icon>Dynamic.png</Icon>
+    <Image></Image>
+    <Rating>3</Rating>
+    <Description>Static compile-time type checking is skipped when using a dynamic type. It makes the assumption that any operation is supported. It will then be resolved at run time. The dynamic type simplifies access to COM APIs such as the Office Automation APIs, and also to dynamic APIs such as IronPython libraries, and to the HTML Document Object Model (DOM).</Description>
+  </Feature>
+  <Feature>
+    <Name>Edit and Continue</Name>
+    <Version>2.0</Version>
+    <Icon>EditAndContinue.png</Icon>
+    <Image></Image>
+    <Rating>4</Rating>
+    <Description>Edit and Continue is a time-saving feature that enables you to make changes to your source code while your program is in break mode. When you resume execution of the program by choosing an execution command like Continue or Step, Edit and Continue automatically applies the code changes with some limitations. This allows you to make changes to your code during a debugging session, instead of having to stop, recompile your entire program, and restart the debugging session.</Description>
+  </Feature>
+  <Feature>
+    <Name>Entity Framework Code First</Name>
+    <Version>4.0</Version>
+    <Icon>EntityFrameworkCodeFirst.png</Icon>
+    <Image></Image>
+    <Rating>3</Rating>
+    <Description>You shouldn't need to be a SQL expert to build the database behind great apps. Design your object model in C# or Visual Basic, then let Entity Framework Code First worry about persisting data into a database.</Description>
+  </Feature>
+  <Feature>
+    <Name>Entity Framework Enums</Name>
+    <Version>4.5</Version>
+    <Icon>EntityFrameworkEnums.png</Icon>
+    <Image></Image>
+    <Rating>3</Rating>
+    <Description>You can now use Enums in Entity Framework with Code First, Database First, Model First workflows and LINQ to Entity queries.</Description>
+  </Feature>
+  <Feature>
+    <Name>Entity Framework Spatial Data</Name>
+    <Version>4.5</Version>
+    <Icon>EntityFrameworkSpatialData.png</Icon>
+    <Image></Image>
+    <Rating>3</Rating>
+    <Description>Spatial data allows users to represent locations on a map as well as points, geometric shapes, and other data which relies on a coordinate system. There are two main types of spatial data: geographic data and geometric data. Geography data takes the ellipsoid nature of the earth into account while Geometry bases all measurements and calculations on Euclidean space.
+
+The reason using spatial types with LINQ is so interesting is that it enables a simple way to perform complex spatial calculations over large amounts of data on the database server.</Description>
+  </Feature>
+  <Feature>
+    <Name>Entity Framework Table Valued Functions</Name>
+    <Version>4.5</Version>
+    <Icon>EntityFrameworkTableValuedFunctions.png</Icon>
+    <Image></Image>
+    <Rating>3</Rating>
+    <Description>Table valued functions (TVFs) are user-defined database functions capable of returning table-shaped results. TVFs are similar to stored procedures in that their definition is stored in the database, they can receive parameters and they can contain arbitrary SQL in their body. Unlike stored procedures, TVFs are composable, which means they can be used inside SQL queries.</Description>
+  </Feature>
+  <Feature>
+    <Name>Extension Methods</Name>
+    <Version>3.5</Version>
+    <Icon>ExtensionMethods.png</Icon>
+    <Image></Image>
+    <Rating>4</Rating>
+    <Description>Extension methods enable you to "add" methods to existing types without creating a new derived type, recompiling, or otherwise modifying the original type. Extension methods are a special kind of static method, but they are called as if they were instance methods on the extended type. For client code written in C# and Visual Basic, there is no apparent difference between calling an extension method and the methods that are actually defined in a type.
+
+The most common extension methods are the LINQ standard query operators that add query functionality to the existing System.Collections.IEnumerable and System.Collections.Generic.IEnumerable&lt;T&gt; types. To use the standard query operators, first bring them into scope with a using System.Linq directive. Then any type that implements IEnumerable&lt;T&gt; appears to have instance methods such as GroupBy, OrderBy, Average, and so on. You can see these additional methods in IntelliSense statement completion when you type "dot" after an instance of an IEnumerable&lt;T&gt; type such as List&lt;T&gt; or Array.</Description>
+  </Feature>
+  <Feature>
+    <Name>Faster ASP.NET </Name>
+    <Version>4.5</Version>
+    <Icon>FasterASP.NET.png</Icon>
+    <Image></Image>
+    <Rating>3</Rating>
+    <Description>Many websites are hosted on the same server with other websites. If a website isn't visted very often, IIS might reclaim the memory. That means the startup time for websites can matter, especially for websites using a shared hosting model. In .NET 4.5, we've made improvements leading to 35% faster cold start. We use multicore JIT, Windows Server 2012 pre-fetch option, and other working set improvements.</Description>
+  </Feature>
+  <Feature>
+    <Name>Friend Assemblies</Name>
+    <Version>2.0</Version>
+    <Icon>FriendAssemblies.png</Icon>
+    <Image></Image>
+    <Rating>3</Rating>
+    <Description>A friend assembly is an assembly that can access another assembly's Friend (Visual Basic) or internal (C#) types and members. You can use the InternalsVisibleToAttribute attribute to identify one or more friend assemblies for a given assembly. If you identify an assembly as a friend assembly, you no longer have to mark types and members as public in order for them to be accessed by other assemblies. This is especially convenient in the following scenarios:
+
+1) During unit testing, when test code runs in a separate assembly but requires access to members in the assembly being tested that are marked as Friend (Visual Basic) or internal (C#).
+2) When you are developing a class library and additions to the library are contained in separate assemblies but require access to members in existing assemblies that are marked as Friend (Visual Basic) or internal (C#).</Description>
+  </Feature>
+  <Feature>
+    <Name>Garbage Collection</Name>
+    <Version>1.0</Version>
+    <Icon>GarbageCollection.png</Icon>
+    <Image></Image>
+    <Rating>3</Rating>
+    <Description>Garbage collection is one of premiere features of the .NET managed coding platform. The garbage collector manages allocating and releasing memory for you. The .NET garbage collector is generational and has 3 generations. There is a basic principle that most objects are either short lived or long lived. Gen 0 is where all object (expect for large objects) are first allocated. Often objects don't live past the first generation. Gen 0 is quick to collect because it is a small space. Gen 1 is really a second chance space. Objects that are short lived but survived the Gen 0 collection (often based on coincidental timing) go to generation 1. Gen 1 collections are also quick because the space is small. Generation 2 is where all long living objects are. Generation 2 can get very large so the Gen 2 collections are the ones that take any noticeable time.
+
+An allocation is made any time you new up an object or a value type is boxed. If there is space in Gen 0, allocations are really fast. When there isn't space left is when a collection happens.</Description>
+  </Feature>
+  <Feature>
+    <Name>GC Notifications</Name>
+    <Version>3.5</Version>
+    <Icon>GCNotifications.png</Icon>
+    <Image></Image>
+    <Rating>3</Rating>
+    <Description>There are situations in which a full garbage collection (that is, a generation 2 collection) by the common language runtime may adversely affect performance. This can be an issue particularly with servers that process large volumes of requests; in this case, a long garbage collection can cause a request time-out. To prevent a full collection from occurring during a critical period, you can be notified that a full garbage collection is approaching and then take action to redirect the workload to another server instance. You can also induce a collection yourself, provided that the current server instance does not need to process requests.
+
+The RegisterForFullGCNotification method registers for a notification to be raised when the runtime senses that a full garbage collection is approaching. There are two parts to this notification: when the full garbage collection is approaching and when the full garbage collection has completed. To determine when a notification has been raised, use the WaitForFullGCApproach and WaitForFullGCComplete methods.</Description>
+  </Feature>
+  <Feature>
+    <Name>Generics</Name>
+    <Version>2.0</Version>
+    <Icon>Generics.png</Icon>
+    <Image></Image>
+    <Rating>5</Rating>
+    <Description>Generics are classes, structures, interfaces, and methods that have placeholders (type parameters) for one or more of the types that they store or use. A generic collection class might use a type parameter as a placeholder for the type of objects that it stores; the type parameters appear as the types of its fields and the parameter types of its methods. A generic method might use its type parameter as the type of its return value or as the type of one of its formal parameters.
+
+When you create an instance of a generic class, you specify the actual types to substitute for the type parameters. This establishes a new generic class, referred to as a constructed generic class, with your chosen types substituted everywhere that the type parameters appear. The result is a type-safe class that is tailored to your choice of types.</Description>
+  </Feature>
+  <Feature>
+    <Name>IPv6</Name>
+    <Version>1.1</Version>
+    <Icon>IPv6.png</Icon>
+    <Image></Image>
+    <Rating>3</Rating>
+    <Description>Support for the IPv6 protocol is designed to significantly increase the address space used to identify communication endpoints in the Internet to accommodate its ongoing growth.</Description>
+  </Feature>
+  <Feature>
+    <Name>JIT</Name>
+    <Version>1.0</Version>
+    <Icon>JIT.png</Icon>
+    <Image></Image>
+    <Rating>3</Rating>
+    <Description>Before you can run Microsoft intermediate language (MSIL), it must be converted by a .NET Framework just-in-time (JIT) compiler to native code, which is CPU-specific code that runs on the same computer architecture as the JIT compiler. Because the common language runtime supplies a JIT compiler for each supported CPU architecture, developers can write a set of MSIL that can be JIT-compiled and run on computers with different architectures. However, your managed code will run only on a specific operating system if it calls platform-specific native APIs, or a platform-specific class library.
+
+JIT compilation takes into account the fact that some code might never get called during execution. Rather than using time and memory to convert all the MSIL in a portable executable (PE) file to native code, it converts the MSIL as needed during execution and stores the resulting native code so that it is accessible for subsequent calls. The loader creates and attaches a stub to each of a type's methods when the type is loaded. On the initial call to the method, the stub passes control to the JIT compiler, which converts the MSIL for that method into native code and modifies the stub to direct execution to the location of the native code. Subsequent calls of the JIT-compiled method proceed directly to the native code that was previously generated, reducing the time it takes to JIT-compile and run the code.
+
+As part of compiling MSIL to native code, code must pass a verification process unless an administrator has established a security policy that allows code to bypass verification. Verification examines MSIL and metadata to find out whether the code is type safe, which means that it only accesses the memory locations it is authorized to access. Type safety helps isolate objects from each other and therefore helps protect them from inadvertent or malicious corruption. It also provides assurance that security restrictions on code can be reliably enforced.</Description>
+  </Feature>
+  <Feature>
+    <Name>Lambdas</Name>
+    <Version>3.5</Version>
+    <Icon>Lambdas.png</Icon>
+    <Image></Image>
+    <Rating>3</Rating>
+    <Description>A lambda expression is an anonymous function that can contain expressions and statements, and can be used to create delegates or expression tree types.
+
+All lambda expressions use the lambda operator =&gt;, which is read as "goes to". The left side of the lambda operator specifies the input parameters (if any) and the right side holds the expression or statement block. The lambda expression x =&gt; x * x is read "x goes to x times x."
+
+The =&gt; operator has the same precedence as assignment (=) and is right-associative.
+
+Lambdas are used in method-based LINQ queries as arguments to standard query operator methods such as Where.
+
+When you use method-based syntax to call the Where method in the Enumerable class (as you do in LINQ to Objects and LINQ to XML) the parameter is a delegate type System.Func&lt;T, TResult&gt;. A lambda expression is the most convenient way to create that delegate. When you call the same method in, for example, the System.Linq.Queryable class (as you do in LINQ to SQL) then the parameter type is an System.Linq.Expressions.Expression&lt;Func&gt; where Func is any Func delegates with up to sixteen input parameters. Again, a lambda expression is just a very concise way to construct that expression tree. The lambdas allow the Where calls to look similar although in fact the type of object created from the lambda is different.
+
+A lambda expression with an expression on the right side is called an expression lambda. Expression lambdas are used extensively in the construction of Expression Trees. A statement lambda resembles an expression lambda except that the statement(s) is enclosed in braces like this: (input parameters) =&gt; {statement;}. Statement lambdas, like anonymous methods, cannot be used to create expression trees.
+
+When writing lambdas, you often do not have to specify a type for the input parameters because the compiler can infer the type based on the lambda body, the underlying delegate type, and other factors as described in the C# Language Specification. For most of the standard query operators, the first input is the type of the elements in the source sequence.</Description>
+  </Feature>
+  <Feature>
+    <Name>Large Object Heap Improvements</Name>
+    <Version>4.5</Version>
+    <Icon>LargeObjectHeapImprovements.png</Icon>
+    <Image></Image>
+    <Rating>3</Rating>
+    <Description>Allocation greater than or equal to 85,000 bytes go on to the Large Object Heap (LOH). Moving these large objects around has a performance cost so the LOH is not compacted. This can lead to fragmentation where there is still memory but it is fragmented and unusable. Two major improvements have been made. First, a change was made to the allocator that allows for better use of the fragmented portions of memory. Secondly, when using ServerGC, the allocator will balance allocations across the heaps. For more about these changes, check out http://blogs.msdn.com/b/dotnet/archive/2011/10/04/large-object-heap-improvements-in-net-4-5.aspx</Description>
+  </Feature>
+  <Feature>
+    <Name>LINQ</Name>
+    <Version>3.5</Version>
+    <Icon>LINQ.png</Icon>
+    <Image></Image>
+    <Rating>3</Rating>
+    <Description>More of the "what", less of the "how". Language Integrated Query (LINQ) transforms the way you code by giving you the power of SQL and functional programming with the comfort of C# or Visual Basic. Query anything from lists to XML to databases. LINQ uses deferred execution to make sure your code is fast.</Description>
+  </Feature>
+  <Feature>
+    <Name>MEF</Name>
+    <Version>4.0</Version>
+    <Icon>MEF.png</Icon>
+    <Image></Image>
+    <Rating>3</Rating>
+    <Description>The Managed Extensibility Framework (MEF) is a composition layer for .NET that improves the flexibility, maintainability and testability of large applications. MEF can be used for third-party plugin extensibility, or it can bring the benefits of a loosely-coupled plugin-like architecture to regular applications.</Description>
+  </Feature>
+  <Feature>
+    <Name>MEF Conventions</Name>
+    <Version>4.5</Version>
+    <Icon>MEFConventions.png</Icon>
+    <Image>MEFCompositionDetails.png</Image>
+    <Rating>3</Rating>
+    <Description>Attributes are great for plug-in models; it can get redundant when using MEF within an app. MEF configuration removes the need to repeat yourself. In this example the composition is inferred. The new RegistrationBuilder rules replace the attributes. Where to find the parts is still figured out separately with the catalog so, AssemblyCatalog is used.</Description>
+  </Feature>
+  <Feature>
+    <Name>MEF DisableSilentRejection</Name>
+    <Version>4.5</Version>
+    <Icon>MEFDisableSilentRejection.png</Icon>
+    <Image></Image>
+    <Rating>3</Rating>
+    <Description>MEF was originally design for composing parts that were not necessarily owned by the same person. Resiliency to failures and missing parts was critical. The tradeoff was around diagnosability. Since it's release, MEF has been used in more scenarios, including where all of the code is owned by the app developer. By disabling silent rejections, the app goes into a "Fail Fast" mode which makes it much easier debugging composition problems. 
+var container = new CompositionContainer(catalog, CompositionOptions.DisableSilentRejection);</Description>
+  </Feature>
+  <Feature>
+    <Name>MEF for Windows Store apps</Name>
+    <Version>4.5</Version>
+    <Icon>MEFForMetro.png</Icon>
+    <Image></Image>
+    <Rating>3</Rating>
+    <Description>Write loosely coupled, testable and maintainable applications for Windows Store apps and the web.</Description>
+  </Feature>
+  <Feature>
+    <Name>Memory Heap Debugging APIs</Name>
+    <Version>4.5</Version>
+    <Icon>MemoryHeapDebuggingAPIs.png</Icon>
+    <Image></Image>
+    <Rating>3</Rating>
+    <Description>CLR 4.5 introduces new APIs that will make it easier and faster to support key memory profiling scenarios. New Heap Enumeration APIs and GC Root APIs have been added into the Debugging Stack of the CLR (ICorDebug) that can now run out-of-process and hence support memory profiling without being intrusive to the application being profiled. With these new APIs, tool vendors can now build high-performing profiling support for scenarios like heap analysis and object allocation graphs.
+
+Better memory profiling support was a key ask from our customers since inception of .NET and in CLR 4.5 we have finally provided a core set of features that will enable a couple of key memory diagnostic scenario.</Description>
+  </Feature>
+  <Feature>
+    <Name>Multicore JIT</Name>
+    <Version>4.5</Version>
+    <Icon>MultiCoreJIT.png</Icon>
+    <Image>MultiCoreJITDetails.png</Image>
+    <Rating>3</Rating>
+    <Description>Basic concept: the JIT compiles functions that haven't been called yet based off of profile data collected when previously running the app. This way when calling a method for the first time, it's less likely that the JIT time will slow it down. Therefore, multi-core JIT is most advantageous for improving start-up time. In order to use multi-core JIT, you'll need to turn it on. If you're using Silverlight 5 or ASP.NET, multi-core JIT has already been turned on for you.</Description>
+  </Feature>
+  <Feature>
+    <Name>Ngen</Name>
+    <Version>1.0</Version>
+    <Icon>Ngen.png</Icon>
+    <Image></Image>
+    <Rating>3</Rating>
+    <Description>The Native Image Generator (Ngen.exe) is a tool that improves the performance of managed applications. Ngen.exe creates native images, which are files containing compiled processor-specific machine code, and installs them into the native image cache on the local computer. The runtime can use native images from the cache instead of using the just-in-time (JIT) compiler to compile the original assembly. Ngen can improve start up performance and enables code sharing between processes.</Description>
+  </Feature>
+  <Feature>
+    <Name>NuGet</Name>
+    <Version>4.5</Version>
+    <Icon>NuGet.png</Icon>
+    <Image></Image>
+    <Rating>3</Rating>
+    <Description>Select .NET components are now available through NuGet. This allows for the framework to stay stable for a longer period while allowing certain components to iterate at a faster rate.</Description>
+  </Feature>
+  <Feature>
+    <Name>Objects Bigger Than 2 GB</Name>
+    <Version>4.5</Version>
+    <Icon>ObjectsBiggerThan2GB.png</Icon>
+    <Image>ObjectsBiggerThan2GBDetails.png</Image>
+    <Rating>3</Rating>
+    <Description>Apps can now have arrays that are larger than 2 gigabytes (GB) on 64-bit platforms. This is considered a compatibility change since some have taken a dependency on that limit as a way of limiting the data their systems take -- so this functionality is opt in. You can do this by setting gcAllowVeryLargeObject = true in the app config file. The maximum number of elements in an array is UInt32.MaxValue and the maximum index of any single dimension is 2,147,483,591 (0x7FFFFFC7) for byte arrays and arrays of single-byte structures, and 2,146,435,071 (0X7FEFFFFF) for other types.</Description>
+  </Feature>
+  <Feature>
+    <Name>P/Invoke</Name>
+    <Version>1.0</Version>
+    <Icon>PInvoke.png</Icon>
+    <Image></Image>
+    <Rating>3</Rating>
+    <Description>P/Invoke is a service that enables managed code to call unmanaged functions that are in dlls, including Win32 APIs. It locates and invokes an exported function and marshals its arguments. To call a method that is exported from a dll, it must be marked with DllImport. Default or custom marshaling can be used. For every .NET Framework type there is a default unmanaged type, which the common language runtime will use to marshal data across a managed to unmanaged function call. For example, the default marshaling for C# string values is to the type LPTSTR (pointer to TCHAR char buffer). You can override the default marshaling using the MarshalAs attribute in the C# declaration of the unmanaged function. Callback methods can also be registered. To register a managed callback that calls an unmanaged function, declare a delegate with the same argument list and pass an instance of it via PInvoke. On the unmanaged side it will appear as a function pointer.</Description>
+  </Feature>
+  <Feature>
+    <Name>Parallel Computing Improvements</Name>
+    <Version>4.5</Version>
+    <Icon>ParallelComputingImprovements.png</Icon>
+    <Image></Image>
+    <Rating>3</Rating>
+    <Description>We've been hard at work making the parallel computing even better. We've added Combinators, Task.WhenAll, Task.WhenAny, Timer integration, Task.Delay(TimeSpan), CancellationTokenSource.CancelAfter(TimeSpan), Task scheduling, ConcurrentExclusiveSchedulerPair, Fine-grained control, DenyChildAttach, HideScheduler, LazyCancellation, EnumerablePartitionerOptions, ThreadLocal&lt;T&gt;.Values, and made a bunch just faster. Check out more at http://blogs.msdn.com/b/pfxteam/archive/2011/09/17/10212961.aspx</Description>
+  </Feature>
+  <Feature>
+    <Name>Parallel Framework</Name>
+    <Version>4.0</Version>
+    <Icon>ParallelFramework.png</Icon>
+    <Image></Image>
+    <Rating>4</Rating>
+    <Description>The Parallel Computing Platform team worked with us to add the Task Parallel Library (TPL), Coordination Data Structures, and Parallel LINQ (PLINQ) to the BCL in .NET 4. This includes an improved ThreadPool scheduling algorithm for tasks, Task and Task&lt;T&gt;, the static Parallel class, concurrent collections in System.Collections.Concurrent, and other coordination data structures such as Lazy&lt;T&gt;, CountdownEvent, Barrier, SemaphoreSlim, SpinLock, SpinWait, and ManualResetEventSlim.</Description>
+  </Feature>
+  <Feature>
+    <Name>Portable Class Library</Name>
+    <Version>4.5</Version>
+    <Icon>PortableClassLibrary.png</Icon>
+    <Image>PortableClassLibraryDetails.png</Image>
+    <Rating>3</Rating>
+    <Description>Helps port your existing Windows Phone, Silverlight, Desktop, and X-box code to Windows 8! MVVM can be shared and only the UI, app model, and device specific code is rewritten. The Portable Class Library project supports a subset of assemblies from these platforms, and provides a Visual Studio template that you can use to build assemblies that run without modification on these platforms. If you don't use a Portable Class Library project, you must target a single app type and then manually rework the class library for other app types.</Description>
+  </Feature>
+  <Feature>
+    <Name>Profile Guided Optimization</Name>
+    <Version>4.5</Version>
+    <Icon>ProfileGuidedOptimization.png</Icon>
+    <Image>ProfileGuidedOptimizationDetails.png</Image>
+    <Rating>3</Rating>
+    <Description>By keeping code that is frequently used, hot code, close together in memory you can use the processor's cache behavior to improve performance. The virtual address space is still used, but working set will be lower since only the pages that are used from the DLL will be loaded.</Description>
+  </Feature>
+  <Feature>
+    <Name>ReadOnlyDictionary</Name>
+    <Version>4.5</Version>
+    <Icon>ReadOnlyDictionary.png</Icon>
+    <Image>ReadOnlyDictionaryDetails.png</Image>
+    <Rating>3</Rating>
+    <Description>Several ReadOnly collections have been added:
+ReadOnlyDictionary&lt;TKey, TValue&gt;
+IReadOnlyDictionary&lt;TKey, TValue&gt;
+IReadOnlyList&lt;out T&gt;
+ReadOnlyDictionary was a popular developer request. Once nice side of it being read only is that it can be covariant.
+
+It is good to understand the different notions of read-only collections
+Mutable (or Not Read-Only)
+The most common collection type in the .NET world. These are collections such as List&lt;T&gt; that allow reading, as well as adding, removing and changing items.
+
+Read-Only
+These are collections that can't be modified from the outside. However, this notion of collections doesn't guarantee that its contents will never change. For example, a dictionary's keys and values collections can't be updated directly, but adding to the dictionary indirectly updates the keys and values collections.
+
+Immutable
+These are collections that, once created, are guaranteed to never be changed. This is a nice property for multithreading. If a complicated data structure is fully immutable, it can always be safely passed to a background worker. You don't need to worry about someone modifying it at the same time. This collection type is not provided by the Microsoft .NET Framework base class library (BCL) today.
+
+Freezable
+These collections behave like mutable collections until they're frozen. Then they behave like immutable collections. Although the BCL doesn't define these collections, you can find them in Windows Presentation Foundation.
+
+Andrew Arnott has written an excellent blog post that describes the different notions of collections in more detail (bit.ly/pDNNdM)</Description>
+  </Feature>
+  <Feature>
+    <Name>Reduced Footprint</Name>
+    <Version>4.5</Version>
+    <Icon>ReducedFootprint.png</Icon>
+    <Image>ReducedFootprintDetails.png</Image>
+    <Rating>3</Rating>
+    <Description>With the rise of tablets, for the first time storage space is getting smaller. In .NET 4.5 introduced features, like Automatic Ngen, to reduce the footprint of .NET on Windows 8. The number of Ngen images on a machine is now much closer to a pay-for-play model, meaning that only the necessary Ngen images are generated.</Description>
+  </Feature>
+  <Feature>
+    <Name>Reduced Reboots</Name>
+    <Version>4.5</Version>
+    <Icon>ReducedReboots.png</Icon>
+    <Image>ReducedRebootsDetails.png</Image>
+    <Rating>3</Rating>
+    <Description>An end-user who is doing a full installation of the .NET Framework 4.5 RC is given the opportunity to avoid a system restart if the installer detects .NET Framework 4 apps in use. A message lists all running .NET Framework 4 apps and provides the option to close these apps before the installation. If the user confirms, these apps are shut down by the installer, and a system restart is avoided. If the user does not respond to the message within a certain amount of time, the installation continues without closing any apps.
+
+If the Restart Manager detects a situation that will require a system restart even if running apps are closed, the message is not displayed.
+
+If you want to redistribute the .NET Framework with your app, but you want to use your own setup program and UI, you can include (chain) the .NET Framework setup process to your setup process. For more information about chained installations, see .NET Framework Deployment Guide for Developers. To reduce system restarts in chained installations, the .NET Framework installer supplies your setup program with the list of apps to close. Your setup program must provide this information to the user through a user interface such as a message box, get the user's response, and then pass the response back to the .NET Framework installer. For an example of a chained installer, see the article How to: Get Progress from the .NET Framework 4.5 Installer.
+
+If you're using a chained installer, but you do not want to provide your own message box for closing apps, you can use the /showrmui and /passive options on the command line when you chain the .NET Framework setup process. When you use these options together, the installer shows the message box for closing apps if they can be closed to avoid a system restart. This message box behaves the same in passive mode as it does under the full user interface. See .NET Framework Deployment Guide for Developers for the complete set of command-line options for the .NET Framework redistributable.</Description>
+  </Feature>
+  <Feature>
+    <Name>Reflection</Name>
+    <Version>1.0</Version>
+    <Icon>Reflection.png</Icon>
+    <Image></Image>
+    <Rating>3</Rating>
+    <Description>"Mirror, mirror, on the wall. What members of this object can I call?"
+
+Reflection methods let you see information about assemblies, modules, members, parameters, and other entities in managed code at runtime.</Description>
+  </Feature>
+  <Feature>
+    <Name>ReJIT</Name>
+    <Version>4.5</Version>
+    <Icon>ReJIT.png</Icon>
+    <Image></Image>
+    <Rating>3</Rating>
+    <Description>In production systems having a verbose instrumentation turned on usually isn't realistic. However, when an issue is hit and you want to profile the app to understand what's going on, having that additional instrumentation is really important. ReJIT allows profilers to add in the instrumentation and then Re-JIT the method without restarting the app.</Description>
+  </Feature>
+  <Feature>
+    <Name>Speech</Name>
+    <Version>4.0</Version>
+    <Icon>Speech.png</Icon>
+    <Image></Image>
+    <Rating>3</Rating>
+    <Description>The System.Speech APIs support speech recognition. The capabilities include creating and extending grammars of what can be recognized and the ability to synthesize speech as prompts and responses.</Description>
+  </Feature>
+  <Feature>
+    <Name>SQL CLR</Name>
+    <Version>2.0</Version>
+    <Icon>SQLCLR.png</Icon>
+    <Image></Image>
+    <Rating>3</Rating>
+    <Description>Microsoft SQL Server features the integration of the common language runtime (CLR) component of the .NET Framework for Microsoft Windows. The CLR supplies managed code with services such as cross-language integration, code access security, object lifetime management, and debugging and profiling support. For SQL Server users and application developers, CLR integration means that you can now write stored procedures, triggers, user-defined types, user-defined functions (scalar and table-valued), and user-defined aggregate functions using any .NET Framework language, including Microsoft Visual Basic .NET and Microsoft Visual C#.
+
+Among the major benefits of this integration are:
+1) A better programming model. The .NET Framework languages are in many respects richer than Transact-SQL, offering constructs and capabilities previously not available to SQL Server developers. Developers may also leverage the power of the .NET Framework Library, which provides an extensive set of classes that can be used to quickly and efficiently solve programming problems.
+2) Improved safety and security. Managed code runs in a common language run-time environment, hosted by the Database Engine. SQL Server leverages this to provide a safer and more secure alternative to the extended stored procedures available in earlier versions of SQL Server.
+3) Ability to define data types and aggregate functions. User defined types and user defined aggregates are two new managed database objects which expand the storage and querying capabilities of SQL Server.
+4) Streamlined development through a standardized environment. Database development is integrated into future releases of the Microsoft Visual Studio .NET development environment. Developers use the same tools for developing and debugging database objects and scripts as they use to write middle-tier or client-tier .NET Framework components and services.
+5) Potential for improved performance and scalability. In many situations, the .NET Framework language compilation and execution models deliver improved performance over Transact-SQL.</Description>
+  </Feature>
+  <Feature>
+    <Name>SxS Execution</Name>
+    <Version>1.1</Version>
+    <Icon>SxSExecution.png</Icon>
+    <Image></Image>
+    <Rating>3</Rating>
+    <Description>The .NET Framework version 1.1 supports side-by-side execution. Side-by-side execution is the ability to store and execute multiple versions of an application or component on the same computer. This means that you can have multiple versions of the runtime, and multiple versions of applications and components that use a version of the runtime, on the same computer at the same time. In addition, subsequent installations of other versions of the .NET Framework or of a component will not affect the applications already installed.</Description>
+  </Feature>
+  <Feature>
+    <Name>Thread Pool Hill Climbing</Name>
+    <Version>4.0</Version>
+    <Icon>ThreadPoolHillClimbing.png</Icon>
+    <Image></Image>
+    <Rating>3</Rating>
+    <Description>To create a new thread, or not to create a new thread, that is the questions.
+
+The Thread Pool hill climbing algorithm has the answer. Creating new threads has overhead and idle processors leave some performance on the table, so the goal is to find an optimum number of threads. The input (number of threads concurrently working) and the output (throughput) loop is monitored to hit peak overall performance.</Description>
+  </Feature>
+  <Feature>
+    <Name>Task Parallel Library</Name>
+    <Version>4.0</Version>
+    <Icon>TPL.png</Icon>
+    <Image></Image>
+    <Rating>3</Rating>
+    <Description>The Task Parallel Library (TPL), as its name implies, is based on the concept of the task. The term task parallelism refers to one or more independent tasks running concurrently. A task represents an asynchronous operation, and in some ways it resembles the creation of a new thread or ThreadPool work item, but at a higher level of abstraction. Tasks provide two primary benefits:
+
+More efficient and more scalable use of system resources.
+Behind the scenes, tasks are queued to the ThreadPool, which has been enhanced with algorithms (like hill-climbing) that determine and adjust to the number of threads that maximizes throughput. This makes tasks relatively lightweight, and you can create many of them to enable fine-grained parallelism. To complement this, widely-known work-stealing algorithms are employed to provide load-balancing.
+
+More programmatic control than is possible with a thread or work item.
+Tasks and the framework built around them provide a rich set of APIs that support waiting, cancellation, continuations, robust exception handling, detailed status, custom scheduling, and more.
+
+For both of these reasons, in the .NET Framework 4, tasks are the preferred API for writing multi-threaded, asynchronous, and parallel code.</Description>
+  </Feature>
+  <Feature>
+    <Name>TPL Dataflow</Name>
+    <Version>4.5</Version>
+    <Icon>TPLDataflow.png</Icon>
+    <Image>TPLDataflowDetails.png</Image>
+    <Rating>3</Rating>
+    <Description>TPL Dataflow, which is part of the Task Parallel Library, is an exciting new library for building highly concurrent systems based on actor/agent-oriented techniques.
+
+In the .NET Framework 4.5, TPL Dataflow is delivered in the Microsoft.Tpl.Dataflow NuGet package and is supported everywhere, including desktop, server and .NET for Windows Store apps.
+
+The simplest way to install the package in Visual Studio is to highlight the target project, choose Tools &gt; Library Package Manager &gt; Package Manager Console, and at the prompt type:
+
+      Install-Package Microsoft.Tpl.Dataflow -Pre
+
+The -Pre flag is needed because these packages are marked as prerelease versions. You can use the GUI Manage NuGet Packages dialog box for this task as well, but when searching make sure to select Include Prerelease from the appropriate drop-down list.</Description>
+  </Feature>
+  <Feature>
+    <Name>Tuple</Name>
+    <Version>4.0</Version>
+    <Icon>Tuple.png</Icon>
+    <Image></Image>
+    <Rating>3</Rating>
+    <Description>A tuple is a data structure that has a specific number and sequence of values where the values can be of different types . For example Tuple&lt;int, string, int&gt; could be used to store an id, name, and rating to represent a feature.</Description>
+  </Feature>
+  <Feature>
+    <Name>User Voice driven fixes</Name>
+    <Version>4.5</Version>
+    <Icon>UserVoiceDrivenFixes.png</Icon>
+    <Image></Image>
+    <Rating>3</Rating>
+    <Description>You asked and we delivered.
+
+WPF
+Ribbon licensing
+Items controls scaling -- huge improvement
+MVVM Improvements -- more like Silverlight
+
+WF
+C# Expressions (instead of VB)
+State machines (added back in -- had gotten taken out)
+Versioning (Change workload while still using old one)
+Contract First Services
+Runtime Performance
+Designer Improvements (Performance, Usability, Better Integration with VS)
+
+BCL
+WeakReferences new API and added WeakReferences&lt;T&gt;
+Additional MEF features.
+ArraySegment : IList
+Keep Streams open
+ReadOnlyDictionary
+ZIP compression APIs added
+Bigger than 2GB Objects</Description>
+  </Feature>
+  <Feature>
+    <Name>WCF</Name>
+    <Version>3.0</Version>
+    <Icon>WCF.png</Icon>
+    <Image></Image>
+    <Rating>3</Rating>
+    <Description>Windows Communication Foundation (WCF) is a framework for building service-oriented applications. Using WCF, you can send data as asynchronous messages from one service endpoint to another. A service endpoint can be part of a continuously available service hosted by IIS, or it can be a service hosted in an application. An endpoint can be a client of a service that requests data from a service endpoint. The messages can be as simple as a single character or word sent as XML, or as complex as a stream of binary data.
+
+A few sample scenarios include:
+- A secure service to process business transactions.
+- A service that supplies current data to others, such as a traffic report or other monitoring service.
+- A chat service that allows two people to communicate or exchange data in real time.
+- A dashboard application that polls one or more services for data and presents it in a logical presentation.
+- Exposing a workflow implemented using Windows Workflow Foundation as a WCF service.
+- A Silverlight application to poll a service for the latest data feeds.
+
+While creating such applications was possible prior to the existence of WCF, WCF makes the development of endpoints easier than ever. In summary, WCF is designed to offer a manageable approach to creating Web services and Web service clients.</Description>
+  </Feature>
+  <Feature>
+    <Name>WCF Simplified Configuration</Name>
+    <Version>4.5</Version>
+    <Icon>WCFSimplifiedConfig.png</Icon>
+    <Image></Image>
+    <Rating>3</Rating>
+    <Description>When you add a service reference in Visual Studio or use the SvcUtil.exe tool a client configuration file is generated. In previous versions of WCF these configuration files contained the value of every binding property even if its value is the default value. In WCF 4.5 the generated configuration files contain only those binding properties that are set to a non-default value. Now the config file has fewer configurations and smart defaults are used.</Description>
+  </Feature>
+  <Feature>
+    <Name>WeakReference&lt;T&gt;</Name>
+    <Version>4.5</Version>
+    <Icon>WeakReferenceT.png</Icon>
+    <Image>WeakReferenceTDetails.png</Image>
+    <Rating>3</Rating>
+    <Description>Using a WeakReference is a great way to watch memory without preventing it from being collected. Now you can strongly type the reference with the new generic-type for WeakReference. In this release we also added a new method that allows you to try to get the reference. This helps avoid a race condition where the memory may have been collected between checking the reference is alive and retrieving the value.</Description>
+  </Feature>
+  <Feature>
+    <Name>Web API</Name>
+    <Version>4.5</Version>
+    <Icon>WebAPI.png</Icon>
+    <Image></Image>
+    <Rating>3</Rating>
+    <Description>ASP.NET Web API is a framework that makes it easy to build HTTP services that reach a broad range of clients, including browsers and mobile devices. ASP.NET Web API is an ideal platform for building RESTful applications on the .NET Framework.
+
+ASP.NET Web API includes support for the following features:
+- Modern HTTP programming model: Directly access and manipulate HTTP requests and responses in your Web APIs using a new, strongly typed HTTP object model. The same programming model and HTTP pipeline is symmetrically available on the client through the new HttpClient type.
+- Full support for routes: ASP.NET Web API supports the full set of route capabilities of ASP.NET Routing, including route parameters and constraints. Additionally, use simple conventions to map actions to HTTP methods.
+- Content negotiation: The client and server can work together to determine the right format for data being returned from a web API. ASP.NET Web API provides default support for XML, JSON, and Form URL-encoded formats and you can extend this support by adding your own formatters, or even replace the default content negotiation strategy.
+- Model binding and validation: Model binders provide an easy way to extract data from various parts of an HTTP request and convert those message parts into .NET objects which can be used by the Web API actions. Validation is also performed on action parameters based on data annotations.
+- Filters: ASP.NET Web API supports filters including well-known filters such as the [Authorize] attribute. You can author and plug in your own filters for actions, authorization and exception handling.
+- Query composition: Use the [Queryable] filter attribute on an action that returns IQueryable to enable support for querying your web API via the OData query conventions.
+- Improved testability: Rather than setting HTTP details in static context objects, web API actions work with instances of HttpRequestMessage and HttpResponseMessage. Create a unit test project along with your Web API project to get started quickly writing unit tests for your Web API functionality.
+- Code-based configuration: ASP.NET Web API configuration is accomplished solely through code, leaving your config files clean. Use the provide service locator pattern to configure extensibility points.
+- Improved support for Inversion of Control (IoC) containers: ASP.NET Web API provides great support for IoC containers through an improved dependency resolver abstraction
+- Self-host: Web APIs can be hosted in your own process in addition to IIS while still using the full power of routes and other features of Web API.
+- Create custom help and test pages: You now can easily build custom help and test pages for your web APIs by using the new IApiExplorer service to get a complete runtime description of your web APIs.
+- Monitoring and diagnostics: ASP.NET Web API now provides light weight tracing infrastructure that makes it easy to integrate with existing logging solutions such as System.Diagnostics, ETW and third party logging frameworks. You can enable tracing by providing an ITraceWriter implementation and adding it to your web API configuration.
+- Link generation: Use the ASP.NET Web API UrlHelper to generate links to related resources in the same application.
+- Web API project template: Select the new Web API project form the New MVC 4 Project wizard to quickly get up and running with ASP.NET Web API.
+- Scaffolding: Use the Add Controller dialog to quickly scaffold a web API controller based on an Entity Framework based model type.</Description>
+  </Feature>
+  <Feature>
+    <Name>Web Sockets</Name>
+    <Version>4.5</Version>
+    <Icon>WebSockets.png</Icon>
+    <Image></Image>
+    <Rating>3</Rating>
+    <Description>WebSocket is a technology providing for bi-directional, full-duplex communications channels, over a single Transmission Control Protocol (TCP) socket. It is designed to be implemented in web browsers and web servers but it can be used by any client or server application. The WebSocket API is being standardized by the W3C and the WebSocket protocol is being standardized by the IETF. With it you can build low latency, low bandwidth client-server applications more easily.
+
+Using web sockets requires the platform to support it. So it's currently more of a foundational technology. Expect to see it used in more applications and services going forward. Best uses are things like stock tickers, chat applications, message notifications, interactive networked games and the like.</Description>
+  </Feature>
+  <Feature>
+    <Name>WF</Name>
+    <Version>3.5</Version>
+    <Icon>WF.png</Icon>
+    <Image></Image>
+    <Rating>3</Rating>
+    <Description>Everybody who writes code wants to build great software. If that software is a server application, part of being great is scaling well, handling large loads without consuming too many resources. A great application should also be as easy as possible to understand, both for its creators and for the people who maintain it.
+
+Achieving both of these goals isn't easy. Approaches that help applications scale tend to break them apart, dividing their logic into separate chunks that can be hard to understand. Yet writing unified logic that lives in a single executable can make scaling the application all but impossible. What's needed is a way to keep the application's logic unified, making it more understandable, while still letting the application scale.
+
+Achieving this is a primary goal of Windows Workflow Foundation (WF). By supporting logic created using workflows, WF provides a foundation for creating unified and scalable applications. Along with this, WF can also simplify other development challenges, such as coordinating parallel work, tracking a program's execution, and more. http://msdn.microsoft.com/en-us/library/dd851337.aspx</Description>
+  </Feature>
+  <Feature>
+    <Name>WF Contract-First</Name>
+    <Version>4.5</Version>
+    <Icon>WFContractFirst.png</Icon>
+    <Image></Image>
+    <Rating>3</Rating>
+    <Description>WF now has support for contract-first development. The svcutl.exe has a /serviceContract switch which allows you to generate service and data contracts from a WSDL document.</Description>
+  </Feature>
+  <Feature>
+    <Name>WF State Machine Improvements</Name>
+    <Version>4.5</Version>
+    <Icon>WFStateMachine.png</Icon>
+    <Image>WFStateMachineDetails.png</Image>
+    <Rating>3</Rating>
+    <Description>State machine workflows were introduced as part of the .NET Framework 4.0.1 in the Microsoft .NET Framework 4 Platform Update 1. This update included several new classes and activities which allowed developers to create state machine workflows. These classes and activities have been updated for .NET Framework 4.5 RC. Updates include:
+1. The ability to set breakpoints on states
+2. The ability to copy and paste transitions in the workflow designer
+3. Designer support for shared trigger transition creation
+4. Activities used to create State Machine workflows, including: StateMachine, State, and Transition</Description>
+  </Feature>
+  <Feature>
+    <Name>WinForms</Name>
+    <Version>1.0</Version>
+    <Icon>WinForms.png</Icon>
+    <Image></Image>
+    <Rating>3</Rating>
+    <Description>With Windows Forms you develop smart clients. Smart clients are graphically rich applications that are easy to deploy and update, can work when they are connected to or disconnected from the Internet, and can access resources on the local computer in a more secure manner than traditional Windows-based applications.
+
+A set of managed libraries that simplify common application tasks such as reading and writing to the file system. When you use a development environment like Visual Studio, you can create Windows Forms smart-client applications that display information, request input from users, and communicate with remote computers over a network.</Description>
+  </Feature>
+  <Feature>
+    <Name>WPF</Name>
+    <Version>3.0</Version>
+    <Icon>WPF.png</Icon>
+    <Image></Image>
+    <Rating>3</Rating>
+    <Description>Windows Presentation Foundation (WPF) is a presentation system for building Windows client applications with visually stunning user experiences. The core of WPF is a resolution-independent and vector-based rendering engine that is built to take advantage of modern graphics hardware. WPF extends the core with a comprehensive set of application-development features that include Extensible Application Markup Language (XAML), controls, data binding, layout, 2-D and 3-D graphics, animation, styles, templates, documents, media, text, and typography. WPF is included in the Microsoft .NET Framework, so you can build applications that incorporate other elements of the .NET Framework class library.
+
+      Most WPF programming is familiar for a .NET developer. To support some of the more powerful WPF capabilities and to simplify the programming experience, WPF includes additional programming constructs that enhance properties and events: dependency properties and routed events.
+
+      WPF offers additional programming enhancements for Windows client application development. One obvious enhancement is the ability to develop an application using both markup and code-behind, an experience that ASP.NET developers should be familiar with. You generally use Extensible Application Markup Language (XAML) markup to implement the appearance of an application while using managed programming languages (code-behind) to implement its behavior.</Description>
+  </Feature>
+  <Feature>
+    <Name>WPF Ribbon Licensing</Name>
+    <Version>4.5</Version>
+    <Icon>WPFRibbonLicensing.png</Icon>
+    <Image>WPFRibbonLicensingDetails.png</Image>
+    <Rating>3</Rating>
+    <Description>The WPF ribbon control licensing makes it easier to use so you can make your desktop apps have the ribbon for menu items in the same way that your customers have learned to love in other aps.</Description>
+  </Feature>
+  <Feature>
+    <Name>ZIP APIs</Name>
+    <Version>4.5</Version>
+    <Icon>ZIPAPIs.png</Icon>
+    <Image>ZIPDetails.png</Image>
+    <Rating>3</Rating>
+    <Description>.NET has provided compression algorithms before (like GZipStream and DeflateStream, which continue to be improved). Now there is a fully ZIP compliant library for compression.
+
+The ZipArchive class enables you to work with a package of compressed files. The package contains an entry for each compressed file. You can:
+Retrieve an entry by using the GetEntry method.
+Retrieve the entire collection of entries by using the Entries property.
+Create a new entry in the package by calling the overloaded CreateEntry method.
+
+When you create a new entry, the file is compressed and added to the zip package. The CreateEntry method enables you to specify a directory hierarchy when adding the entry. You include the relative path of the new entry within the zip package. For example, creating a new entry with a relative path of AddedFolder\NewFile.txt creates a compressed text file in a directory named AddedFolder.
+
+If you reference the System.IO.Compression.FileSystem assembly in your project, you can access three extension methods (from the ZipFileExtensions class) for the ZipArchive class: CreateEntryFromFile, CreateEntryFromFile, and ExtractToDirectory. These extension methods enable you to compress and decompress the contents of the entry to a file. The System.IO.Compression.FileSystem assembly is not available for Windows Store apps. In Windows Store apps, you can compress and decompress files by using the DeflateStream or GZipStream class, or you can use the Windows Runtime types Compressor and Decompressor.</Description>
+  </Feature>
+</Features>

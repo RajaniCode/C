@@ -1,0 +1,145 @@
+2.2 Create Our Create Action
+
+Let's work together on setting our view and controller to accept user input.
+
+Views/Home/Index.cshtml
+
+@model CharacterSheetApp.Models.Equipment 
+<h2>Equipment</h2>
+
+<div>
+  <ul>
+    <li>@Model.Name</li>
+  </ul>
+</div>
+
+Models/Equipment.cs
+
+using Microsoft.AspNet.Mvc;
+using CharacterSheetApp.Models;
+
+namespace CharacterSheetApp.Models
+{
+  public class Equipment
+  {
+    public string Name;         
+  }
+}
+
+Controllers/HomeController.cs
+
+using Microsoft.AspNet.Mvc;
+using CharacterSheetApp.Models;
+using System;
+
+namespace CharacterSheetApp.Controllers
+{
+  public class HomeController : Controller
+  {
+    public IActionResult Index()
+    {
+      Equipment model = new Equipment();
+      model.Name = "Shield";
+      return View("Index", model);
+    }
+     
+    //create our Create Action here
+     
+     
+  } 
+}
+
+
+1. Create a public Create action that returns an IActionResult and accepts a string EquipmentName.
+
+Then, inside of that new action, return an empty View().
+
+Answer:
+Controllers/HomeController.cs
+
+using Microsoft.AspNet.Mvc;
+using CharacterSheetApp.Models;
+using System;
+
+namespace CharacterSheetApp.Controllers
+{
+  public class HomeController : Controller
+  {
+    public IActionResult Index()
+    {
+      Equipment model = new Equipment();
+      model.Name = "Shield";
+      return View("Index", model);
+    }
+     
+    //create our Create Action here
+    public IActionResult Create(string EquipmentName)
+    {
+      return View();
+    } 
+     
+  } 
+}
+
+2. In the Create action before the return statement, instantiate a new Equipment object named model, and set its Name field to the EquipmentName parameter that was passed into the method.
+
+Answer:
+Controllers/HomeController.cs
+
+using Microsoft.AspNet.Mvc;
+using CharacterSheetApp.Models;
+using System;
+
+namespace CharacterSheetApp.Controllers
+{
+  public class HomeController : Controller
+  {
+    public IActionResult Index()
+    {
+      Equipment model = new Equipment();
+      model.Name = "Shield";
+      return View("Index", model);
+    }
+     
+    //create our Create Action here
+    public IActionResult Create(string EquipmentName)
+    {
+      var model = new Equipment();
+      model.Name = EquipmentName;
+      return View();
+    } 
+     
+  } 
+}
+
+3. Now, update the View() function being returned to accept two parameters: first, the string "Index", and second, the new Equipment object you just made.
+
+Answer:
+Controllers/HomeController.cs
+
+using Microsoft.AspNet.Mvc;
+using CharacterSheetApp.Models;
+using System;
+
+namespace CharacterSheetApp.Controllers
+{
+  public class HomeController : Controller
+  {
+    public IActionResult Index()
+    {
+      Equipment model = new Equipment();
+      model.Name = "Shield";
+      return View("Index", model);
+    }
+     
+    //create our Create Action here
+    public IActionResult Create(string EquipmentName)
+    {
+      var model = new Equipment();
+      model.Name = EquipmentName;
+      return View("Index", model);
+    } 
+     
+  } 
+}
+

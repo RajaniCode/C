@@ -1,0 +1,180 @@
+1.8 Update a Quest
+
+Next, we can work on a method that will update a record in the database.
+
+Controllers/QuestController.cs
+
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using System.Collections.Generic;
+using System.Linq;
+
+using ForgingAhead.Models;
+
+namespace ForgingAhead.Controllers
+{
+  public class QuestController : Controller
+  {
+    private readonly ApplicationDbContext _context;
+        
+    public QuestController(ApplicationDbContext context)
+    {
+      _context = context;
+    }
+    
+    [HttpGet]
+    public IActionResult Create()
+    {
+      return View();
+    }
+    
+    [HttpPost]
+    public IActionResult Create(Quest quest)
+    {
+      _context.Quests.Add(quest);
+      _context.SaveChanges();
+            
+      return RedirectToAction("Index");
+    }
+        
+    public IActionResult Index() 
+    {
+      var model = _context.Quests.ToList();
+      return View(model);
+    }
+        
+    public IActionResult Details(string name)
+    {
+      var model = _context.Quests.FirstOrDefault(e => e.Name == name);
+      return View(model);
+    }
+        
+    public IActionResult Update(Quest quest)
+    {
+      // add quest update logic here
+      
+      return RedirectToAction("Index");
+    }
+  }
+}
+
+
+1. Start by calling the Entry() method on the database context while passing in the updated quest and setting the state to EntityState.Modified.
+
+Answer:
+Controllers/QuestController.cs
+
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using System.Collections.Generic;
+using System.Linq;
+
+using ForgingAhead.Models;
+
+namespace ForgingAhead.Controllers
+{
+  public class QuestController : Controller
+  {
+    private readonly ApplicationDbContext _context;
+        
+    public QuestController(ApplicationDbContext context)
+    {
+      _context = context;
+    }
+    
+    [HttpGet]
+    public IActionResult Create()
+    {
+      return View();
+    }
+    
+    [HttpPost]
+    public IActionResult Create(Quest quest)
+    {
+      _context.Quests.Add(quest);
+      _context.SaveChanges();
+            
+      return RedirectToAction("Index");
+    }
+        
+    public IActionResult Index() 
+    {
+      var model = _context.Quests.ToList();
+      return View(model);
+    }
+        
+    public IActionResult Details(string name)
+    {
+      var model = _context.Quests.FirstOrDefault(e => e.Name == name);
+      return View(model);
+    }
+        
+    public IActionResult Update(Quest quest)
+    {
+      // add quest update logic here
+      _context.Entry(quest).State = EntityState.Modified;
+      
+      return RedirectToAction("Index");
+    }
+  }
+}
+
+2. Since we updated some data in the context we'll also need to call the SaveChanges() method, so do that now.
+
+Answer:
+Controllers/QuestController.cs
+
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using System.Collections.Generic;
+using System.Linq;
+
+using ForgingAhead.Models;
+
+namespace ForgingAhead.Controllers
+{
+  public class QuestController : Controller
+  {
+    private readonly ApplicationDbContext _context;
+        
+    public QuestController(ApplicationDbContext context)
+    {
+      _context = context;
+    }
+    
+    [HttpGet]
+    public IActionResult Create()
+    {
+      return View();
+    }
+    
+    [HttpPost]
+    public IActionResult Create(Quest quest)
+    {
+      _context.Quests.Add(quest);
+      _context.SaveChanges();
+            
+      return RedirectToAction("Index");
+    }
+        
+    public IActionResult Index() 
+    {
+      var model = _context.Quests.ToList();
+      return View(model);
+    }
+        
+    public IActionResult Details(string name)
+    {
+      var model = _context.Quests.FirstOrDefault(e => e.Name == name);
+      return View(model);
+    }
+        
+    public IActionResult Update(Quest quest)
+    {
+      // add quest update logic here
+      _context.Entry(quest).State = EntityState.Modified;
+      _context.SaveChanges();
+      return RedirectToAction("Index");
+    }
+  }
+}

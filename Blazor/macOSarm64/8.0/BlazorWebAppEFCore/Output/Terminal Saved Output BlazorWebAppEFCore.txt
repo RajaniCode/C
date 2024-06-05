@@ -1,0 +1,364 @@
+Last login: Mon Apr 29 19:46:50 on ttys000
+rajaniapple@Rajanis-MacBook-Pro ~ % dotnet --version                                                                                                     
+8.0.204
+rajaniapple@Rajanis-MacBook-Pro ~ % cd /Users/rajaniapple/Desktop/GitHub/CS/macOSarm64/Blazor/Blazor/8.0/BlazorWebAppEFCore 
+rajaniapple@Rajanis-MacBook-Pro BlazorWebAppEFCore % dotnet run
+Building...
+/Users/rajaniapple/Desktop/GitHub/CS/macOSarm64/Blazor/Blazor/8.0/BlazorWebAppEFCore/Components/ContactRow.razor(50,20): warning BL0007: Component parameter 'BlazorWebAppEFCore.Components.ContactRow.CurrentContact' should be auto property [/Users/rajaniapple/Desktop/GitHub/CS/macOSarm64/Blazor/Blazor/8.0/BlazorWebAppEFCore/BlazorWebAppEFCore.csproj]
+/Users/rajaniapple/Desktop/GitHub/CS/macOSarm64/Blazor/Blazor/8.0/BlazorWebAppEFCore/Components/Pages/Home.razor(99,16): warning BL0007: Component parameter 'BlazorWebAppEFCore.Components.Pages.Home.Page' should be auto property [/Users/rajaniapple/Desktop/GitHub/CS/macOSarm64/Blazor/Blazor/8.0/BlazorWebAppEFCore/BlazorWebAppEFCore.csproj]
+info: Microsoft.Hosting.Lifetime[14]
+      Now listening on: http://localhost:5055
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: /Users/rajaniapple/Desktop/GitHub/CS/macOSarm64/Blazor/Blazor/8.0/BlazorWebAppEFCore
+warn: Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware[3]
+      Failed to determine the https port for redirect.
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT COUNT(*)
+      FROM "Contacts" AS "c"
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT "c"."Id", "c"."City", "c"."FirstName", "c"."LastName", "c"."Phone", "c"."RowVersion", "c"."State", "c"."Street", "c"."ZipCode"
+      FROM "Contacts" AS "c"
+      ORDER BY CASE
+          WHEN "c"."LastName" IS NOT NULL THEN "c"."LastName"
+          ELSE ''
+      END
+      LIMIT @__p_1 OFFSET @__p_0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT COUNT(*)
+      FROM "Contacts" AS "c"
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT "c"."Id", "c"."City", "c"."FirstName", "c"."LastName", "c"."Phone", "c"."RowVersion", "c"."State", "c"."Street", "c"."ZipCode"
+      FROM "Contacts" AS "c"
+      ORDER BY CASE
+          WHEN "c"."LastName" IS NOT NULL THEN "c"."LastName"
+          ELSE ''
+      END
+      LIMIT @__p_1 OFFSET @__p_0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT COUNT(*)
+      FROM "Contacts" AS "c"
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT "c"."Id", "c"."City", "c"."FirstName", "c"."LastName", "c"."Phone", "c"."RowVersion", "c"."State", "c"."Street", "c"."ZipCode"
+      FROM "Contacts" AS "c"
+      ORDER BY CASE
+          WHEN "c"."LastName" IS NOT NULL THEN "c"."LastName"
+          ELSE ''
+      END
+      LIMIT @__p_0 OFFSET @__p_0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT COUNT(*)
+      FROM "Contacts" AS "c"
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT "c"."Id", "c"."City", "c"."FirstName", "c"."LastName", "c"."Phone", "c"."RowVersion", "c"."State", "c"."Street", "c"."ZipCode"
+      FROM "Contacts" AS "c"
+      ORDER BY CASE
+          WHEN "c"."LastName" IS NOT NULL THEN "c"."LastName"
+          ELSE ''
+      END
+      LIMIT @__p_0 OFFSET @__p_0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT COUNT(*)
+      FROM "Contacts" AS "c"
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT "c"."Id", "c"."City", "c"."FirstName", "c"."LastName", "c"."Phone", "c"."RowVersion", "c"."State", "c"."Street", "c"."ZipCode"
+      FROM "Contacts" AS "c"
+      ORDER BY CASE
+          WHEN "c"."LastName" IS NOT NULL THEN "c"."LastName"
+          ELSE ''
+      END
+      LIMIT @__p_1 OFFSET @__p_0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT COUNT(*)
+      FROM "Contacts" AS "c"
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT "c"."Id", "c"."City", "c"."FirstName", "c"."LastName", "c"."Phone", "c"."RowVersion", "c"."State", "c"."Street", "c"."ZipCode"
+      FROM "Contacts" AS "c"
+      ORDER BY CASE
+          WHEN "c"."LastName" IS NOT NULL THEN "c"."LastName"
+          ELSE ''
+      END
+      LIMIT @__p_1 OFFSET @__p_0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT COUNT(*)
+      FROM "Contacts" AS "c"
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT "c"."Id", "c"."City", "c"."FirstName", "c"."LastName", "c"."Phone", "c"."RowVersion", "c"."State", "c"."Street", "c"."ZipCode"
+      FROM "Contacts" AS "c"
+      ORDER BY CASE
+          WHEN "c"."LastName" IS NOT NULL THEN "c"."LastName"
+          ELSE ''
+      END
+      LIMIT @__p_0 OFFSET @__p_0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT COUNT(*)
+      FROM "Contacts" AS "c"
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT "c"."Id", "c"."City", "c"."FirstName", "c"."LastName", "c"."Phone", "c"."RowVersion", "c"."State", "c"."Street", "c"."ZipCode"
+      FROM "Contacts" AS "c"
+      ORDER BY CASE
+          WHEN "c"."LastName" IS NOT NULL THEN "c"."LastName"
+          ELSE ''
+      END
+      LIMIT @__p_0 OFFSET @__p_0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT COUNT(*)
+      FROM "Contacts" AS "c"
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT "c"."Id", "c"."City", "c"."FirstName", "c"."LastName", "c"."Phone", "c"."RowVersion", "c"."State", "c"."Street", "c"."ZipCode"
+      FROM "Contacts" AS "c"
+      ORDER BY CASE
+          WHEN "c"."LastName" IS NOT NULL THEN "c"."LastName"
+          ELSE ''
+      END
+      LIMIT @__p_1 OFFSET @__p_0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT COUNT(*)
+      FROM "Contacts" AS "c"
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT "c"."Id", "c"."City", "c"."FirstName", "c"."LastName", "c"."Phone", "c"."RowVersion", "c"."State", "c"."Street", "c"."ZipCode"
+      FROM "Contacts" AS "c"
+      ORDER BY CASE
+          WHEN "c"."LastName" IS NOT NULL THEN "c"."LastName"
+          ELSE ''
+      END
+      LIMIT @__p_1 OFFSET @__p_0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT COUNT(*)
+      FROM "Contacts" AS "c"
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT "c"."Id", "c"."City", "c"."FirstName", "c"."LastName", "c"."Phone", "c"."RowVersion", "c"."State", "c"."Street", "c"."ZipCode"
+      FROM "Contacts" AS "c"
+      ORDER BY CASE
+          WHEN "c"."LastName" IS NOT NULL THEN "c"."LastName"
+          ELSE ''
+      END
+      LIMIT @__p_1 OFFSET @__p_0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT COUNT(*)
+      FROM "Contacts" AS "c"
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT "c"."Id", "c"."City", "c"."FirstName", "c"."LastName", "c"."Phone", "c"."RowVersion", "c"."State", "c"."Street", "c"."ZipCode"
+      FROM "Contacts" AS "c"
+      ORDER BY CASE
+          WHEN "c"."LastName" IS NOT NULL THEN "c"."LastName"
+          ELSE ''
+      END
+      LIMIT @__p_1 OFFSET @__p_0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@___controls_FilterText_0='?' (Size = 1)], CommandType='Text', CommandTimeout='30']
+      SELECT COUNT(*)
+      FROM "Contacts" AS "c"
+      WHERE instr("c"."FirstName", @___controls_FilterText_0) > 0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@___controls_FilterText_0='?' (Size = 1), @__p_2='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT "c"."Id", "c"."City", "c"."FirstName", "c"."LastName", "c"."Phone", "c"."RowVersion", "c"."State", "c"."Street", "c"."ZipCode"
+      FROM "Contacts" AS "c"
+      WHERE instr("c"."FirstName", @___controls_FilterText_0) > 0
+      ORDER BY CASE
+          WHEN "c"."LastName" IS NOT NULL THEN "c"."LastName"
+          ELSE ''
+      END
+      LIMIT @__p_2 OFFSET @__p_1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT COUNT(*)
+      FROM "Contacts" AS "c"
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT "c"."Id", "c"."City", "c"."FirstName", "c"."LastName", "c"."Phone", "c"."RowVersion", "c"."State", "c"."Street", "c"."ZipCode"
+      FROM "Contacts" AS "c"
+      ORDER BY CASE
+          WHEN "c"."LastName" IS NOT NULL THEN "c"."LastName"
+          ELSE ''
+      END
+      LIMIT @__p_1 OFFSET @__p_0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@___controls_FilterText_0='?' (Size = 1)], CommandType='Text', CommandTimeout='30']
+      SELECT COUNT(*)
+      FROM "Contacts" AS "c"
+      WHERE instr("c"."FirstName", @___controls_FilterText_0) > 0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@___controls_FilterText_0='?' (Size = 1), @__p_2='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT "c"."Id", "c"."City", "c"."FirstName", "c"."LastName", "c"."Phone", "c"."RowVersion", "c"."State", "c"."Street", "c"."ZipCode"
+      FROM "Contacts" AS "c"
+      WHERE instr("c"."FirstName", @___controls_FilterText_0) > 0
+      ORDER BY CASE
+          WHEN "c"."LastName" IS NOT NULL THEN "c"."LastName"
+          ELSE ''
+      END
+      LIMIT @__p_2 OFFSET @__p_1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@p0='?' (Size = 13), @p1='?' (Size = 6), @p2='?' (Size = 1), @p3='?' (Size = 10), @p4='?' (Size = 2), @p5='?' (Size = 5), @p6='?' (Size = 5)], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "Contacts" ("City", "FirstName", "LastName", "Phone", "State", "Street", "ZipCode")
+      VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6)
+      RETURNING "Id", "RowVersion";
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT COUNT(*)
+      FROM "Contacts" AS "c"
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT "c"."Id", "c"."City", "c"."FirstName", "c"."LastName", "c"."Phone", "c"."RowVersion", "c"."State", "c"."Street", "c"."ZipCode"
+      FROM "Contacts" AS "c"
+      ORDER BY CASE
+          WHEN "c"."LastName" IS NOT NULL THEN "c"."LastName"
+          ELSE ''
+      END
+      LIMIT @__p_1 OFFSET @__p_0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@___controls_FilterText_0='?' (Size = 1)], CommandType='Text', CommandTimeout='30']
+      SELECT COUNT(*)
+      FROM "Contacts" AS "c"
+      WHERE instr("c"."FirstName", @___controls_FilterText_0) > 0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@___controls_FilterText_0='?' (Size = 1), @__p_2='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT "c"."Id", "c"."City", "c"."FirstName", "c"."LastName", "c"."Phone", "c"."RowVersion", "c"."State", "c"."Street", "c"."ZipCode"
+      FROM "Contacts" AS "c"
+      WHERE instr("c"."FirstName", @___controls_FilterText_0) > 0
+      ORDER BY CASE
+          WHEN "c"."LastName" IS NOT NULL THEN "c"."LastName"
+          ELSE ''
+      END
+      LIMIT @__p_2 OFFSET @__p_1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@___controls_FilterText_0='?' (Size = 1)], CommandType='Text', CommandTimeout='30']
+      SELECT COUNT(*)
+      FROM "Contacts" AS "c"
+      WHERE instr("c"."FirstName", @___controls_FilterText_0) > 0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@___controls_FilterText_0='?' (Size = 1), @__p_2='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT "c"."Id", "c"."City", "c"."FirstName", "c"."LastName", "c"."Phone", "c"."RowVersion", "c"."State", "c"."Street", "c"."ZipCode"
+      FROM "Contacts" AS "c"
+      WHERE instr("c"."FirstName", @___controls_FilterText_0) > 0
+      ORDER BY CASE
+          WHEN "c"."LastName" IS NOT NULL THEN "c"."LastName"
+          ELSE ''
+      END
+      LIMIT @__p_2 OFFSET @__p_1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@___controls_FilterText_0='?' (Size = 2)], CommandType='Text', CommandTimeout='30']
+      SELECT COUNT(*)
+      FROM "Contacts" AS "c"
+      WHERE instr("c"."FirstName", @___controls_FilterText_0) > 0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@___controls_FilterText_0='?' (Size = 2), @__p_2='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT "c"."Id", "c"."City", "c"."FirstName", "c"."LastName", "c"."Phone", "c"."RowVersion", "c"."State", "c"."Street", "c"."ZipCode"
+      FROM "Contacts" AS "c"
+      WHERE instr("c"."FirstName", @___controls_FilterText_0) > 0
+      ORDER BY CASE
+          WHEN "c"."LastName" IS NOT NULL THEN "c"."LastName"
+          ELSE ''
+      END
+      LIMIT @__p_2 OFFSET @__p_1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@__ContactId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT "c"."Id", "c"."City", "c"."FirstName", "c"."LastName", "c"."Phone", "c"."RowVersion", "c"."State", "c"."Street", "c"."ZipCode"
+      FROM "Contacts" AS "c"
+      WHERE "c"."Id" = @__ContactId_0
+      LIMIT 2
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@__ContactId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT "c"."Id", "c"."City", "c"."FirstName", "c"."LastName", "c"."Phone", "c"."RowVersion", "c"."State", "c"."Street", "c"."ZipCode"
+      FROM "Contacts" AS "c"
+      WHERE "c"."Id" = @__ContactId_0
+      LIMIT 2
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT COUNT(*)
+      FROM "Contacts" AS "c"
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT "c"."Id", "c"."City", "c"."FirstName", "c"."LastName", "c"."Phone", "c"."RowVersion", "c"."State", "c"."Street", "c"."ZipCode"
+      FROM "Contacts" AS "c"
+      ORDER BY CASE
+          WHEN "c"."LastName" IS NOT NULL THEN "c"."LastName"
+          ELSE ''
+      END
+      LIMIT @__p_1 OFFSET @__p_0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@___controls_FilterText_0='?' (Size = 2)], CommandType='Text', CommandTimeout='30']
+      SELECT COUNT(*)
+      FROM "Contacts" AS "c"
+      WHERE instr("c"."FirstName", @___controls_FilterText_0) > 0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@___controls_FilterText_0='?' (Size = 2), @__p_2='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT "c"."Id", "c"."City", "c"."FirstName", "c"."LastName", "c"."Phone", "c"."RowVersion", "c"."State", "c"."Street", "c"."ZipCode"
+      FROM "Contacts" AS "c"
+      WHERE instr("c"."FirstName", @___controls_FilterText_0) > 0
+      ORDER BY CASE
+          WHEN "c"."LastName" IS NOT NULL THEN "c"."LastName"
+          ELSE ''
+      END
+      LIMIT @__p_2 OFFSET @__p_1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT COUNT(*)
+      FROM "Contacts" AS "c"
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT "c"."Id", "c"."City", "c"."FirstName", "c"."LastName", "c"."Phone", "c"."RowVersion", "c"."State", "c"."Street", "c"."ZipCode"
+      FROM "Contacts" AS "c"
+      ORDER BY CASE
+          WHEN "c"."LastName" IS NOT NULL THEN "c"."LastName"
+          ELSE ''
+      END
+      LIMIT @__p_1 OFFSET @__p_0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@___controls_FilterText_0='?' (Size = 2)], CommandType='Text', CommandTimeout='30']
+      SELECT COUNT(*)
+      FROM "Contacts" AS "c"
+      WHERE instr("c"."FirstName", @___controls_FilterText_0) > 0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@___controls_FilterText_0='?' (Size = 2), @__p_2='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT "c"."Id", "c"."City", "c"."FirstName", "c"."LastName", "c"."Phone", "c"."RowVersion", "c"."State", "c"."Street", "c"."ZipCode"
+      FROM "Contacts" AS "c"
+      WHERE instr("c"."FirstName", @___controls_FilterText_0) > 0
+      ORDER BY CASE
+          WHEN "c"."LastName" IS NOT NULL THEN "c"."LastName"
+          ELSE ''
+      END
+      LIMIT @__p_2 OFFSET @__p_1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT COUNT(*)
+      FROM "Contacts" AS "c"
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT "c"."Id", "c"."City", "c"."FirstName", "c"."LastName", "c"."Phone", "c"."RowVersion", "c"."State", "c"."Street", "c"."ZipCode"
+      FROM "Contacts" AS "c"
+      ORDER BY CASE
+          WHEN "c"."LastName" IS NOT NULL THEN "c"."LastName"
+          ELSE ''
+      END
+      LIMIT @__p_1 OFFSET @__p_0
+^Cinfo: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+rajaniapple@Rajanis-MacBook-Pro BlazorWebAppEFCore % 

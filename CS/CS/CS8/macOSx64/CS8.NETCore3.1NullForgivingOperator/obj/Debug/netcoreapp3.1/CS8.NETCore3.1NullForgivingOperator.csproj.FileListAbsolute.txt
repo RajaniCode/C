@@ -1,0 +1,13 @@
+/Users/rajaniapple/Desktop/GitHub/CS/CS/CS/CS8/macOSx64/CS8.NETCore3.1NullForgivingOperator/bin/Debug/netcoreapp3.1/CS8.NETCore3.1NullForgivingOperator
+/Users/rajaniapple/Desktop/GitHub/CS/CS/CS/CS8/macOSx64/CS8.NETCore3.1NullForgivingOperator/bin/Debug/netcoreapp3.1/CS8.NETCore3.1NullForgivingOperator.deps.json
+/Users/rajaniapple/Desktop/GitHub/CS/CS/CS/CS8/macOSx64/CS8.NETCore3.1NullForgivingOperator/bin/Debug/netcoreapp3.1/CS8.NETCore3.1NullForgivingOperator.runtimeconfig.json
+/Users/rajaniapple/Desktop/GitHub/CS/CS/CS/CS8/macOSx64/CS8.NETCore3.1NullForgivingOperator/bin/Debug/netcoreapp3.1/CS8.NETCore3.1NullForgivingOperator.runtimeconfig.dev.json
+/Users/rajaniapple/Desktop/GitHub/CS/CS/CS/CS8/macOSx64/CS8.NETCore3.1NullForgivingOperator/bin/Debug/netcoreapp3.1/CS8.NETCore3.1NullForgivingOperator.dll
+/Users/rajaniapple/Desktop/GitHub/CS/CS/CS/CS8/macOSx64/CS8.NETCore3.1NullForgivingOperator/bin/Debug/netcoreapp3.1/CS8.NETCore3.1NullForgivingOperator.pdb
+/Users/rajaniapple/Desktop/GitHub/CS/CS/CS/CS8/macOSx64/CS8.NETCore3.1NullForgivingOperator/obj/Debug/netcoreapp3.1/CS8.NETCore3.1NullForgivingOperator.GeneratedMSBuildEditorConfig.editorconfig
+/Users/rajaniapple/Desktop/GitHub/CS/CS/CS/CS8/macOSx64/CS8.NETCore3.1NullForgivingOperator/obj/Debug/netcoreapp3.1/CS8.NETCore3.1NullForgivingOperator.AssemblyInfoInputs.cache
+/Users/rajaniapple/Desktop/GitHub/CS/CS/CS/CS8/macOSx64/CS8.NETCore3.1NullForgivingOperator/obj/Debug/netcoreapp3.1/CS8.NETCore3.1NullForgivingOperator.AssemblyInfo.cs
+/Users/rajaniapple/Desktop/GitHub/CS/CS/CS/CS8/macOSx64/CS8.NETCore3.1NullForgivingOperator/obj/Debug/netcoreapp3.1/CS8.NETCore3.1NullForgivingOperator.csproj.CoreCompileInputs.cache
+/Users/rajaniapple/Desktop/GitHub/CS/CS/CS/CS8/macOSx64/CS8.NETCore3.1NullForgivingOperator/obj/Debug/netcoreapp3.1/CS8.NETCore3.1NullForgivingOperator.dll
+/Users/rajaniapple/Desktop/GitHub/CS/CS/CS/CS8/macOSx64/CS8.NETCore3.1NullForgivingOperator/obj/Debug/netcoreapp3.1/CS8.NETCore3.1NullForgivingOperator.pdb
+/Users/rajaniapple/Desktop/GitHub/CS/CS/CS/CS8/macOSx64/CS8.NETCore3.1NullForgivingOperator/obj/Debug/netcoreapp3.1/CS8.NETCore3.1NullForgivingOperator.genruntimeconfig.cache

@@ -1,0 +1,92 @@
+5.2 Add Validation Rules to Quest
+
+Before we can set up our front-end or back-end validation, we need to set up what our validation rules are on our Quest object. We'll do this using Data Annotations.
+
+Models/Quest.cs
+
+using System.ComponentModel.DataAnnotations;
+using System.Collections.Generic;
+
+namespace ForgingAhead.Models
+{
+  public class Quest
+  {
+    
+    public string Name { get; set; }
+
+    [Display(Name = "Is Active")]
+    public bool IsActive { get; set; }
+
+    public List<Character> Characters { get; set; }
+  }
+}
+
+1. Set our Name Property to be unique. (Disallow using the same name for more than one quest.)
+
+Answer:
+Models/Quest.cs
+
+using System.ComponentModel.DataAnnotations;
+using System.Collections.Generic;
+
+namespace ForgingAhead.Models
+{
+  public class Quest
+  {
+    [Key]
+    public string Name { get; set; }
+
+    [Display(Name = "Is Active")]
+    public bool IsActive { get; set; }
+
+    public List<Character> Characters { get; set; }
+  }
+}
+
+2. Make sure the Name property also fails validation if it's not at least three characters long.
+
+Answer:
+Models/Quest.cs
+
+using System.ComponentModel.DataAnnotations;
+using System.Collections.Generic;
+
+namespace ForgingAhead.Models
+{
+  public class Quest
+  {
+    [Key]
+    [MinLength(3)]
+    public string Name { get; set; }
+
+    [Display(Name = "Is Active")]
+    public bool IsActive { get; set; }
+
+    public List<Character> Characters { get; set; }
+  }
+}
+
+3. Finally, make it so the user must provide a value for both the Name and IsActive properties. (Disallow null.)
+
+Answer:
+Models/Quest.cs
+
+using System.ComponentModel.DataAnnotations;
+using System.Collections.Generic;
+
+namespace ForgingAhead.Models
+{
+  public class Quest
+  {
+    [Key]
+    [MinLength(3)]
+    [Required]
+    public string Name { get; set; }
+    [Required]
+    [Display(Name = "Is Active")]
+    public bool IsActive { get; set; }
+
+    public List<Character> Characters { get; set; }
+  }
+}
+

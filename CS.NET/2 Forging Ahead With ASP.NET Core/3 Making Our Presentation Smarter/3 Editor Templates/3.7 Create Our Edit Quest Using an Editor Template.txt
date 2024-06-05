@@ -1,0 +1,35 @@
+3.7 Create Our Edit Quest Using an Editor Template
+
+Our users need to be able to update their quests after they've been created. We've already got the form wired up to utilize QuestController's Update action, so now we just need to add the appropriate labels and inputs for our Quest.
+
+Instead of writing out the HTML by hand, let's use Editor Templates to save some time.
+
+Views/Quest/Edit.cshtml
+
+@model ForgingAhead.Models.Quest
+<h2>
+  Edit Quest
+</h2>
+
+<form asp-action="Update" asp-controller="Quest">
+  // Wire up Editor template here
+  
+  <input type="submit" value="Update" class="btn btn-default"/>
+</form>
+
+
+Use the EditorForModel() helper in the form tag to automatically create the labels and inputs needed to complete our form based on the data in our model.
+
+Answer:
+Views/Quest/Edit.cshtml
+
+@model ForgingAhead.Models.Quest
+<h2>
+  Edit Quest
+</h2>
+
+<form asp-action="Update" asp-controller="Quest">
+  // Wire up Editor template here
+  @Html.EditorForModel()
+  <input type="submit" value="Update" class="btn btn-default"/>
+</form>

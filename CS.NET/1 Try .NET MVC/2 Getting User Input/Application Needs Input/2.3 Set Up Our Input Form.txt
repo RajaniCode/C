@@ -1,0 +1,112 @@
+2.3 Set Up Our Input Form
+
+Now that we've got a working Create action in our Controller, let's set up a form in our Index view that will accept user input and pass that entered data back to our Controller.
+
+Models/Equipment.cs
+
+namespace CharacterSheetApp.Models
+{
+  public class Equipment
+  {
+    public string Name;
+  }
+}
+
+Controllers/HomeController.cs
+
+using Microsoft.AspNet.Mvc;
+using CharacterSheetApp.Models;
+
+namespace CharacterSheetApp.Controllers
+{
+  public class HomeController : Controller
+  {
+
+    public IActionResult Index()
+    {
+      var model = new CharacterSheetApp.Models.Equipment();
+      model.Name = "Shield";
+      return View(model);
+    }
+
+    public IActionResult Create(string EquipmentName)
+    {
+      var model = new CharacterSheetApp.Models.Equipment();
+      model.Name = EquipmentName;
+      return View("Index",model);
+    }
+  } 
+}
+
+Views/Home/Index.cshtml
+
+@model CharacterSheetApp.Models.Equipment
+<h2>Equipment:</h2>
+
+<form    class="form-inline mbm">
+  <div class="form-group">
+    
+    <input type="submit" value="Add Equipment" class="form-control" />
+  </div>
+</form>
+
+<h4>Equipment:</h4>
+
+<div>
+  <ul>
+    <li>
+      <label>@Model.Name</label>
+    </li>
+  </ul>
+</div>
+
+
+1. In our Index.cshtml page set an attribute in the form to use the Create method.
+
+Answer:
+Views/Home/Index.cshtml
+
+@model CharacterSheetApp.Models.Equipment
+<h2>Equipment:</h2>
+
+<form asp-action="Create" class="form-inline mbm">
+  <div class="form-group">
+    
+    <input type="submit" value="Add Equipment" class="form-control" />
+  </div>
+</form>
+
+<h4>Equipment:</h4>
+
+<div>
+  <ul>
+    <li>
+      <label>@Model.Name</label>
+    </li>
+  </ul>
+</div>
+
+2. Next, still in Index.cshtml, add an input field with the HTML <input> tag, and add a name attribute to that tag that maps up with our Create method's EquipmentName parameter.
+
+Answer:
+Views/Home/Index.cshtml
+
+@model CharacterSheetApp.Models.Equipment
+<h2>Equipment:</h2>
+
+<form asp-action="Create" class="form-inline mbm">
+  <div class="form-group">
+    <input name="EquipmentName" />
+    <input type="submit" value="Add Equipment" class="form-control" />
+  </div>
+</form>
+
+<h4>Equipment:</h4>
+
+<div>
+  <ul>
+    <li>
+      <label>@Model.Name</label>
+    </li>
+  </ul>
+</div>

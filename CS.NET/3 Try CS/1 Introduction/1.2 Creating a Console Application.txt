@@ -1,0 +1,14 @@
+1.2 Creating a Console Application
+
+Type the dotnet command that will create a new console application.
+
+Type help to see the help menu.
+
+​
+$ dotnet new console
+
+The template "Console Application" created successfully.
+
+Success!
+
+$

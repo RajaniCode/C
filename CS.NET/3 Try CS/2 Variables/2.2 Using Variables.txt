@@ -1,0 +1,59 @@
+2.2 Using Variables
+
+Let's practice declaring some variables and setting their values. Then, we'll use our new variables to print an announcement to the console.
+
+Program.cs
+using System;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+            
+    }
+}
+
+1. Declare a string variable named venue. On the same line, set this variable's value to "C's Blues".
+Answer:
+Program.cs
+using System;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        string venue = "C's Blues";
+    }
+}
+
+2. Declare an int variable named bands. On the same line, set this variable's value to 4.
+
+Answer:
+Program.cs
+using System;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        string venue = "C's Blues";
+        int bands = 4;
+    }
+}
+
+3. Use Console.WriteLine with the venue and bands variables to print the following announcement text to the console:
+
+C's Blues will have 4 bands performing tonight!
+Answer:
+Program.cs
+using System;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        string venue = "C's Blues";
+        int bands = 4;
+        Console.WriteLine("{0} will have {1} bands performing tonight!", venue,  bands);
+    }
+}

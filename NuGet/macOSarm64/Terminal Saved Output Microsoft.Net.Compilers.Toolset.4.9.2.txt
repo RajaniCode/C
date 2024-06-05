@@ -1,0 +1,84 @@
+Last login: Sun May 26 10:47:43 on ttys000
+rajaniapple@Rajanis-MacBook-Pro ~ % cd /Users/rajaniapple/Desktop/GitHub/CS/macOSarm64/NuGet     
+rajaniapple@Rajanis-MacBook-Pro NuGet % nuget install Microsoft.Net.Compilers.Toolset -Version 4.9.2
+Feeds used:
+  /Users/rajaniapple/.nuget/packages/
+  https://api.nuget.org/v3/index.json
+
+
+
+Attempting to gather dependency information for package 'Microsoft.Net.Compilers.Toolset.4.9.2' with respect to project '/Users/rajaniapple/Desktop/GitHub/CS/macOSarm64/NuGet', targeting 'Any,Version=v0.0'
+Gathering dependency information took 344 ms
+Attempting to resolve dependencies for package 'Microsoft.Net.Compilers.Toolset.4.9.2' with DependencyBehavior 'Lowest'
+Resolving dependency information took 0 ms
+Resolving actions to install package 'Microsoft.Net.Compilers.Toolset.4.9.2'
+Resolved actions to install package 'Microsoft.Net.Compilers.Toolset.4.9.2'
+Retrieving package 'Microsoft.Net.Compilers.Toolset 4.9.2' from '/Users/rajaniapple/.nuget/packages/'.
+Adding package 'Microsoft.Net.Compilers.Toolset.4.9.2' to folder '/Users/rajaniapple/Desktop/GitHub/CS/macOSarm64/NuGet'
+Added package 'Microsoft.Net.Compilers.Toolset.4.9.2' to folder '/Users/rajaniapple/Desktop/GitHub/CS/macOSarm64/NuGet'
+Successfully installed 'Microsoft.Net.Compilers.Toolset 4.9.2' to /Users/rajaniapple/Desktop/GitHub/CS/macOSarm64/NuGet
+Executing nuget actions took 306 ms
+rajaniapple@Rajanis-MacBook-Pro NuGet % mono Microsoft.Net.Compilers.Toolset.4.9.2/tasks/net472/csi.exe -version
+4.9.2-3.24129.6 ()
+rajaniapple@Rajanis-MacBook-Pro NuGet % mono Microsoft.Net.Compilers.Toolset.4.9.2/tasks/net472/csi.exe -help
+Microsoft (R) Visual C# Interactive Compiler version 4.9.2-3.24129.6 ()
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Usage: csi [option] ... [script-file.csx] [script-argument] ...
+
+Executes script-file.csx if specified, otherwise launches an interactive REPL (Read Eval Print Loop).
+
+Options:
+  /help                          Display this usage message (alternative form: /?)
+  /version                       Display the version and exit
+  /i                             Drop to REPL after executing the specified script.
+  /r:<file>                      Reference metadata from the specified assembly file (alternative form: /reference)
+  /r:<file list>                 Reference metadata from the specified assembly files (alternative form: /reference)
+  /lib:<path list>               List of directories where to look for libraries specified by #r directive. 
+                                 (alternative forms: /libPath /libPaths)
+  /u:<namespace>                 Define global namespace using (alternative forms: /using, /usings, /import, /imports)
+  /langversion:?                 Display the allowed values for language version and exit
+  /langversion:<string>          Specify language version such as
+                                 `latest` (latest version, including minor versions),
+                                 `default` (same as `latest`),
+                                 `latestmajor` (latest version, excluding minor versions),
+                                 `preview` (latest version, including features in unsupported preview),
+                                 or specific versions like `6` or `7.1`
+  @<file>                        Read response file for more options
+  --                             Indicates that the remaining arguments should not be treated as options.
+rajaniapple@Rajanis-MacBook-Pro NuGet % mono Program.exe
+Environment.Version: 4.0.30319.42000
+RuntimeInformation.FrameworkDescription: Mono 6.12.0.199 (2020-02/f648ec1e0a6 Wed Jun 14 09:24:35 EDT 2023)
+
+Hello World!
+rajaniapple@Rajanis-MacBook-Pro NuGet % csi -version
+3.9.0-6.21124.20 ()
+rajaniapple@Rajanis-MacBook-Pro NuGet % mono Microsoft.Net.Compilers.Toolset.4.9.2/tasks/net472/csi.exe
+Microsoft (R) Visual C# Interactive Compiler version 4.9.2-3.24129.6 ()
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Type "#help" for more information.
+> #help
+Keyboard shortcuts:
+  Enter         If the current submission appears to be complete, evaluate it.  Otherwise, insert a new line.
+  Escape        Clear the current submission.
+  UpArrow       Replace the current submission with a previous submission.
+  DownArrow     Replace the current submission with a subsequent submission (after having previously navigated backwards).
+  Ctrl-C        Exit the REPL.
+REPL commands:
+  #help         Display help on available commands and key bindings.
+Script directives:
+  #r            Add a metadata reference to specified assembly and all its dependencies, e.g. #r "myLib.dll".
+  #load         Load specified script file and execute it, e.g. #load "myScript.csx".
+> using System.Runtime.InteropServices;
+> Environment.Version
+[4.0.30319.42000]
+> RuntimeInformation.FrameworkDescription
+"Mono 6.12.0.199 (2020-02/f648ec1e0a6 Wed Jun 14 09:24:35 EDT 2023)"
+> "Hello World!"
+"Hello World!"
+> class Sandbox { public void Print() { Console.WriteLine("Hello World!"); } }
+> Sandbox box = new(); // mono // mcs // Sandbox box = new Sandbox();
+> box. Print()
+Hello World!
+> %                                                                                                                                                             rajaniapple@Rajanis-MacBook-Pro NuGet % 

@@ -1,0 +1,135 @@
+1.4 Save Quest to Database
+
+Now you'll need to set up the Create action that accepts a Quest and add that quest to the database.
+
+Controllers/QuestController.cs
+
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using System.Collections.Generic;
+using System.Linq;
+
+using ForgingAhead.Models;
+
+namespace ForgingAhead.Controllers
+{
+  public class QuestController : Controller
+  {
+    private readonly ApplicationDbContext _context;
+
+    public QuestController(ApplicationDbContext context)
+    {
+      _context = context;
+    }
+
+    [HttpGet]
+    public IActionResult Create()
+    {
+      return View();
+    }
+
+    [HttpPost]
+    public IActionResult Create(Quest quest)
+    {
+      //Save Quest to Database Here
+      
+      return RedirectToAction("Index");
+    }
+
+    public IActionResult Index()
+    {
+      return View();
+    }
+  }
+}
+
+
+1. Add the quest parameter to our Quests collection.
+
+Answer:
+Controllers/QuestController.cs
+
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using System.Collections.Generic;
+using System.Linq;
+
+using ForgingAhead.Models;
+
+namespace ForgingAhead.Controllers
+{
+  public class QuestController : Controller
+  {
+    private readonly ApplicationDbContext _context;
+
+    public QuestController(ApplicationDbContext context)
+    {
+      _context = context;
+    }
+
+    [HttpGet]
+    public IActionResult Create()
+    {
+      return View();
+    }
+
+    [HttpPost]
+    public IActionResult Create(Quest quest)
+    {
+      //Save Quest to Database Here
+      _context.Quests.Add(quest);
+      return RedirectToAction("Index");
+    }
+
+    public IActionResult Index()
+    {
+      return View();
+    }
+  }
+}
+
+2. From here you need to use the SaveChanges() method to save your changes to the database.
+
+Answer:
+Controllers/QuestController.cs
+
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using System.Collections.Generic;
+using System.Linq;
+
+using ForgingAhead.Models;
+
+namespace ForgingAhead.Controllers
+{
+  public class QuestController : Controller
+  {
+    private readonly ApplicationDbContext _context;
+
+    public QuestController(ApplicationDbContext context)
+    {
+      _context = context;
+    }
+
+    [HttpGet]
+    public IActionResult Create()
+    {
+      return View();
+    }
+
+    [HttpPost]
+    public IActionResult Create(Quest quest)
+    {
+      //Save Quest to Database Here
+      _context.Quests.Add(quest);
+      _context.SaveChanges();
+      return RedirectToAction("Index");
+    }
+
+    public IActionResult Index()
+    {
+      return View();
+    }
+  }
+}
+

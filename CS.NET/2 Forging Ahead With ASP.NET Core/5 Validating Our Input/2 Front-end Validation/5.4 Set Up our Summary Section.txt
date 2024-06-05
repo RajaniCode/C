@@ -1,0 +1,34 @@
+5.4 Set Up our Summary Section
+
+Our layout is already wired up so that we can use front-end validation throughout our application. From here we just need to set up our Edit view to list a summary of any validation errors on user submission.
+
+Views/Quest/Edit.cshtml
+
+@model ForgingAhead.Models.Quest
+<h2>
+  Edit Quest
+</h2>
+
+<form asp-action="Update" asp-controller="Quest">
+  @Html.EditorForModel()
+  <input type="submit" value="Update" class="btn btn-default"/>
+    @* List Validation errors here *@
+    
+</form>
+
+
+Create a new div that will contain all our validation errors, and use the appropriate Tag Helper to have it populate the div with all validation errors.
+
+Answer:
+Views/Quest/Edit.cshtml
+
+@model ForgingAhead.Models.Quest
+<h2>
+  Edit Quest
+</h2>
+
+<form asp-action="Update" asp-controller="Quest">
+  @Html.EditorForModel()
+  <input type="submit" value="Update" class="btn btn-default"/>
+   <div asp-validation-summary="All"></div>    
+</form>

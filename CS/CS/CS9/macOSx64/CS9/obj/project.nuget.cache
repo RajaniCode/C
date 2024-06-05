@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "OdGSnFEvZbsaj7dqjpj2eJW1sybkWL6qGtcoPeyW9zz6t7R6u7dog7FEeqVd6vUbgSCO9L24JOwDKFdC1kPZpA==",
+  "success": true,
+  "projectFilePath": "/Users/rajaniapple/Desktop/GitHub/CS/CS/CS/CS9/macOSx64/CS9/CS9.csproj",
+  "expectedPackageFiles": [
+    "/Users/rajaniapple/.nuget/packages/microsoft.aspnetcore.app.ref/5.0.0/microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512",
+    "/Users/rajaniapple/.nuget/packages/microsoft.netcore.app.host.osx-x64/5.0.17/microsoft.netcore.app.host.osx-x64.5.0.17.nupkg.sha512",
+    "/Users/rajaniapple/.nuget/packages/microsoft.netcore.app.ref/5.0.0/microsoft.netcore.app.ref.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

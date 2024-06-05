@@ -1,0 +1,14 @@
+5.2 Method Signatures
+
+Identify the two methods that have conflicting method signatures.
+
+[Multiple Answers]
+
+string AddBand(string name)
+string AddBand(string name, string leadMusician)
+void AddBand(string name)
+string CreateBand(string name)
+
+Answer
+string AddBand(string name)
+void AddBand(string name)

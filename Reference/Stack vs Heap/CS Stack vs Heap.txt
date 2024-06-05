@@ -1,0 +1,22 @@
+int x = 5; // x is a local variable and is stored on the stack
+
+// y is a reference to an object and is stored on the stack
+// The object itself is stored on the heap
+string y = new string("Hola!");
+
+// z is a reference to the same object as y
+// Both y and z are stored on the stack, but the object is only stored once on the heap
+string z = y;
+
+// The object referenced by y and z is no longer needed, so the garbage collector will deallocate the memory on the heap
+y = null;
+z = null;
+
+Using value types minimizes the number of allocation operations:
+• Storage for value types is stack allocated for local variables and method arguments.
+• Storage for value types that are members of other objects is allocated as part of that object, not as a separate allocation.
+• Storage for value type return values is stack allocated.
+Contrast that with reference types in those same situations:
+• Storage for reference types are heap allocated for local variables and method arguments. The reference is stored on the stack.
+• Storage for reference types that are members of other objects are separately allocated on the heap. The containing object stores the reference.
+• Storage for reference type return values is heap allocated. The reference to that storage is stored on the stack.

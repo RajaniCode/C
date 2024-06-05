@@ -1,0 +1,46 @@
+2.7 Change IsActive Through DataAnnotations
+
+Our label for "IsActive" should really read "Is Active" to make it more user friendly. Let's fix that using Data Annotations.
+
+Models/Quest.cs
+
+using System.ComponentModel.DataAnnotations;
+using System.Collections.Generic;
+
+namespace ForgingAhead.Models
+{
+  public class Quest
+  {
+    [Key]
+    public string Name { get; set; }
+
+    
+    public bool IsActive { get; set; }
+
+    public List<Character> Characters { get; set; }
+  }
+}
+
+
+Use the Display DataAnnotation to change IsActive's display name to "Is Active".
+
+Answer:
+Models/Quest.cs
+
+using System.ComponentModel.DataAnnotations;
+using System.Collections.Generic;
+
+namespace ForgingAhead.Models
+{
+  public class Quest
+  {
+    [Key]
+    public string Name { get; set; }
+
+    [Display(Name="Is Active")]
+    public bool IsActive { get; set; }
+
+    public List<Character> Characters { get; set; }
+  }
+}
+

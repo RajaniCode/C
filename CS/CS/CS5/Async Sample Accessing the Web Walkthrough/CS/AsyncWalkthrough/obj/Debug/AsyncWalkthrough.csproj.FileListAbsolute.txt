@@ -1,0 +1,13 @@
+C:\RemoteAccess\Async projects without snippet tags\CSAsyncWalkthroughCode\AsyncWalkthrough\bin\Debug\AsyncWalkthrough.exe.config
+C:\RemoteAccess\Async projects without snippet tags\CSAsyncWalkthroughCode\AsyncWalkthrough\bin\Debug\AsyncWalkthrough.exe
+C:\RemoteAccess\Async projects without snippet tags\CSAsyncWalkthroughCode\AsyncWalkthrough\bin\Debug\AsyncWalkthrough.pdb
+C:\RemoteAccess\Async projects without snippet tags\CSAsyncWalkthroughCode\AsyncWalkthrough\obj\Debug\AsyncWalkthrough.csprojResolveAssemblyReference.cache
+C:\RemoteAccess\Async projects without snippet tags\CSAsyncWalkthroughCode\AsyncWalkthrough\obj\Debug\MainWindow.baml
+C:\RemoteAccess\Async projects without snippet tags\CSAsyncWalkthroughCode\AsyncWalkthrough\obj\Debug\MainWindow.g.cs
+C:\RemoteAccess\Async projects without snippet tags\CSAsyncWalkthroughCode\AsyncWalkthrough\obj\Debug\App.g.cs
+C:\RemoteAccess\Async projects without snippet tags\CSAsyncWalkthroughCode\AsyncWalkthrough\obj\Debug\AsyncWalkthrough_MarkupCompile.cache
+C:\RemoteAccess\Async projects without snippet tags\CSAsyncWalkthroughCode\AsyncWalkthrough\obj\Debug\AsyncWalkthrough.g.resources
+C:\RemoteAccess\Async projects without snippet tags\CSAsyncWalkthroughCode\AsyncWalkthrough\obj\Debug\AsyncWalkthrough.Properties.Resources.resources
+C:\RemoteAccess\Async projects without snippet tags\CSAsyncWalkthroughCode\AsyncWalkthrough\obj\Debug\AsyncWalkthrough.csproj.GenerateResource.Cache
+C:\RemoteAccess\Async projects without snippet tags\CSAsyncWalkthroughCode\AsyncWalkthrough\obj\Debug\AsyncWalkthrough.exe
+C:\RemoteAccess\Async projects without snippet tags\CSAsyncWalkthroughCode\AsyncWalkthrough\obj\Debug\AsyncWalkthrough.pdb

@@ -1,0 +1,14 @@
+/Users/rajaniapple/Desktop/Working/CS/CS12/macOS/CS11/bin/Debug/net7.0/CS11
+/Users/rajaniapple/Desktop/Working/CS/CS12/macOS/CS11/bin/Debug/net7.0/CS11.deps.json
+/Users/rajaniapple/Desktop/Working/CS/CS12/macOS/CS11/bin/Debug/net7.0/CS11.runtimeconfig.json
+/Users/rajaniapple/Desktop/Working/CS/CS12/macOS/CS11/bin/Debug/net7.0/CS11.dll
+/Users/rajaniapple/Desktop/Working/CS/CS12/macOS/CS11/bin/Debug/net7.0/CS11.pdb
+/Users/rajaniapple/Desktop/Working/CS/CS12/macOS/CS11/obj/Debug/net7.0/CS11.GeneratedMSBuildEditorConfig.editorconfig
+/Users/rajaniapple/Desktop/Working/CS/CS12/macOS/CS11/obj/Debug/net7.0/CS11.AssemblyInfoInputs.cache
+/Users/rajaniapple/Desktop/Working/CS/CS12/macOS/CS11/obj/Debug/net7.0/CS11.AssemblyInfo.cs
+/Users/rajaniapple/Desktop/Working/CS/CS12/macOS/CS11/obj/Debug/net7.0/CS11.csproj.CoreCompileInputs.cache
+/Users/rajaniapple/Desktop/Working/CS/CS12/macOS/CS11/obj/Debug/net7.0/CS11.dll
+/Users/rajaniapple/Desktop/Working/CS/CS12/macOS/CS11/obj/Debug/net7.0/refint/CS11.dll
+/Users/rajaniapple/Desktop/Working/CS/CS12/macOS/CS11/obj/Debug/net7.0/CS11.pdb
+/Users/rajaniapple/Desktop/Working/CS/CS12/macOS/CS11/obj/Debug/net7.0/CS11.genruntimeconfig.cache
+/Users/rajaniapple/Desktop/Working/CS/CS12/macOS/CS11/obj/Debug/net7.0/ref/CS11.dll

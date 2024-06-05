@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "4TpmorYLMAR+ks4gtvDzVm8ZZ7GIortCsTNmF6hI3a3Lc2ZdWhYkeIciCkUJToPrMYXF9xE5PVN0vNNTwFWmrA==",
+  "success": true,
+  "projectFilePath": "/Users/rajaniapple/Desktop/GitHub/CS/CS/CS/CS8/macOSx64/CS8.NETCore3.1NullForgivingOperator/CS8.NETCore3.1NullForgivingOperator.csproj",
+  "expectedPackageFiles": [
+    "/Users/rajaniapple/.nuget/packages/microsoft.netcore.app.ref/3.1.0/microsoft.netcore.app.ref.3.1.0.nupkg.sha512",
+    "/Users/rajaniapple/.nuget/packages/microsoft.aspnetcore.app.ref/3.1.10/microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512",
+    "/Users/rajaniapple/.nuget/packages/microsoft.netcore.app.host.osx-x64/3.1.32/microsoft.netcore.app.host.osx-x64.3.1.32.nupkg.sha512"
+  ],
+  "logs": []
+}

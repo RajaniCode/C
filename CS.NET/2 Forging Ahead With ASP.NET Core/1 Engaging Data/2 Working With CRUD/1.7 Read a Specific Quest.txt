@@ -1,0 +1,109 @@
+1.7 Read a Specific Quest
+
+Now let's work on the Details action and get a single object back from the database.
+
+Controllers/QuestController.cs
+
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using System.Collections.Generic;
+using System.Linq;
+
+using ForgingAhead.Models;
+
+namespace ForgingAhead.Controllers
+{
+  public class QuestController : Controller
+  {
+    private readonly ApplicationDbContext _context;
+
+    public QuestController(ApplicationDbContext context)
+    {
+      _context = context;
+    }
+
+    [HttpGet]
+    public IActionResult Create()
+    {
+      return View();
+    }
+
+    [HttpPost]
+    public IActionResult Create(Quest quest)
+    {
+      _context.Quests.Add(quest);
+      _context.SaveChanges();
+
+      return RedirectToAction("Index");
+    }
+
+    public IActionResult Index()
+    {
+      var model = _context.Quests.ToList();
+      return View(model);
+    }
+
+    public IActionResult Details(string name)
+    {
+      //Get matching Quest here
+      
+      return View( );
+    }
+  }
+}
+
+
+In the Details action, access the database context for a single object with the FirstOrDefault method that matches the passed-in name string and return a View() with that data as an argument.
+
+Note: Use a lambda to check the collection for the right name so the step where you get your data in a model variable can be done in one line.
+
+Answer:
+Controllers/QuestController.cs
+
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using System.Collections.Generic;
+using System.Linq;
+
+using ForgingAhead.Models;
+
+namespace ForgingAhead.Controllers
+{
+  public class QuestController : Controller
+  {
+    private readonly ApplicationDbContext _context;
+
+    public QuestController(ApplicationDbContext context)
+    {
+      _context = context;
+    }
+
+    [HttpGet]
+    public IActionResult Create()
+    {
+      return View();
+    }
+
+    [HttpPost]
+    public IActionResult Create(Quest quest)
+    {
+      _context.Quests.Add(quest);
+      _context.SaveChanges();
+
+      return RedirectToAction("Index");
+    }
+
+    public IActionResult Index()
+    {
+      var model = _context.Quests.ToList();
+      return View(model);
+    }
+
+    public IActionResult Details(string name)
+    {
+      //Get matching Quest here
+      var model = _context.Quests.FirstOrDefault(e => e.Name == name);
+      return View(model);
+    }
+  }
+}

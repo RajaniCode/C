@@ -1,0 +1,35 @@
+Last login: Mon Apr 29 19:35:52 on ttys001
+rajaniapple@Rajanis-MacBook-Pro ~ % dotnet --version                                                                                                
+8.0.204
+rajaniapple@Rajanis-MacBook-Pro ~ % cd /Users/rajaniapple/Desktop/GitHub/CS/macOSarm64/Blazor/Blazor/8.0/BlazorWebAppCallWebApi_Weather/                 
+rajaniapple@Rajanis-MacBook-Pro BlazorWebAppCallWebApi_Weather % dotnet build
+MSBuild version 17.9.8+b34f75857 for .NET
+  Determining projects to restore...
+  Restored /Users/rajaniapple/Desktop/GitHub/CS/macOSarm64/Blazor/Blazor/8.0/BlazorWebAppCallWebApi_Weather/BlazorApp/BlazorApp.csproj (in 967 ms).
+  Restored /Users/rajaniapple/Desktop/GitHub/CS/macOSarm64/Blazor/Blazor/8.0/BlazorWebAppCallWebApi_Weather/BlazorApp.Client/BlazorApp.Client.csproj (in 967 ms).
+  BlazorApp.Client -> /Users/rajaniapple/Desktop/GitHub/CS/macOSarm64/Blazor/Blazor/8.0/BlazorWebAppCallWebApi_Weather/BlazorApp.Client/bin/Debug/net8.0/BlazorApp.Client.dll
+  BlazorApp.Client (Blazor output) -> /Users/rajaniapple/Desktop/GitHub/CS/macOSarm64/Blazor/Blazor/8.0/BlazorWebAppCallWebApi_Weather/BlazorApp.Client/bin/Debug/net8.0/wwwroot
+  BlazorApp -> /Users/rajaniapple/Desktop/GitHub/CS/macOSarm64/Blazor/Blazor/8.0/BlazorWebAppCallWebApi_Weather/BlazorApp/bin/Debug/net8.0/BlazorApp.dll
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:03.38
+rajaniapple@Rajanis-MacBook-Pro BlazorWebAppCallWebApi_Weather % cd /Users/rajaniapple/Desktop/GitHub/CS/macOSarm64/Blazor/Blazor/8.0/BlazorWebAppCallWebApi_Weather/BlazorApp.Client
+rajaniapple@Rajanis-MacBook-Pro BlazorApp.Client % cd /Users/rajaniapple/Desktop/GitHub/CS/macOSarm64/Blazor/Blazor/8.0/BlazorWebAppCallWebApi_Weather/BlazorApp 
+rajaniapple@Rajanis-MacBook-Pro BlazorApp % dotnet run                                                                                                    
+Building...
+info: Microsoft.Hosting.Lifetime[14]
+      Now listening on: http://localhost:5236
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: /Users/rajaniapple/Desktop/GitHub/CS/macOSarm64/Blazor/Blazor/8.0/BlazorWebAppCallWebApi_Weather/BlazorApp
+warn: Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware[3]
+      Failed to determine the https port for redirect.
+^Cinfo: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+rajaniapple@Rajanis-MacBook-Pro BlazorApp % 

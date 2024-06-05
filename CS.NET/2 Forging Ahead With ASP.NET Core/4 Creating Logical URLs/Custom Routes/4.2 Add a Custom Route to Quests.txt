@@ -1,0 +1,224 @@
+4.2 Add a Custom Route to Quests
+
+We want to make the URLs to our Details and Edit actions a bit cleaner for our users. Let's set up custom routes so that we no longer need to use query strings when accessing these actions.
+
+Controllers/QuestController.cs
+
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using System.Collections.Generic;
+using System.Linq;
+
+using ForgingAhead.Models;
+
+namespace ForgingAhead.Controllers
+{
+  public class QuestController : Controller
+  {
+    private readonly ApplicationDbContext _context;
+
+    public QuestController(ApplicationDbContext context)
+    {
+      _context = context;
+    }
+
+    [HttpGet]
+    public IActionResult Create()
+    {
+      return View();
+    }
+
+    [HttpPost]
+    public IActionResult Create(Quest quest)
+    {
+      _context.Quests.Add(quest);
+      _context.SaveChanges();
+
+      return RedirectToAction("Index");
+    }
+
+    public IActionResult Index()
+    {
+      ViewData["Title"] = "Quests";
+      var model = _context.Quests.ToList();
+      return View(model);
+    }
+    // Add Details Route Here
+    
+    public IActionResult Details(string name)
+    {
+      var model = _context.Quests.FirstOrDefault(e => e.Name == name);
+      return View(model);
+    }
+    // Add Edit Route Here
+    public IActionResult Edit(string name)
+    {
+      var model = _context.Quests.FirstOrDefault(e => e.Name == name);
+      return View(model);
+    }
+
+    public IActionResult Update(Quest quest)
+    {
+      _context.Entry(quest).State = EntityState.Modified;
+      _context.SaveChanges();
+      return RedirectToAction("Index");
+    }
+
+    public IActionResult Delete(string name)
+    {
+      var quest = _context.Quests.FirstOrDefault(e => e.Name == name);
+      _context.Quests.Remove(quest);
+      _context.SaveChanges();
+      return RedirectToAction("Index");
+    }
+  }
+}
+
+
+1. Create a custom route to make our Details action accessible using Quest/QuestName/Details where "QuestName" is the name of the quest and will populate the name parameter of our Details action.
+
+Answer:
+Controllers/QuestController.cs
+
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using System.Collections.Generic;
+using System.Linq;
+
+using ForgingAhead.Models;
+
+namespace ForgingAhead.Controllers
+{
+  public class QuestController : Controller
+  {
+    private readonly ApplicationDbContext _context;
+
+    public QuestController(ApplicationDbContext context)
+    {
+      _context = context;
+    }
+
+    [HttpGet]
+    public IActionResult Create()
+    {
+      return View();
+    }
+
+    [HttpPost]
+    public IActionResult Create(Quest quest)
+    {
+      _context.Quests.Add(quest);
+      _context.SaveChanges();
+
+      return RedirectToAction("Index");
+    }
+
+    public IActionResult Index()
+    {
+      ViewData["Title"] = "Quests";
+      var model = _context.Quests.ToList();
+      return View(model);
+    }
+    [Route("Quest/{name}/Details")]
+    public IActionResult Details(string name)
+    {
+      var model = _context.Quests.FirstOrDefault(e => e.Name == name);
+      return View(model);
+    }
+    // Add Edit Route Here
+    public IActionResult Edit(string name)
+    {
+      var model = _context.Quests.FirstOrDefault(e => e.Name == name);
+      return View(model);
+    }
+
+    public IActionResult Update(Quest quest)
+    {
+      _context.Entry(quest).State = EntityState.Modified;
+      _context.SaveChanges();
+      return RedirectToAction("Index");
+    }
+
+    public IActionResult Delete(string name)
+    {
+      var quest = _context.Quests.FirstOrDefault(e => e.Name == name);
+      _context.Quests.Remove(quest);
+      _context.SaveChanges();
+      return RedirectToAction("Index");
+    }
+  }
+}
+
+2. Next, create a custom route to make our Edit view accessible using Quest/QuestName/Edit where "QuestName" is the name of the quest and will populate the name parameter of our Edit action.
+
+Answer:
+Controllers/QuestController.cs
+
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using System.Collections.Generic;
+using System.Linq;
+
+using ForgingAhead.Models;
+
+namespace ForgingAhead.Controllers
+{
+  public class QuestController : Controller
+  {
+    private readonly ApplicationDbContext _context;
+
+    public QuestController(ApplicationDbContext context)
+    {
+      _context = context;
+    }
+
+    [HttpGet]
+    public IActionResult Create()
+    {
+      return View();
+    }
+
+    [HttpPost]
+    public IActionResult Create(Quest quest)
+    {
+      _context.Quests.Add(quest);
+      _context.SaveChanges();
+
+      return RedirectToAction("Index");
+    }
+
+    public IActionResult Index()
+    {
+      ViewData["Title"] = "Quests";
+      var model = _context.Quests.ToList();
+      return View(model);
+    }
+    [Route("Quest/{name}/Details")]
+    public IActionResult Details(string name)
+    {
+      var model = _context.Quests.FirstOrDefault(e => e.Name == name);
+      return View(model);
+    }
+    [Route("Quest/{name}/Edit")]
+    public IActionResult Edit(string name)
+    {
+      var model = _context.Quests.FirstOrDefault(e => e.Name == name);
+      return View(model);
+    }
+
+    public IActionResult Update(Quest quest)
+    {
+      _context.Entry(quest).State = EntityState.Modified;
+      _context.SaveChanges();
+      return RedirectToAction("Index");
+    }
+
+    public IActionResult Delete(string name)
+    {
+      var quest = _context.Quests.FirstOrDefault(e => e.Name == name);
+      _context.Quests.Remove(quest);
+      _context.SaveChanges();
+      return RedirectToAction("Index");
+    }
+  }
+}

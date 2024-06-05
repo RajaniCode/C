@@ -1,0 +1,11 @@
+@page "/expanders"
+
+<h1>Expanders Example</h1>
+
+<ShowMoreExpander InitiallyExpanded="false">
+    Expander 1 content
+</ShowMoreExpander>
+
+<ShowMoreExpander InitiallyExpanded="false" />
+
+<button @onclick="StateHasChanged">Call StateHasChanged</button>

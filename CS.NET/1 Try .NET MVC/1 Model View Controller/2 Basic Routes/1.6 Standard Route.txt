@@ -1,0 +1,14 @@
+1.6 Standard Route
+
+If we were to visit http://localhost:5000/Character/Create (assuming it exists), what action would we reach?
+
+[Single Answer]
+
+A Controller named HomeController's Index action
+A Controller named CharacterController's Create action
+A Controller named HomeController's Create action
+A Controller named CharacterController's Index action
+We'd get a 404 "not found" error
+
+
+Answer: A Controller named CharacterController's Create action

@@ -1,0 +1,24 @@
+Last login: Mon Apr 29 19:26:55 on ttys000
+rajaniapple@Rajanis-MacBook-Pro ~ % dotnet --version                                                                              
+8.0.204
+rajaniapple@Rajanis-MacBook-Pro ~ % cd /Users/rajaniapple/Desktop/GitHub/CS/macOSarm64/Blazor/Blazor/8.0/BlazorSignalRApp 
+rajaniapple@Rajanis-MacBook-Pro BlazorSignalRApp % dotnet run
+Building...
+info: Microsoft.Hosting.Lifetime[14]
+      Now listening on: https://localhost:7034
+info: Microsoft.Hosting.Lifetime[14]
+      Now listening on: http://localhost:5094
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: /Users/rajaniapple/Desktop/GitHub/CS/macOSarm64/Blazor/Blazor/8.0/BlazorSignalRApp
+^Cinfo: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+rajaniapple@Rajanis-MacBook-Pro BlazorSignalRApp % 
+
+
+
+
+

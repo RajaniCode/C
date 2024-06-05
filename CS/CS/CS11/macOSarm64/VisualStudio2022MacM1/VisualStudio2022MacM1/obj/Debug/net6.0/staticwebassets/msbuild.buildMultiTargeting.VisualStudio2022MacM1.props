@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../build/VisualStudio2022MacM1.props" />
+</Project>

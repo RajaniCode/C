@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../buildMultiTargeting/VisualStudio2022MacM1.props" />
+</Project>

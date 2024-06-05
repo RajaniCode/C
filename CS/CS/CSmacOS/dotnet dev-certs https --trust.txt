@@ -1,0 +1,8 @@
+Delete localhost from Keychain Access and Run: dotnet dev-certs https --trust
+
+"Unable to configure HTTPS endpoint. No server certificate was specified, and the default developer certificate could not be found or is out of date.\nTo generate a developer certificate run 'dotnet dev-certs https'. To trust the certificate (Windows and macOS only) run 'dotnet dev-certs https --trust'.\nFor more information on configuring HTTPS see https://go.microsoft.com/fwlink/?linkid=848054."
+
+
+The HTTPS development certificate will be installed and trusted by running 'dotnet dev-certs https --trust'. Running this command may prompt you for your password to install the certificate on the system keychain.
+
+Do you want to install and trust this certificate?

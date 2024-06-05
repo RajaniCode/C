@@ -1,0 +1,113 @@
+1.9 Creating a Model
+
+Let's create a model class to hold information about our Equipment.
+
+Views/Home/Index.cshtml
+
+@model String
+<h2>Equipment</h2>
+
+<div>
+  <ul>
+    <li>@Model</li>
+  </ul>
+</div>
+
+Controllers/HomeController.cs
+
+using Microsoft.AspNet.Mvc;
+using CharacterSheetApp.Models;
+using System;
+
+namespace CharacterSheetApp.Controllers
+{
+  public class HomeController : Controller
+  {
+    public IActionResult Index()
+    {
+      var name = "Shield";
+      
+      return View("Index", name);
+    }
+  }
+}
+
+Models/Equipment.cs
+
+using System;
+
+namespace CharacterSheetApp.Models
+{
+  public class Equipment
+  {
+    
+  }
+}
+
+
+1. First, in Equipment.cs, add a public string field called Name.
+
+Answer:
+Models/Equipment.cs
+
+using System;
+
+namespace CharacterSheetApp.Models
+{
+  public class Equipment
+  {
+    public string Name;
+  }
+}
+
+2. In HomeController.cs, create a new instance of our Equipment object, set the Name field to "Shield", and return it to our view.
+
+Answer:
+
+Controllers/HomeController.cs
+
+using Microsoft.AspNet.Mvc;
+using CharacterSheetApp.Models;
+using System;
+
+namespace CharacterSheetApp.Controllers
+{
+  public class HomeController : Controller
+  {
+    public IActionResult Index()
+    {
+      var model = new Equipment();
+      model.Name = "Shield";
+      return View(model);
+    }
+  }
+}
+
+3. Now, update Index.cshtml so that it accepts an Equipment object for its model instead of a String.
+
+Answer:
+Views/Home/Index.cshtml
+
+@model CharacterSheetApp.Models.Equipment
+<h2>Equipment</h2>
+
+<div>
+  <ul>
+    <li>@Model</li>
+  </ul>
+</div>
+
+4. Finally, access the model's Name field inside of the list item tag.
+
+Answer:
+Views/Home/Index.cshtml
+
+@model CharacterSheetApp.Models.Equipment
+<h2>Equipment</h2>
+
+<div>
+  <ul>
+    <li>@Model.Name</li>
+  </ul>
+</div>
+

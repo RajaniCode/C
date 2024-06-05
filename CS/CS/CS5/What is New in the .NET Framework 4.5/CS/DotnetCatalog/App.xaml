@@ -1,0 +1,32 @@
+﻿<Application
+    x:Class="DotnetCatalog.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:DotnetCatalog"
+    xmlns:common="using:DotnetCatalog.Common">
+
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+
+                <!-- 
+                    Styles that define common aspects of the platform look and feel
+                    Required by Visual Studio project and item templates
+                 -->
+                <ResourceDictionary Source="Common/StandardStyles.xaml"/>
+                <ResourceDictionary Source="Common/CustomStyles.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+
+            <x:String x:Key="AppName">.NET Feature Catalog</x:String>
+
+            <common:RatingConverter x:Key="ratingConverter"/>
+            <common:NullToVisibilityConverter x:Key="nullToVisibilityConverter"/>
+            <common:NotNullToVisibilityConverter x:Key="notNullToVisibilityConverter"/>
+            <common:NullToBooleanConverter x:Key="nullToBooleanConverter" />
+            <common:ZeroToVisibilityConverter x:Key="zeroToVisibilityConverter" />
+            <common:ZeroToBooleanConverter x:Key="zeroToBooleanConverter" />
+            <common:ByteArrayToBitmapConverter x:Key="byteArrayToBitmapConverter" />
+
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

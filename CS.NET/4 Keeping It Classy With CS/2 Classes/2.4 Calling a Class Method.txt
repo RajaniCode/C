@@ -1,0 +1,79 @@
+2.4 Calling a Class Method
+
+Now that we have our Venue class in Venue.cs, we can instantiate and use it in our Program.cs file.
+
+Venue.cs
+using System;
+
+public class Venue
+{
+    public string Name;
+
+    public void Announce()
+    {
+        Console.WriteLine(Name + " will have several bands playing tonight!");
+    }
+}
+
+Program.cs
+using System;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        Console.WriteLine("What is the name of your venue?");
+
+    }
+}
+
+1. Declare a variable venue of type Venue and set it to a newly instantiated instance of the Venue class.
+
+Answer
+Program.cs
+using System;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        Console.WriteLine("What is the name of your venue?");
+
+        Venue venue = new Venue();
+    }
+}
+
+2. Assign the string "The Jazz Hut" to the Name property of the venue object.
+
+Answer
+Program.cs
+using System;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        Console.WriteLine("What is the name of your venue?");
+
+        Venue venue = new Venue();
+        venue.Name = "The Jazz Hut";
+    }
+}
+
+3. Using our venue variable, call our Venue class's Announce method.
+
+Answer
+Program.cs
+using System;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        Console.WriteLine("What is the name of your venue?");
+
+        Venue venue = new Venue();
+        venue.Name = "The Jazz Hut";
+        venue.Announce();
+    }
+}

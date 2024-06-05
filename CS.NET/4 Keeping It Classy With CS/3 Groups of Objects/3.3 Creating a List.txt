@@ -1,0 +1,122 @@
+3.3 Creating a List
+
+Let's create a List of type Band called Bands.
+
+Band.cs
+using System;
+
+public class Band
+{
+    public string Name;
+
+    public void Announce()
+    {
+        Console.WriteLine("Welcome " + Name + " to the stage!");
+    }
+
+}
+
+Venue.cs
+using System;
+using System.Collections.Generic;
+​
+public class Venue
+{
+    public string Name;
+​    
+    
+    public void AddBand(string name)
+    {
+        Band band = new Band();
+        band.Name = name;
+        
+    }
+​
+    public void Announce()
+    {
+        Console.WriteLine(Name + " will have several bands playing tonight!");
+
+    }
+
+}
+
+1. Create a public List of Band called Bands. For this task, we'll just create the Bands variable, and we won't need to assign it a value until the next task.
+
+Answer
+Venue.cs
+using System;
+using System.Collections.Generic;
+​
+public class Venue
+{
+    public string Name;
+​    public List<Band> Bands;
+    
+    public void AddBand(string name)
+    {
+        Band band = new Band();
+        band.Name = name;
+        
+    }
+​
+    public void Announce()
+    {
+        Console.WriteLine(Name + " will have several bands playing tonight!");
+
+    }
+
+}
+
+2. Set Bands default value to be a new List of Band.
+
+Answer
+Venue.cs
+using System;
+using System.Collections.Generic;
+​
+public class Venue
+{
+    public string Name;
+​    public List<Band> Bands = new List<Band>();
+    
+    public void AddBand(string name)
+    {
+        Band band = new Band();
+        band.Name = name;
+        
+    }
+​
+    public void Announce()
+    {
+        Console.WriteLine(Name + " will have several bands playing tonight!");
+
+    }
+
+}
+
+3. Inside the AddBand method, add the band object to the Bands list.
+
+Answer
+Venue.cs
+using System;
+using System.Collections.Generic;
+​
+public class Venue
+{
+    public string Name;
+​    public List<Band> Bands = new List<Band>();
+    
+    public void AddBand(string name)
+    {
+        Band band = new Band();
+        band.Name = name;
+        Bands.Add(band);
+      }
+​
+    public void Announce()
+    {
+        Console.WriteLine(Name + " will have several bands playing tonight!");
+
+    }
+
+}

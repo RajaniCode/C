@@ -1,0 +1,58 @@
+Mono Framework 6.12.0_199
+
+This is the Mono Runtime and Development Platform (http://www.mono-project.com/).
+
+This package installs Mono and all of its dependencies inside of /Library/Frameworks/Mono.framework.
+
+The following components are included inside Mono.framework:
+gettext 0.18.2
+pkg-config 0.27
+libpng 1.4.12
+libjpeg 8
+tiff 4.0.9
+giflib 4.1.6
+libxml2 2.9.1
+freetype 2.5.0.1
+fontconfig 2.10.2
+pixman 0.30.0
+cairo 1.12.14
+libffi 3.0.13
+glib 2.36.4
+pango 1.35.0
+atk 2.8.0
+intltool 0.50.2
+gdk-pixbuf 2.28.2
+gtk 2.24 (main@2.24.22-3-g280fc402be)
+libglade 2.6.4
+sqlite-autoconf 3260000
+expat 2.2.5
+ige-mac-integration 0.9.4
+libcroco 0.6.8
+librsvg 2.37.0
+hicolor-icon-theme 0.12
+gtk-engines 2.20.2
+murrine 0.98.2
+xamarin-gtk-theme 0.98.2 (main@fa8ba3e)
+mono 6.12.0 (2020-02@f648ec1e0a6-dirty)
+msbuild 15 (xplat-master@v15.1.0-preview-000370-00-5005-gde7a9c7b8)
+PortableReferenceAssemblies 2014-04-14
+libgdiplus 6.0.4
+xsp 4.7
+gtk-sharp (gtk-sharp-2-12-branch@33fabaf93)
+iron-languages 2.11
+fsharp 5.0.0
+mono-basic 4.8
+NuGet 6.6.1
+mono-extensions (master@a72d7d0)
+
+Other packages used to build Mono.framework:
+bockbuild (rev. 3bd44f6)
+cmake 3.16.2
+autoconf 2.69
+automake 1.13
+ccache 3.1.9 (master@v3.1.9-321-g55f1fc6)
+libtool 2.4.2
+xz 5.0.4
+tar 1.26
+gtk-osx-docbook 1.0
+gtk-doc 1.18

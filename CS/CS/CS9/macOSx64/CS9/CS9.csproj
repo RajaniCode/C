@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="StructTypes\Struct.cs" />
+    <Compile Remove="StructTypes\obj\Debug\net5.0\.NETCoreApp,Version=v5.0.AssemblyAttributes.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="StructTypes\.DS_Store" />
+    <None Remove="StructTypes\obj\StructTypes.csproj.nuget.g.targets" />
+    <None Remove="StructTypes\obj\StructTypes.csproj.nuget.dgspec.json" />
+    <None Remove="StructTypes\obj\StructTypes.csproj.nuget.g.props" />
+    <None Remove="StructTypes\obj\project.nuget.cache" />
+    <None Remove="StructTypes\obj\project.assets.json" />
+    <None Remove="StructTypes\obj\Debug\net5.0\StructTypes.csproj.FileListAbsolute.txt" />
+    <None Remove="StructTypes\obj\Debug\net5.0\StructTypes.assets.cache" />
+  </ItemGroup>
+</Project>

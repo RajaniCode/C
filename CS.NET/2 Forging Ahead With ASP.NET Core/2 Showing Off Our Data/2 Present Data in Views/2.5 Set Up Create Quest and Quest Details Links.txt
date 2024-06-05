@@ -1,0 +1,64 @@
+2.5 Set Up Create Quest and Quest Details Links
+
+We have the beginnings of a working Index view for our Quest object, but we need a way to navigate to our quest's Create and Details actions.
+
+Views/Quest/Index.cshtml
+
+@model List<ForgingAhead.Models.Quest>
+<h1>
+  Quests
+</h1>
+<p>
+    @*Add Create Quest link here*@
+</p>
+<ul>
+  @foreach(var item in Model)
+  {
+    <li>
+      @*Add Details Quest link here*@
+    </li>
+  }
+</ul>
+
+
+1. Start by creating a new HTML link that uses Tag Helpers to populate the href attribute to our QuestController's Create action, and label that link Create new quest.
+
+Answer:
+Views/Quest/Index.cshtml
+
+@model List<ForgingAhead.Models.Quest>
+<h1>
+  Quests
+</h1>
+<p>
+    <a asp-action="Create" asp-controller="Quest">Create new quest</a>
+</p>
+<ul>
+  @foreach(var item in Model)
+  {
+    <li>
+      @*Add Details Quest link here*@
+    </li>
+  }
+</ul>
+
+2. Next, add an HTML link using Tag Helpers to QuestController's Details action. The Details action also has a parameter name you'll need to populate with the quest's Name property. The label for the link should be the Quest's Name as well.
+
+Answer:
+Views/Quest/Index.cshtml
+
+@model List<ForgingAhead.Models.Quest>
+<h1>
+  Quests
+</h1>
+<p>
+    <a asp-action="Create" asp-controller="Quest">Create new quest</a>
+</p>
+<ul>
+  @foreach(var item in Model)
+  {
+    <li>
+      <a asp-action="Details" asp-controller="Quest" asp-route-name="@item.Name">@item.Name</a>
+    </li>
+  }
+</ul>

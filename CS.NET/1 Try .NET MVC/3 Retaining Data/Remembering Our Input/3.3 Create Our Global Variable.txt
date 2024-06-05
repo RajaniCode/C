@@ -1,0 +1,90 @@
+3.3 Create Our Global Variable
+
+Since we're not using databases yet, we're going to use a GlobalVariables class to store the objects in the Equipment list. This new class will be static and will have a default value of a new list of equipment.
+
+
+Controllers/HomeController.cs
+
+using Microsoft.AspNet.Mvc;
+using CharacterSheetApp.Models;
+
+namespace CharacterSheetApp.Controllers
+{
+  public class HomeController : Controller
+  {
+    public IActionResult Index()
+    {
+      var name = "Shield";
+       
+      return View("Index", name);
+    }
+
+    public IActionResult Create(string EquipmentName)
+    {
+      var model = new CharacterSheetApp.Models.Equipment();
+      model.Name = EquipmentName;
+      return View("Index",model);
+    }
+  }
+}
+
+Models/Equipment.cs
+
+using Microsoft.AspNet.Mvc;
+using CharacterSheetApp.Models;
+
+namespace CharacterSheetApp.Models
+{
+  public class Equipment
+  {
+    public string Name;
+  }
+}
+
+GlobalVariables.cs
+
+using System.Collections.Generic;
+using CharacterSheetApp.Models;
+using System;
+
+namespace CharacterSheetApp
+{
+  public static class GlobalVariables
+  {
+        
+  }
+}
+
+
+1. First, create a new public static property named Equipment that is a list of equipment.
+
+Answer:
+
+using System.Collections.Generic;
+using CharacterSheetApp.Models;
+using System;
+
+namespace CharacterSheetApp
+{
+  public static class GlobalVariables
+  {
+    public static List<Equipment> Equipment{ get; set; }    
+  }
+}
+
+2. Next, set our Equipment property's default value to be a new list of equipment.
+
+Answer:
+
+using System.Collections.Generic;
+using CharacterSheetApp.Models;
+using System;
+
+namespace CharacterSheetApp
+{
+  public static class GlobalVariables
+  {
+    public static List<Equipment> Equipment{ get; set; } = new List<Equipment>();        
+  }
+}
+

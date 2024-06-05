@@ -1,0 +1,20 @@
+@page "/event-handler-2"
+
+<h1>@headingValue</h1>
+
+<p>
+    <button @onclick="UpdateHeading">
+        Update heading
+    </button>
+</p>
+
+@code {
+    private string headingValue = "Initial heading";
+
+    private async Task UpdateHeading()
+    {
+        await Task.Delay(2000);
+
+        headingValue = $"New heading ({DateTime.Now})";
+    }
+}

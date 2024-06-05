@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "VisualStudio2022MacM1/1.0.0": {
+        "runtime": {
+          "VisualStudio2022MacM1.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "VisualStudio2022MacM1/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

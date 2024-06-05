@@ -1,0 +1,41 @@
+2.2 Declaring a Class
+
+Let's create a new Venue class that will contain a Name variable and an Announce method that will write our venue announcement message to the console.
+
+Venue.cs
+using System;
+
+1. Declare a class named Venue.
+
+Answer
+Venue.cs
+using System;
+
+class Venue { }
+
+2. Inside the Venue class, add an instance variable of data type string called Name.
+
+Answer
+Venue.cs
+using System;
+
+class Venue
+{
+    string Name;
+}
+
+3. Create a method named Announce() that won't return any data and doesn't accept any parameters. This method should use Console.WriteLine to print the Name of the venue followed by " will have several bands playing tonight!".
+
+Answer
+Venue.cs
+using System;
+
+class Venue
+{
+    string Name;
+
+    void Announce()
+    {
+        Console.WriteLine(Name + " will have several bands playing tonight!");
+    }
+}

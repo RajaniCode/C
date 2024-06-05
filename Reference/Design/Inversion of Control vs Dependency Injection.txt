@@ -1,0 +1,13 @@
+Inversion of Control vs Dependency Injection
+
+IoC is a generic term meaning rather than having the application call the methods in a framework, the framework calls implementations provided by the application.
+
+DI is a form of IoC, where implementations are passed into an object through constructors/setters/service look-ups, which the object will 'depend' on in order to behave correctly.
+
+IoC without using DI, for example would be the Template pattern because the implementation can only be changed through sub-classing.
+
+DI Frameworks are designed to make use of DI and can define interfaces (or Annotations in Java) to make it easy to pass in implementations.
+
+IoC Containers are DI frameworks that can work outside of the programming language. In some you can configure which implementations to use in metadata files (e.g. XML) which are less invasive. With some you can do IoC that would normally be impossible like inject implementation at pointcuts [https://en.wikipedia.org/wiki/Pointcut].
+
+See also http://martinfowler.com/articles/injection.html#InversionOfControl

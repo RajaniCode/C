@@ -1,0 +1,125 @@
+4.3 Foreach Loop
+
+Let's create a foreach loop that will announce each band in our list of bands.
+
+Program.cs
+using System;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        Console.WriteLine("What is the name of your venue?");
+
+        Venue venue = new Venue();
+
+        venue.Name = "The Jazz Hut";
+
+        venue.AddBand("Jazztallica");
+
+        venue.AddBand("Jazzadeth");
+
+        venue.Announce();
+
+    }
+
+}
+
+Band.cs
+using System;
+
+public class Band
+{
+    public string Name;
+
+    public void Announce()
+    {
+        Console.WriteLine("Welcome " + Name + " to the stage!");
+
+    }
+
+}
+
+Venue.cs
+using System;
+
+using System.Collections.Generic;
+
+public class Venue
+{
+    public string Name;
+    public List<Band> Bands = new List<Band>();
+​
+    public void AddBand(string name)
+    {
+        Band band = new Band();
+        band.Name = name;
+        Bands.Add(band);
+    }
+​
+    public void Announce()
+    {
+        Console.WriteLine(Name + " will have " + Bands.Count + " bands playing tonight!");
+        
+        
+    }
+}
+
+1. Create a foreach loop that iterates through each band in Bands.
+
+Answer
+Venue.cs
+using System;
+
+using System.Collections.Generic;
+
+public class Venue
+{
+    public string Name;
+    public List<Band> Bands = new List<Band>();
+​
+    public void AddBand(string name)
+    {
+        Band band = new Band();
+        band.Name = name;
+        Bands.Add(band);
+    }
+​
+    public void Announce()
+    {
+        Console.WriteLine(Name + " will have " + Bands.Count + " bands playing tonight!");
+        
+        foreach(var band in Bands) { }
+    }
+}
+
+2. Inside the loop, print the announcement message for each band by invoking its Announce method.
+
+Answer
+Venue.cs
+using System;
+
+using System.Collections.Generic;
+
+public class Venue
+{
+    public string Name;
+    public List<Band> Bands = new List<Band>();
+​
+    public void AddBand(string name)
+    {
+        Band band = new Band();
+        band.Name = name;
+        Bands.Add(band);
+    }
+​
+    public void Announce()
+    {
+        Console.WriteLine(Name + " will have " + Bands.Count + " bands playing tonight!");
+        
+        foreach(var band in Bands)
+        {
+             band.Announce(); 
+        }
+    }
+}

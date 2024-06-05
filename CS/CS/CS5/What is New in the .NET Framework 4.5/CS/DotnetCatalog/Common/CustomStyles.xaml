@@ -1,0 +1,26 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!-- Non-brush values that vary across themes -->
+
+    <DataTemplate x:Key="Custom80ItemTemplate">
+        <Grid Margin="6">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Image Height="30" Width="30" Source="{Binding Icon, Converter={StaticResource byteArrayToBitmapConverter}}" />
+            <StackPanel Grid.Column="1" Margin="10,0,0,0">
+                <TextBlock Text="{Binding Name}" Style="{StaticResource ItemTextStyle}" MaxHeight="40"/>
+            </StackPanel>
+        </Grid>
+    </DataTemplate>
+
+    <DataTemplate x:Key="Custom250x250ItemTemplate">
+        <Grid HorizontalAlignment="Left" Width="250" Height="250">
+            <Image Width="250" Height="250" Source="{Binding Icon, Converter={StaticResource byteArrayToBitmapConverter}}" Stretch="UniformToFill"/>
+            <TextBlock VerticalAlignment="Bottom" Text="{Binding Name}" Foreground="{StaticResource ListViewItemOverlayForegroundThemeBrush}" Style="{StaticResource TitleTextStyle}" Height="40" Margin="15,0,15,0" TextWrapping="NoWrap"/>
+        </Grid>
+    </DataTemplate>
+</ResourceDictionary>

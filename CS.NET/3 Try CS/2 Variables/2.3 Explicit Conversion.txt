@@ -1,0 +1,12 @@
+2.3 Explicit Conversion
+
+Select the appropriate way to set an int value to the instruments variable using the string value from guitars.
+
+[Single Answer]
+
+int instruments = guitars;
+int instruments = int.Parse(guitars);
+int instruments = guitars.ToInt();
+int instruments = (int)guitars;
+
+Answer: int instruments = int.Parse(guitars);

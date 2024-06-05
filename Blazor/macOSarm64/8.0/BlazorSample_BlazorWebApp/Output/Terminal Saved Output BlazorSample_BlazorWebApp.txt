@@ -1,0 +1,619 @@
+Last login: Mon Apr 29 18:10:15 on ttys000
+rajaniapple@Rajanis-MacBook-Pro ~ % cd /Users/rajaniapple/Desktop/GitHub/CS/macOSarm64/Blazor/Blazor/8.0/BlazorSample_BlazorWebApp 
+rajaniapple@Rajanis-MacBook-Pro BlazorSample_BlazorWebApp % dotnet --version
+8.0.204
+rajaniapple@Rajanis-MacBook-Pro BlazorSample_BlazorWebApp % dotnet run
+Building...
+/Users/rajaniapple/Desktop/GitHub/CS/macOSarm64/Blazor/Blazor/8.0/BlazorSample_BlazorWebApp/Services/TransitiveTransientDisposableDependency.cs(14,9): warning CS9113: Parameter 'transitiveTransientDisposableDependency' is unread. [/Users/rajaniapple/Desktop/GitHub/CS/macOSarm64/Blazor/Blazor/8.0/BlazorSample_BlazorWebApp/BlazorSample.csproj]
+/Users/rajaniapple/Desktop/GitHub/CS/macOSarm64/Blazor/Blazor/8.0/BlazorSample_BlazorWebApp/Components/Pages/Starship4.razor(37,24): warning CS1998: This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread. [/Users/rajaniapple/Desktop/GitHub/CS/macOSarm64/Blazor/Blazor/8.0/BlazorSample_BlazorWebApp/BlazorSample.csproj]
+info: Microsoft.Hosting.Lifetime[14]
+      Now listening on: http://localhost:5285
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: /Users/rajaniapple/Desktop/GitHub/CS/macOSarm64/Blazor/Blazor/8.0/BlazorSample_BlazorWebApp
+warn: Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware[3]
+      Failed to determine the https port for redirect.
+info: BlazorSample.Components.Pages.AfterRender[0]
+      OnAfterRender: firstRender = True
+info: BlazorSample.Components.Pages.AfterRender[0]
+      HandleClick called
+info: BlazorSample.Components.Pages.AfterRender[0]
+      OnAfterRender: firstRender = False
+info: BlazorSample.Components.Pages.BackgroundWork[0]
+      Long running work started
+info: BlazorSample.Components.Pages.BackgroundWork[0]
+      Long running work started
+info: BlazorSample.Components.Pages.BackgroundWork[0]
+      Executing Dispose
+info: BlazorSample.Components.Pages.BackgroundWork[0]
+      Executing Dispose
+info: BlazorSample.Components.Pages.BlazorRocks2[0]
+      Initialization code of BlazorRocks2 executed!
+info: BlazorSample.BlazorRocksBase2[0]
+      Initialization code of BlazorRocksBase2 executed!
+warn: Microsoft.AspNetCore.Components.Server.Circuits.RemoteRenderer[100]
+      Unhandled exception rendering component: Failed to initialize WebGL.
+      Error: Failed to initialize WebGL.
+          at new r (https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js:35:314559)
+          at Module.addMapToElement (http://localhost:5285/mapComponent.js:6:10)
+          at http://localhost:5285/_framework/blazor.web.js:1:3244
+          at new Promise (<anonymous>)
+          at y.beginInvokeJSFromDotNet (http://localhost:5285/_framework/blazor.web.js:1:3201)
+          at fn._invokeClientMethod (http://localhost:5285/_framework/blazor.web.js:1:62914)
+          at fn._processIncomingData (http://localhost:5285/_framework/blazor.web.js:1:60389)
+          at connection.onreceive (http://localhost:5285/_framework/blazor.web.js:1:54030)
+          at i.onmessage (http://localhost:5285/_framework/blazor.web.js:1:82175)
+      Microsoft.JSInterop.JSException: Failed to initialize WebGL.
+      Error: Failed to initialize WebGL.
+          at new r (https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js:35:314559)
+          at Module.addMapToElement (http://localhost:5285/mapComponent.js:6:10)
+          at http://localhost:5285/_framework/blazor.web.js:1:3244
+          at new Promise (<anonymous>)
+          at y.beginInvokeJSFromDotNet (http://localhost:5285/_framework/blazor.web.js:1:3201)
+          at fn._invokeClientMethod (http://localhost:5285/_framework/blazor.web.js:1:62914)
+          at fn._processIncomingData (http://localhost:5285/_framework/blazor.web.js:1:60389)
+          at connection.onreceive (http://localhost:5285/_framework/blazor.web.js:1:54030)
+          at i.onmessage (http://localhost:5285/_framework/blazor.web.js:1:82175)
+         at Microsoft.JSInterop.JSRuntime.InvokeAsync[TValue](Int64 targetInstanceId, String identifier, Object[] args)
+         at BlazorSample.Components.Pages.CallJs8.OnAfterRenderAsync(Boolean firstRender) in /Users/rajaniapple/Desktop/GitHub/CS/macOSarm64/Blazor/Blazor/8.0/BlazorSample_BlazorWebApp/Components/Pages/CallJs8.razor:line 31
+         at Microsoft.AspNetCore.Components.RenderTree.Renderer.GetErrorHandledTask(Task taskToHandle, ComponentState owningComponentState)
+fail: Microsoft.AspNetCore.Components.Server.Circuits.CircuitHost[111]
+      Unhandled exception in circuit 'Ye2svYhN5grVoYGvzRBb-oOm2CRZqBZmck9JWZQqGrE'.
+      Microsoft.JSInterop.JSException: Failed to initialize WebGL.
+      Error: Failed to initialize WebGL.
+          at new r (https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js:35:314559)
+          at Module.addMapToElement (http://localhost:5285/mapComponent.js:6:10)
+          at http://localhost:5285/_framework/blazor.web.js:1:3244
+          at new Promise (<anonymous>)
+          at y.beginInvokeJSFromDotNet (http://localhost:5285/_framework/blazor.web.js:1:3201)
+          at fn._invokeClientMethod (http://localhost:5285/_framework/blazor.web.js:1:62914)
+          at fn._processIncomingData (http://localhost:5285/_framework/blazor.web.js:1:60389)
+          at connection.onreceive (http://localhost:5285/_framework/blazor.web.js:1:54030)
+          at i.onmessage (http://localhost:5285/_framework/blazor.web.js:1:82175)
+         at Microsoft.JSInterop.JSRuntime.InvokeAsync[TValue](Int64 targetInstanceId, String identifier, Object[] args)
+         at BlazorSample.Components.Pages.CallJs8.OnAfterRenderAsync(Boolean firstRender) in /Users/rajaniapple/Desktop/GitHub/CS/macOSarm64/Blazor/Blazor/8.0/BlazorSample_BlazorWebApp/Components/Pages/CallJs8.razor:line 31
+         at Microsoft.AspNetCore.Components.RenderTree.Renderer.GetErrorHandledTask(Task taskToHandle, ComponentState owningComponentState)
+warn: Microsoft.AspNetCore.Components.Server.Circuits.RemoteRenderer[100]
+      Unhandled exception rendering component: JavaScript interop calls cannot be issued at this time. This is because the circuit has disconnected and is being disposed.
+      Microsoft.JSInterop.JSDisconnectedException: JavaScript interop calls cannot be issued at this time. This is because the circuit has disconnected and is being disposed.
+         at Microsoft.AspNetCore.Components.Server.Circuits.RemoteJSRuntime.BeginInvokeJS(Int64 asyncHandle, String identifier, String argsJson, JSCallResultType resultType, Int64 targetInstanceId)
+         at Microsoft.JSInterop.JSRuntime.InvokeAsync[TValue](Int64 targetInstanceId, String identifier, CancellationToken cancellationToken, Object[] args)
+         at Microsoft.JSInterop.JSRuntime.InvokeAsync[TValue](Int64 targetInstanceId, String identifier, Object[] args)
+         at Microsoft.JSInterop.JSRuntimeExtensions.InvokeVoidAsync(IJSRuntime jsRuntime, String identifier, Object[] args)
+         at Microsoft.JSInterop.Implementation.JSObjectReference.DisposeAsync()
+         at BlazorSample.Components.Pages.CallJs8.System.IAsyncDisposable.DisposeAsync() in /Users/rajaniapple/Desktop/GitHub/CS/macOSarm64/Blazor/Blazor/8.0/BlazorSample_BlazorWebApp/Components/Pages/CallJs8.razor:line 54
+         at Microsoft.AspNetCore.Components.RenderTree.Renderer.<>c__DisplayClass85_0.<<Dispose>g__HandleAsyncExceptions|1>d.MoveNext()
+fail: Microsoft.AspNetCore.Components.Server.Circuits.CircuitHost[111]
+      Unhandled exception in circuit 'Ye2svYhN5grVoYGvzRBb-oOm2CRZqBZmck9JWZQqGrE'.
+      Microsoft.JSInterop.JSDisconnectedException: JavaScript interop calls cannot be issued at this time. This is because the circuit has disconnected and is being disposed.
+         at Microsoft.AspNetCore.Components.Server.Circuits.RemoteJSRuntime.BeginInvokeJS(Int64 asyncHandle, String identifier, String argsJson, JSCallResultType resultType, Int64 targetInstanceId)
+         at Microsoft.JSInterop.JSRuntime.InvokeAsync[TValue](Int64 targetInstanceId, String identifier, CancellationToken cancellationToken, Object[] args)
+         at Microsoft.JSInterop.JSRuntime.InvokeAsync[TValue](Int64 targetInstanceId, String identifier, Object[] args)
+         at Microsoft.JSInterop.JSRuntimeExtensions.InvokeVoidAsync(IJSRuntime jsRuntime, String identifier, Object[] args)
+         at Microsoft.JSInterop.Implementation.JSObjectReference.DisposeAsync()
+         at BlazorSample.Components.Pages.CallJs8.System.IAsyncDisposable.DisposeAsync() in /Users/rajaniapple/Desktop/GitHub/CS/macOSarm64/Blazor/Blazor/8.0/BlazorSample_BlazorWebApp/Components/Pages/CallJs8.razor:line 54
+         at Microsoft.AspNetCore.Components.RenderTree.Renderer.<>c__DisplayClass85_0.<<Dispose>g__HandleAsyncExceptions|1>d.MoveNext()
+warn: Microsoft.AspNetCore.Components.Server.Circuits.RemoteRenderer[100]
+      Unhandled exception rendering component: Failed to initialize WebGL.
+      Error: Failed to initialize WebGL.
+          at new r (https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js:35:314559)
+          at Module.addMapToElement (http://localhost:5285/mapComponent.js:6:10)
+          at http://localhost:5285/_framework/blazor.web.js:1:3244
+          at new Promise (<anonymous>)
+          at y.beginInvokeJSFromDotNet (http://localhost:5285/_framework/blazor.web.js:1:3201)
+          at fn._invokeClientMethod (http://localhost:5285/_framework/blazor.web.js:1:62914)
+          at fn._processIncomingData (http://localhost:5285/_framework/blazor.web.js:1:60389)
+          at connection.onreceive (http://localhost:5285/_framework/blazor.web.js:1:54030)
+          at i.onmessage (http://localhost:5285/_framework/blazor.web.js:1:82175)
+      Microsoft.JSInterop.JSException: Failed to initialize WebGL.
+      Error: Failed to initialize WebGL.
+          at new r (https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js:35:314559)
+          at Module.addMapToElement (http://localhost:5285/mapComponent.js:6:10)
+          at http://localhost:5285/_framework/blazor.web.js:1:3244
+          at new Promise (<anonymous>)
+          at y.beginInvokeJSFromDotNet (http://localhost:5285/_framework/blazor.web.js:1:3201)
+          at fn._invokeClientMethod (http://localhost:5285/_framework/blazor.web.js:1:62914)
+          at fn._processIncomingData (http://localhost:5285/_framework/blazor.web.js:1:60389)
+          at connection.onreceive (http://localhost:5285/_framework/blazor.web.js:1:54030)
+          at i.onmessage (http://localhost:5285/_framework/blazor.web.js:1:82175)
+         at Microsoft.JSInterop.JSRuntime.InvokeAsync[TValue](Int64 targetInstanceId, String identifier, Object[] args)
+         at BlazorSample.Components.Pages.CallJs8.OnAfterRenderAsync(Boolean firstRender) in /Users/rajaniapple/Desktop/GitHub/CS/macOSarm64/Blazor/Blazor/8.0/BlazorSample_BlazorWebApp/Components/Pages/CallJs8.razor:line 31
+         at Microsoft.AspNetCore.Components.RenderTree.Renderer.GetErrorHandledTask(Task taskToHandle, ComponentState owningComponentState)
+fail: Microsoft.AspNetCore.Components.Server.Circuits.CircuitHost[111]
+      Unhandled exception in circuit 'mx75kmVeZjR8IqdFqXnI0RBKnWrYZarJtA1XrxJwf6w'.
+      Microsoft.JSInterop.JSException: Failed to initialize WebGL.
+      Error: Failed to initialize WebGL.
+          at new r (https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js:35:314559)
+          at Module.addMapToElement (http://localhost:5285/mapComponent.js:6:10)
+          at http://localhost:5285/_framework/blazor.web.js:1:3244
+          at new Promise (<anonymous>)
+          at y.beginInvokeJSFromDotNet (http://localhost:5285/_framework/blazor.web.js:1:3201)
+          at fn._invokeClientMethod (http://localhost:5285/_framework/blazor.web.js:1:62914)
+          at fn._processIncomingData (http://localhost:5285/_framework/blazor.web.js:1:60389)
+          at connection.onreceive (http://localhost:5285/_framework/blazor.web.js:1:54030)
+          at i.onmessage (http://localhost:5285/_framework/blazor.web.js:1:82175)
+         at Microsoft.JSInterop.JSRuntime.InvokeAsync[TValue](Int64 targetInstanceId, String identifier, Object[] args)
+         at BlazorSample.Components.Pages.CallJs8.OnAfterRenderAsync(Boolean firstRender) in /Users/rajaniapple/Desktop/GitHub/CS/macOSarm64/Blazor/Blazor/8.0/BlazorSample_BlazorWebApp/Components/Pages/CallJs8.razor:line 31
+         at Microsoft.AspNetCore.Components.RenderTree.Renderer.GetErrorHandledTask(Task taskToHandle, ComponentState owningComponentState)
+warn: Microsoft.AspNetCore.Components.Server.Circuits.RemoteRenderer[100]
+      Unhandled exception rendering component: JavaScript interop calls cannot be issued at this time. This is because the circuit has disconnected and is being disposed.
+      Microsoft.JSInterop.JSDisconnectedException: JavaScript interop calls cannot be issued at this time. This is because the circuit has disconnected and is being disposed.
+         at Microsoft.JSInterop.JSRuntime.InvokeAsync[TValue](Int64 targetInstanceId, String identifier, CancellationToken cancellationToken, Object[] args)
+         at Microsoft.JSInterop.JSRuntime.InvokeAsync[TValue](Int64 targetInstanceId, String identifier, Object[] args)
+         at Microsoft.JSInterop.JSRuntimeExtensions.InvokeVoidAsync(IJSRuntime jsRuntime, String identifier, Object[] args)
+         at Microsoft.JSInterop.Implementation.JSObjectReference.DisposeAsync()
+         at BlazorSample.Components.Pages.CallJs8.System.IAsyncDisposable.DisposeAsync() in /Users/rajaniapple/Desktop/GitHub/CS/macOSarm64/Blazor/Blazor/8.0/BlazorSample_BlazorWebApp/Components/Pages/CallJs8.razor:line 54
+         at Microsoft.AspNetCore.Components.RenderTree.Renderer.<>c__DisplayClass85_0.<<Dispose>g__HandleAsyncExceptions|1>d.MoveNext()
+fail: Microsoft.AspNetCore.Components.Server.Circuits.CircuitHost[111]
+      Unhandled exception in circuit 'mx75kmVeZjR8IqdFqXnI0RBKnWrYZarJtA1XrxJwf6w'.
+      Microsoft.JSInterop.JSDisconnectedException: JavaScript interop calls cannot be issued at this time. This is because the circuit has disconnected and is being disposed.
+         at Microsoft.JSInterop.JSRuntime.InvokeAsync[TValue](Int64 targetInstanceId, String identifier, CancellationToken cancellationToken, Object[] args)
+         at Microsoft.JSInterop.JSRuntime.InvokeAsync[TValue](Int64 targetInstanceId, String identifier, Object[] args)
+         at Microsoft.JSInterop.JSRuntimeExtensions.InvokeVoidAsync(IJSRuntime jsRuntime, String identifier, Object[] args)
+         at Microsoft.JSInterop.Implementation.JSObjectReference.DisposeAsync()
+         at BlazorSample.Components.Pages.CallJs8.System.IAsyncDisposable.DisposeAsync() in /Users/rajaniapple/Desktop/GitHub/CS/macOSarm64/Blazor/Blazor/8.0/BlazorSample_BlazorWebApp/Components/Pages/CallJs8.razor:line 54
+         at Microsoft.AspNetCore.Components.RenderTree.Renderer.<>c__DisplayClass85_0.<<Dispose>g__HandleAsyncExceptions|1>d.MoveNext()
+warn: Microsoft.AspNetCore.Components.Server.Circuits.RemoteRenderer[100]
+      Unhandled exception rendering component: Failed to initialize WebGL.
+      Error: Failed to initialize WebGL.
+          at new r (https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js:35:314559)
+          at Module.addMapToElement (http://localhost:5285/mapComponent.js:6:10)
+          at http://localhost:5285/_framework/blazor.web.js:1:3244
+          at new Promise (<anonymous>)
+          at y.beginInvokeJSFromDotNet (http://localhost:5285/_framework/blazor.web.js:1:3201)
+          at fn._invokeClientMethod (http://localhost:5285/_framework/blazor.web.js:1:62914)
+          at fn._processIncomingData (http://localhost:5285/_framework/blazor.web.js:1:60389)
+          at connection.onreceive (http://localhost:5285/_framework/blazor.web.js:1:54030)
+          at i.onmessage (http://localhost:5285/_framework/blazor.web.js:1:82175)
+      Microsoft.JSInterop.JSException: Failed to initialize WebGL.
+      Error: Failed to initialize WebGL.
+          at new r (https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js:35:314559)
+          at Module.addMapToElement (http://localhost:5285/mapComponent.js:6:10)
+          at http://localhost:5285/_framework/blazor.web.js:1:3244
+          at new Promise (<anonymous>)
+          at y.beginInvokeJSFromDotNet (http://localhost:5285/_framework/blazor.web.js:1:3201)
+          at fn._invokeClientMethod (http://localhost:5285/_framework/blazor.web.js:1:62914)
+          at fn._processIncomingData (http://localhost:5285/_framework/blazor.web.js:1:60389)
+          at connection.onreceive (http://localhost:5285/_framework/blazor.web.js:1:54030)
+          at i.onmessage (http://localhost:5285/_framework/blazor.web.js:1:82175)
+         at Microsoft.JSInterop.JSRuntime.InvokeAsync[TValue](Int64 targetInstanceId, String identifier, Object[] args)
+         at BlazorSample.Components.Pages.CallJs8.OnAfterRenderAsync(Boolean firstRender) in /Users/rajaniapple/Desktop/GitHub/CS/macOSarm64/Blazor/Blazor/8.0/BlazorSample_BlazorWebApp/Components/Pages/CallJs8.razor:line 31
+         at Microsoft.AspNetCore.Components.RenderTree.Renderer.GetErrorHandledTask(Task taskToHandle, ComponentState owningComponentState)
+fail: Microsoft.AspNetCore.Components.Server.Circuits.CircuitHost[111]
+      Unhandled exception in circuit 'hC_ZXfUBU92210I_RZXgXqpb59krqpoMu_NDUhWWKOI'.
+      Microsoft.JSInterop.JSException: Failed to initialize WebGL.
+      Error: Failed to initialize WebGL.
+          at new r (https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js:35:314559)
+          at Module.addMapToElement (http://localhost:5285/mapComponent.js:6:10)
+          at http://localhost:5285/_framework/blazor.web.js:1:3244
+          at new Promise (<anonymous>)
+          at y.beginInvokeJSFromDotNet (http://localhost:5285/_framework/blazor.web.js:1:3201)
+          at fn._invokeClientMethod (http://localhost:5285/_framework/blazor.web.js:1:62914)
+          at fn._processIncomingData (http://localhost:5285/_framework/blazor.web.js:1:60389)
+          at connection.onreceive (http://localhost:5285/_framework/blazor.web.js:1:54030)
+          at i.onmessage (http://localhost:5285/_framework/blazor.web.js:1:82175)
+         at Microsoft.JSInterop.JSRuntime.InvokeAsync[TValue](Int64 targetInstanceId, String identifier, Object[] args)
+         at BlazorSample.Components.Pages.CallJs8.OnAfterRenderAsync(Boolean firstRender) in /Users/rajaniapple/Desktop/GitHub/CS/macOSarm64/Blazor/Blazor/8.0/BlazorSample_BlazorWebApp/Components/Pages/CallJs8.razor:line 31
+         at Microsoft.AspNetCore.Components.RenderTree.Renderer.GetErrorHandledTask(Task taskToHandle, ComponentState owningComponentState)
+warn: Microsoft.AspNetCore.Components.Server.Circuits.RemoteRenderer[100]
+      Unhandled exception rendering component: JavaScript interop calls cannot be issued at this time. This is because the circuit has disconnected and is being disposed.
+      Microsoft.JSInterop.JSDisconnectedException: JavaScript interop calls cannot be issued at this time. This is because the circuit has disconnected and is being disposed.
+         at Microsoft.JSInterop.JSRuntime.InvokeAsync[TValue](Int64 targetInstanceId, String identifier, CancellationToken cancellationToken, Object[] args)
+         at Microsoft.JSInterop.JSRuntime.InvokeAsync[TValue](Int64 targetInstanceId, String identifier, Object[] args)
+         at Microsoft.JSInterop.JSRuntimeExtensions.InvokeVoidAsync(IJSRuntime jsRuntime, String identifier, Object[] args)
+         at Microsoft.JSInterop.Implementation.JSObjectReference.DisposeAsync()
+         at BlazorSample.Components.Pages.CallJs8.System.IAsyncDisposable.DisposeAsync() in /Users/rajaniapple/Desktop/GitHub/CS/macOSarm64/Blazor/Blazor/8.0/BlazorSample_BlazorWebApp/Components/Pages/CallJs8.razor:line 54
+         at Microsoft.AspNetCore.Components.RenderTree.Renderer.<>c__DisplayClass85_0.<<Dispose>g__HandleAsyncExceptions|1>d.MoveNext()
+fail: Microsoft.AspNetCore.Components.Server.Circuits.CircuitHost[111]
+      Unhandled exception in circuit 'hC_ZXfUBU92210I_RZXgXqpb59krqpoMu_NDUhWWKOI'.
+      Microsoft.JSInterop.JSDisconnectedException: JavaScript interop calls cannot be issued at this time. This is because the circuit has disconnected and is being disposed.
+         at Microsoft.JSInterop.JSRuntime.InvokeAsync[TValue](Int64 targetInstanceId, String identifier, CancellationToken cancellationToken, Object[] args)
+         at Microsoft.JSInterop.JSRuntime.InvokeAsync[TValue](Int64 targetInstanceId, String identifier, Object[] args)
+         at Microsoft.JSInterop.JSRuntimeExtensions.InvokeVoidAsync(IJSRuntime jsRuntime, String identifier, Object[] args)
+         at Microsoft.JSInterop.Implementation.JSObjectReference.DisposeAsync()
+         at BlazorSample.Components.Pages.CallJs8.System.IAsyncDisposable.DisposeAsync() in /Users/rajaniapple/Desktop/GitHub/CS/macOSarm64/Blazor/Blazor/8.0/BlazorSample_BlazorWebApp/Components/Pages/CallJs8.razor:line 54
+         at Microsoft.AspNetCore.Components.RenderTree.Renderer.<>c__DisplayClass85_0.<<Dispose>g__HandleAsyncExceptions|1>d.MoveNext()
+warn: Microsoft.AspNetCore.Components.Server.Circuits.RemoteRenderer[100]
+      Unhandled exception rendering component: Failed to initialize WebGL.
+      Error: Failed to initialize WebGL.
+          at new r (https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js:35:314559)
+          at Module.addMapToElement (http://localhost:5285/mapComponent.js:6:10)
+          at http://localhost:5285/_framework/blazor.web.js:1:3244
+          at new Promise (<anonymous>)
+          at y.beginInvokeJSFromDotNet (http://localhost:5285/_framework/blazor.web.js:1:3201)
+          at fn._invokeClientMethod (http://localhost:5285/_framework/blazor.web.js:1:62914)
+          at fn._processIncomingData (http://localhost:5285/_framework/blazor.web.js:1:60389)
+          at connection.onreceive (http://localhost:5285/_framework/blazor.web.js:1:54030)
+          at i.onmessage (http://localhost:5285/_framework/blazor.web.js:1:82175)
+      Microsoft.JSInterop.JSException: Failed to initialize WebGL.
+      Error: Failed to initialize WebGL.
+          at new r (https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js:35:314559)
+          at Module.addMapToElement (http://localhost:5285/mapComponent.js:6:10)
+          at http://localhost:5285/_framework/blazor.web.js:1:3244
+          at new Promise (<anonymous>)
+          at y.beginInvokeJSFromDotNet (http://localhost:5285/_framework/blazor.web.js:1:3201)
+          at fn._invokeClientMethod (http://localhost:5285/_framework/blazor.web.js:1:62914)
+          at fn._processIncomingData (http://localhost:5285/_framework/blazor.web.js:1:60389)
+          at connection.onreceive (http://localhost:5285/_framework/blazor.web.js:1:54030)
+          at i.onmessage (http://localhost:5285/_framework/blazor.web.js:1:82175)
+         at Microsoft.JSInterop.JSRuntime.InvokeAsync[TValue](Int64 targetInstanceId, String identifier, Object[] args)
+         at BlazorSample.Components.Pages.CallJs8.OnAfterRenderAsync(Boolean firstRender) in /Users/rajaniapple/Desktop/GitHub/CS/macOSarm64/Blazor/Blazor/8.0/BlazorSample_BlazorWebApp/Components/Pages/CallJs8.razor:line 31
+         at Microsoft.AspNetCore.Components.RenderTree.Renderer.GetErrorHandledTask(Task taskToHandle, ComponentState owningComponentState)
+fail: Microsoft.AspNetCore.Components.Server.Circuits.CircuitHost[111]
+      Unhandled exception in circuit 'gDbMoMHxjFkU7AwCXd4de2mwh-O33YlRC60SG6mG_Gk'.
+      Microsoft.JSInterop.JSException: Failed to initialize WebGL.
+      Error: Failed to initialize WebGL.
+          at new r (https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js:35:314559)
+          at Module.addMapToElement (http://localhost:5285/mapComponent.js:6:10)
+          at http://localhost:5285/_framework/blazor.web.js:1:3244
+          at new Promise (<anonymous>)
+          at y.beginInvokeJSFromDotNet (http://localhost:5285/_framework/blazor.web.js:1:3201)
+          at fn._invokeClientMethod (http://localhost:5285/_framework/blazor.web.js:1:62914)
+          at fn._processIncomingData (http://localhost:5285/_framework/blazor.web.js:1:60389)
+          at connection.onreceive (http://localhost:5285/_framework/blazor.web.js:1:54030)
+          at i.onmessage (http://localhost:5285/_framework/blazor.web.js:1:82175)
+         at Microsoft.JSInterop.JSRuntime.InvokeAsync[TValue](Int64 targetInstanceId, String identifier, Object[] args)
+         at BlazorSample.Components.Pages.CallJs8.OnAfterRenderAsync(Boolean firstRender) in /Users/rajaniapple/Desktop/GitHub/CS/macOSarm64/Blazor/Blazor/8.0/BlazorSample_BlazorWebApp/Components/Pages/CallJs8.razor:line 31
+         at Microsoft.AspNetCore.Components.RenderTree.Renderer.GetErrorHandledTask(Task taskToHandle, ComponentState owningComponentState)
+warn: Microsoft.AspNetCore.Components.Server.Circuits.RemoteRenderer[100]
+      Unhandled exception rendering component: JavaScript interop calls cannot be issued at this time. This is because the circuit has disconnected and is being disposed.
+      Microsoft.JSInterop.JSDisconnectedException: JavaScript interop calls cannot be issued at this time. This is because the circuit has disconnected and is being disposed.
+         at Microsoft.JSInterop.JSRuntime.InvokeAsync[TValue](Int64 targetInstanceId, String identifier, CancellationToken cancellationToken, Object[] args)
+         at Microsoft.JSInterop.JSRuntime.InvokeAsync[TValue](Int64 targetInstanceId, String identifier, Object[] args)
+         at Microsoft.JSInterop.JSRuntimeExtensions.InvokeVoidAsync(IJSRuntime jsRuntime, String identifier, Object[] args)
+         at Microsoft.JSInterop.Implementation.JSObjectReference.DisposeAsync()
+         at BlazorSample.Components.Pages.CallJs8.System.IAsyncDisposable.DisposeAsync() in /Users/rajaniapple/Desktop/GitHub/CS/macOSarm64/Blazor/Blazor/8.0/BlazorSample_BlazorWebApp/Components/Pages/CallJs8.razor:line 54
+         at Microsoft.AspNetCore.Components.RenderTree.Renderer.<>c__DisplayClass85_0.<<Dispose>g__HandleAsyncExceptions|1>d.MoveNext()
+fail: Microsoft.AspNetCore.Components.Server.Circuits.CircuitHost[111]
+      Unhandled exception in circuit 'gDbMoMHxjFkU7AwCXd4de2mwh-O33YlRC60SG6mG_Gk'.
+      Microsoft.JSInterop.JSDisconnectedException: JavaScript interop calls cannot be issued at this time. This is because the circuit has disconnected and is being disposed.
+         at Microsoft.JSInterop.JSRuntime.InvokeAsync[TValue](Int64 targetInstanceId, String identifier, CancellationToken cancellationToken, Object[] args)
+         at Microsoft.JSInterop.JSRuntime.InvokeAsync[TValue](Int64 targetInstanceId, String identifier, Object[] args)
+         at Microsoft.JSInterop.JSRuntimeExtensions.InvokeVoidAsync(IJSRuntime jsRuntime, String identifier, Object[] args)
+         at Microsoft.JSInterop.Implementation.JSObjectReference.DisposeAsync()
+         at BlazorSample.Components.Pages.CallJs8.System.IAsyncDisposable.DisposeAsync() in /Users/rajaniapple/Desktop/GitHub/CS/macOSarm64/Blazor/Blazor/8.0/BlazorSample_BlazorWebApp/Components/Pages/CallJs8.razor:line 54
+         at Microsoft.AspNetCore.Components.RenderTree.Renderer.<>c__DisplayClass85_0.<<Dispose>g__HandleAsyncExceptions|1>d.MoveNext()
+warn: Microsoft.AspNetCore.Components.Server.Circuits.RemoteRenderer[100]
+      Unhandled exception rendering component: Failed to initialize WebGL.
+      Error: Failed to initialize WebGL.
+          at new r (https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js:35:314559)
+          at Module.addMapToElement (http://localhost:5285/mapComponent.js:6:10)
+          at http://localhost:5285/_framework/blazor.web.js:1:3244
+          at new Promise (<anonymous>)
+          at y.beginInvokeJSFromDotNet (http://localhost:5285/_framework/blazor.web.js:1:3201)
+          at fn._invokeClientMethod (http://localhost:5285/_framework/blazor.web.js:1:62914)
+          at fn._processIncomingData (http://localhost:5285/_framework/blazor.web.js:1:60389)
+          at connection.onreceive (http://localhost:5285/_framework/blazor.web.js:1:54030)
+          at i.onmessage (http://localhost:5285/_framework/blazor.web.js:1:82175)
+      Microsoft.JSInterop.JSException: Failed to initialize WebGL.
+      Error: Failed to initialize WebGL.
+          at new r (https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js:35:314559)
+          at Module.addMapToElement (http://localhost:5285/mapComponent.js:6:10)
+          at http://localhost:5285/_framework/blazor.web.js:1:3244
+          at new Promise (<anonymous>)
+          at y.beginInvokeJSFromDotNet (http://localhost:5285/_framework/blazor.web.js:1:3201)
+          at fn._invokeClientMethod (http://localhost:5285/_framework/blazor.web.js:1:62914)
+          at fn._processIncomingData (http://localhost:5285/_framework/blazor.web.js:1:60389)
+          at connection.onreceive (http://localhost:5285/_framework/blazor.web.js:1:54030)
+          at i.onmessage (http://localhost:5285/_framework/blazor.web.js:1:82175)
+         at Microsoft.JSInterop.JSRuntime.InvokeAsync[TValue](Int64 targetInstanceId, String identifier, Object[] args)
+         at BlazorSample.Components.Pages.CallJs8.OnAfterRenderAsync(Boolean firstRender) in /Users/rajaniapple/Desktop/GitHub/CS/macOSarm64/Blazor/Blazor/8.0/BlazorSample_BlazorWebApp/Components/Pages/CallJs8.razor:line 31
+         at Microsoft.AspNetCore.Components.RenderTree.Renderer.GetErrorHandledTask(Task taskToHandle, ComponentState owningComponentState)
+fail: Microsoft.AspNetCore.Components.Server.Circuits.CircuitHost[111]
+      Unhandled exception in circuit 'P0-YJ9gbcoMxyKuBOI4bffHmmAOVa9Z-UWpf6eo39DE'.
+      Microsoft.JSInterop.JSException: Failed to initialize WebGL.
+      Error: Failed to initialize WebGL.
+          at new r (https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js:35:314559)
+          at Module.addMapToElement (http://localhost:5285/mapComponent.js:6:10)
+          at http://localhost:5285/_framework/blazor.web.js:1:3244
+          at new Promise (<anonymous>)
+          at y.beginInvokeJSFromDotNet (http://localhost:5285/_framework/blazor.web.js:1:3201)
+          at fn._invokeClientMethod (http://localhost:5285/_framework/blazor.web.js:1:62914)
+          at fn._processIncomingData (http://localhost:5285/_framework/blazor.web.js:1:60389)
+          at connection.onreceive (http://localhost:5285/_framework/blazor.web.js:1:54030)
+          at i.onmessage (http://localhost:5285/_framework/blazor.web.js:1:82175)
+         at Microsoft.JSInterop.JSRuntime.InvokeAsync[TValue](Int64 targetInstanceId, String identifier, Object[] args)
+         at BlazorSample.Components.Pages.CallJs8.OnAfterRenderAsync(Boolean firstRender) in /Users/rajaniapple/Desktop/GitHub/CS/macOSarm64/Blazor/Blazor/8.0/BlazorSample_BlazorWebApp/Components/Pages/CallJs8.razor:line 31
+         at Microsoft.AspNetCore.Components.RenderTree.Renderer.GetErrorHandledTask(Task taskToHandle, ComponentState owningComponentState)
+warn: Microsoft.AspNetCore.Components.Server.Circuits.RemoteRenderer[100]
+      Unhandled exception rendering component: JavaScript interop calls cannot be issued at this time. This is because the circuit has disconnected and is being disposed.
+      Microsoft.JSInterop.JSDisconnectedException: JavaScript interop calls cannot be issued at this time. This is because the circuit has disconnected and is being disposed.
+         at Microsoft.JSInterop.JSRuntime.InvokeAsync[TValue](Int64 targetInstanceId, String identifier, CancellationToken cancellationToken, Object[] args)
+         at Microsoft.JSInterop.JSRuntime.InvokeAsync[TValue](Int64 targetInstanceId, String identifier, Object[] args)
+         at Microsoft.JSInterop.JSRuntimeExtensions.InvokeVoidAsync(IJSRuntime jsRuntime, String identifier, Object[] args)
+         at Microsoft.JSInterop.Implementation.JSObjectReference.DisposeAsync()
+         at BlazorSample.Components.Pages.CallJs8.System.IAsyncDisposable.DisposeAsync() in /Users/rajaniapple/Desktop/GitHub/CS/macOSarm64/Blazor/Blazor/8.0/BlazorSample_BlazorWebApp/Components/Pages/CallJs8.razor:line 54
+         at Microsoft.AspNetCore.Components.RenderTree.Renderer.<>c__DisplayClass85_0.<<Dispose>g__HandleAsyncExceptions|1>d.MoveNext()
+fail: Microsoft.AspNetCore.Components.Server.Circuits.CircuitHost[111]
+      Unhandled exception in circuit 'P0-YJ9gbcoMxyKuBOI4bffHmmAOVa9Z-UWpf6eo39DE'.
+      Microsoft.JSInterop.JSDisconnectedException: JavaScript interop calls cannot be issued at this time. This is because the circuit has disconnected and is being disposed.
+         at Microsoft.JSInterop.JSRuntime.InvokeAsync[TValue](Int64 targetInstanceId, String identifier, CancellationToken cancellationToken, Object[] args)
+         at Microsoft.JSInterop.JSRuntime.InvokeAsync[TValue](Int64 targetInstanceId, String identifier, Object[] args)
+         at Microsoft.JSInterop.JSRuntimeExtensions.InvokeVoidAsync(IJSRuntime jsRuntime, String identifier, Object[] args)
+         at Microsoft.JSInterop.Implementation.JSObjectReference.DisposeAsync()
+         at BlazorSample.Components.Pages.CallJs8.System.IAsyncDisposable.DisposeAsync() in /Users/rajaniapple/Desktop/GitHub/CS/macOSarm64/Blazor/Blazor/8.0/BlazorSample_BlazorWebApp/Components/Pages/CallJs8.razor:line 54
+         at Microsoft.AspNetCore.Components.RenderTree.Renderer.<>c__DisplayClass85_0.<<Dispose>g__HandleAsyncExceptions|1>d.MoveNext()
+info: BlazorSample.Components.Pages.StarshipPlainForm[0]
+      Id = (null)
+info: BlazorSample.Components.Pages.StarshipPlainForm[0]
+      Id = kappa
+info: BlazorSample.Components.Pages.StarshipPlainForm[0]
+      Id = kappa
+info: BlazorSample.Components.Pages.Starship9[0]
+      Submit called: Processing the form
+info: BlazorSample.Components.Pages.Starship8[0]
+      Submit called: Processing the form
+info: BlazorSample.Components.Pages.Starship7[0]
+      Id = mu Desc = nu Length = 2
+info: BlazorSample.Components.Pages.Starship6[0]
+      Submit1: Id = xi
+info: BlazorSample.Components.Pages.Starship6[0]
+      Submit2: Id = 	omicron
+info: BlazorSample.Components.Pages.Starship5[0]
+      Submit called: Processing the form
+info: BlazorSample.Components.Pages.Starship4[0]
+      Submit called: Form is valid
+info: BlazorSample.Components.Pages.Starship3[0]
+      Id = pi Description = rho Classification = Defense MaximumAccommodation = 1 IsValidatedDesign = True ProductionDate = 04/29/2024 12:53:05
+info: BlazorSample.Components.Pages.Starship2[0]
+      Id = sigma
+info: BlazorSample.Components.Pages.Starship14[0]
+      Submit called: Processing the form
+info: BlazorSample.Components.Pages.Starship13[0]
+      Submit called: Processing the form
+info: BlazorSample.Components.Pages.Starship11[0]
+      Submit called: Processing the form
+info: BlazorSample.Components.Pages.Starship1[0]
+      Id = chi
+info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+      Start processing HTTP request GET https://avatars.githubusercontent.com/u/9141961
+info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+      Sending HTTP request GET https://avatars.githubusercontent.com/u/9141961
+info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+      Received HTTP response headers after 609.5105ms - 200
+info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+      End processing HTTP request after 631.3674ms - 200
+info: BlazorSample.Components.ReferenceChild[0]
+      Received 5 in ChildMethod
+info: BlazorSample.Components.ReferenceChild[0]
+      Received 5 in ChildMethod
+info: BlazorSample.Components.Pages.AfterRender[0]
+      OnAfterRender: firstRender = True
+warn: Microsoft.AspNetCore.Components.Server.Circuits.RemoteRenderer[100]
+      Unhandled exception rendering component: Failed to initialize WebGL.
+      Error: Failed to initialize WebGL.
+          at new r (https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js:35:314559)
+          at Module.addMapToElement (http://localhost:5285/mapComponent.js:6:10)
+          at http://localhost:5285/_framework/blazor.web.js:1:3244
+          at new Promise (<anonymous>)
+          at y.beginInvokeJSFromDotNet (http://localhost:5285/_framework/blazor.web.js:1:3201)
+          at fn._invokeClientMethod (http://localhost:5285/_framework/blazor.web.js:1:62914)
+          at fn._processIncomingData (http://localhost:5285/_framework/blazor.web.js:1:60389)
+          at connection.onreceive (http://localhost:5285/_framework/blazor.web.js:1:54030)
+          at i.onmessage (http://localhost:5285/_framework/blazor.web.js:1:82175)
+      Microsoft.JSInterop.JSException: Failed to initialize WebGL.
+      Error: Failed to initialize WebGL.
+          at new r (https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js:35:314559)
+          at Module.addMapToElement (http://localhost:5285/mapComponent.js:6:10)
+          at http://localhost:5285/_framework/blazor.web.js:1:3244
+          at new Promise (<anonymous>)
+          at y.beginInvokeJSFromDotNet (http://localhost:5285/_framework/blazor.web.js:1:3201)
+          at fn._invokeClientMethod (http://localhost:5285/_framework/blazor.web.js:1:62914)
+          at fn._processIncomingData (http://localhost:5285/_framework/blazor.web.js:1:60389)
+          at connection.onreceive (http://localhost:5285/_framework/blazor.web.js:1:54030)
+          at i.onmessage (http://localhost:5285/_framework/blazor.web.js:1:82175)
+         at Microsoft.JSInterop.JSRuntime.InvokeAsync[TValue](Int64 targetInstanceId, String identifier, Object[] args)
+         at BlazorSample.Components.Pages.CallJs8.OnAfterRenderAsync(Boolean firstRender) in /Users/rajaniapple/Desktop/GitHub/CS/macOSarm64/Blazor/Blazor/8.0/BlazorSample_BlazorWebApp/Components/Pages/CallJs8.razor:line 31
+         at Microsoft.AspNetCore.Components.RenderTree.Renderer.GetErrorHandledTask(Task taskToHandle, ComponentState owningComponentState)
+fail: Microsoft.AspNetCore.Components.Server.Circuits.CircuitHost[111]
+      Unhandled exception in circuit 'RzM3WZO4rWMe1uidzIGO4o_Pxl5wtbmwHZ1_BBiDEf8'.
+      Microsoft.JSInterop.JSException: Failed to initialize WebGL.
+      Error: Failed to initialize WebGL.
+          at new r (https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js:35:314559)
+          at Module.addMapToElement (http://localhost:5285/mapComponent.js:6:10)
+          at http://localhost:5285/_framework/blazor.web.js:1:3244
+          at new Promise (<anonymous>)
+          at y.beginInvokeJSFromDotNet (http://localhost:5285/_framework/blazor.web.js:1:3201)
+          at fn._invokeClientMethod (http://localhost:5285/_framework/blazor.web.js:1:62914)
+          at fn._processIncomingData (http://localhost:5285/_framework/blazor.web.js:1:60389)
+          at connection.onreceive (http://localhost:5285/_framework/blazor.web.js:1:54030)
+          at i.onmessage (http://localhost:5285/_framework/blazor.web.js:1:82175)
+         at Microsoft.JSInterop.JSRuntime.InvokeAsync[TValue](Int64 targetInstanceId, String identifier, Object[] args)
+         at BlazorSample.Components.Pages.CallJs8.OnAfterRenderAsync(Boolean firstRender) in /Users/rajaniapple/Desktop/GitHub/CS/macOSarm64/Blazor/Blazor/8.0/BlazorSample_BlazorWebApp/Components/Pages/CallJs8.razor:line 31
+         at Microsoft.AspNetCore.Components.RenderTree.Renderer.GetErrorHandledTask(Task taskToHandle, ComponentState owningComponentState)
+warn: Microsoft.AspNetCore.Components.Server.Circuits.RemoteRenderer[100]
+      Unhandled exception rendering component: JavaScript interop calls cannot be issued at this time. This is because the circuit has disconnected and is being disposed.
+      Microsoft.JSInterop.JSDisconnectedException: JavaScript interop calls cannot be issued at this time. This is because the circuit has disconnected and is being disposed.
+         at Microsoft.JSInterop.JSRuntime.InvokeAsync[TValue](Int64 targetInstanceId, String identifier, CancellationToken cancellationToken, Object[] args)
+         at Microsoft.JSInterop.JSRuntime.InvokeAsync[TValue](Int64 targetInstanceId, String identifier, Object[] args)
+         at Microsoft.JSInterop.JSRuntimeExtensions.InvokeVoidAsync(IJSRuntime jsRuntime, String identifier, Object[] args)
+         at Microsoft.JSInterop.Implementation.JSObjectReference.DisposeAsync()
+         at BlazorSample.Components.Pages.CallJs8.System.IAsyncDisposable.DisposeAsync() in /Users/rajaniapple/Desktop/GitHub/CS/macOSarm64/Blazor/Blazor/8.0/BlazorSample_BlazorWebApp/Components/Pages/CallJs8.razor:line 54
+         at Microsoft.AspNetCore.Components.RenderTree.Renderer.<>c__DisplayClass85_0.<<Dispose>g__HandleAsyncExceptions|1>d.MoveNext()
+fail: Microsoft.AspNetCore.Components.Server.Circuits.CircuitHost[111]
+      Unhandled exception in circuit 'RzM3WZO4rWMe1uidzIGO4o_Pxl5wtbmwHZ1_BBiDEf8'.
+      Microsoft.JSInterop.JSDisconnectedException: JavaScript interop calls cannot be issued at this time. This is because the circuit has disconnected and is being disposed.
+         at Microsoft.JSInterop.JSRuntime.InvokeAsync[TValue](Int64 targetInstanceId, String identifier, CancellationToken cancellationToken, Object[] args)
+         at Microsoft.JSInterop.JSRuntime.InvokeAsync[TValue](Int64 targetInstanceId, String identifier, Object[] args)
+         at Microsoft.JSInterop.JSRuntimeExtensions.InvokeVoidAsync(IJSRuntime jsRuntime, String identifier, Object[] args)
+         at Microsoft.JSInterop.Implementation.JSObjectReference.DisposeAsync()
+         at BlazorSample.Components.Pages.CallJs8.System.IAsyncDisposable.DisposeAsync() in /Users/rajaniapple/Desktop/GitHub/CS/macOSarm64/Blazor/Blazor/8.0/BlazorSample_BlazorWebApp/Components/Pages/CallJs8.razor:line 54
+         at Microsoft.AspNetCore.Components.RenderTree.Renderer.<>c__DisplayClass85_0.<<Dispose>g__HandleAsyncExceptions|1>d.MoveNext()
+warn: Microsoft.AspNetCore.Components.Server.Circuits.RemoteRenderer[100]
+      Unhandled exception rendering component: Failed to initialize WebGL.
+      Error: Failed to initialize WebGL.
+          at new r (https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js:35:314559)
+          at Module.addMapToElement (http://localhost:5285/mapComponent.js:6:10)
+          at http://localhost:5285/_framework/blazor.web.js:1:3244
+          at new Promise (<anonymous>)
+          at y.beginInvokeJSFromDotNet (http://localhost:5285/_framework/blazor.web.js:1:3201)
+          at fn._invokeClientMethod (http://localhost:5285/_framework/blazor.web.js:1:62914)
+          at fn._processIncomingData (http://localhost:5285/_framework/blazor.web.js:1:60389)
+          at connection.onreceive (http://localhost:5285/_framework/blazor.web.js:1:54030)
+          at i.onmessage (http://localhost:5285/_framework/blazor.web.js:1:82175)
+      Microsoft.JSInterop.JSException: Failed to initialize WebGL.
+      Error: Failed to initialize WebGL.
+          at new r (https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js:35:314559)
+          at Module.addMapToElement (http://localhost:5285/mapComponent.js:6:10)
+          at http://localhost:5285/_framework/blazor.web.js:1:3244
+          at new Promise (<anonymous>)
+          at y.beginInvokeJSFromDotNet (http://localhost:5285/_framework/blazor.web.js:1:3201)
+          at fn._invokeClientMethod (http://localhost:5285/_framework/blazor.web.js:1:62914)
+          at fn._processIncomingData (http://localhost:5285/_framework/blazor.web.js:1:60389)
+          at connection.onreceive (http://localhost:5285/_framework/blazor.web.js:1:54030)
+          at i.onmessage (http://localhost:5285/_framework/blazor.web.js:1:82175)
+         at Microsoft.JSInterop.JSRuntime.InvokeAsync[TValue](Int64 targetInstanceId, String identifier, Object[] args)
+         at BlazorSample.Components.Pages.CallJs8.OnAfterRenderAsync(Boolean firstRender) in /Users/rajaniapple/Desktop/GitHub/CS/macOSarm64/Blazor/Blazor/8.0/BlazorSample_BlazorWebApp/Components/Pages/CallJs8.razor:line 31
+         at Microsoft.AspNetCore.Components.RenderTree.Renderer.GetErrorHandledTask(Task taskToHandle, ComponentState owningComponentState)
+fail: Microsoft.AspNetCore.Components.Server.Circuits.CircuitHost[111]
+      Unhandled exception in circuit '4IOHL4c6XigO5-RSdHNcybVPf8yjR1JE9KO55-F6zgg'.
+      Microsoft.JSInterop.JSException: Failed to initialize WebGL.
+      Error: Failed to initialize WebGL.
+          at new r (https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js:35:314559)
+          at Module.addMapToElement (http://localhost:5285/mapComponent.js:6:10)
+          at http://localhost:5285/_framework/blazor.web.js:1:3244
+          at new Promise (<anonymous>)
+          at y.beginInvokeJSFromDotNet (http://localhost:5285/_framework/blazor.web.js:1:3201)
+          at fn._invokeClientMethod (http://localhost:5285/_framework/blazor.web.js:1:62914)
+          at fn._processIncomingData (http://localhost:5285/_framework/blazor.web.js:1:60389)
+          at connection.onreceive (http://localhost:5285/_framework/blazor.web.js:1:54030)
+          at i.onmessage (http://localhost:5285/_framework/blazor.web.js:1:82175)
+         at Microsoft.JSInterop.JSRuntime.InvokeAsync[TValue](Int64 targetInstanceId, String identifier, Object[] args)
+         at BlazorSample.Components.Pages.CallJs8.OnAfterRenderAsync(Boolean firstRender) in /Users/rajaniapple/Desktop/GitHub/CS/macOSarm64/Blazor/Blazor/8.0/BlazorSample_BlazorWebApp/Components/Pages/CallJs8.razor:line 31
+         at Microsoft.AspNetCore.Components.RenderTree.Renderer.GetErrorHandledTask(Task taskToHandle, ComponentState owningComponentState)
+warn: Microsoft.AspNetCore.Components.Server.Circuits.RemoteRenderer[100]
+      Unhandled exception rendering component: JavaScript interop calls cannot be issued at this time. This is because the circuit has disconnected and is being disposed.
+      Microsoft.JSInterop.JSDisconnectedException: JavaScript interop calls cannot be issued at this time. This is because the circuit has disconnected and is being disposed.
+         at Microsoft.JSInterop.JSRuntime.InvokeAsync[TValue](Int64 targetInstanceId, String identifier, CancellationToken cancellationToken, Object[] args)
+         at Microsoft.JSInterop.JSRuntime.InvokeAsync[TValue](Int64 targetInstanceId, String identifier, Object[] args)
+         at Microsoft.JSInterop.JSRuntimeExtensions.InvokeVoidAsync(IJSRuntime jsRuntime, String identifier, Object[] args)
+         at Microsoft.JSInterop.Implementation.JSObjectReference.DisposeAsync()
+         at BlazorSample.Components.Pages.CallJs8.System.IAsyncDisposable.DisposeAsync() in /Users/rajaniapple/Desktop/GitHub/CS/macOSarm64/Blazor/Blazor/8.0/BlazorSample_BlazorWebApp/Components/Pages/CallJs8.razor:line 54
+         at Microsoft.AspNetCore.Components.RenderTree.Renderer.<>c__DisplayClass85_0.<<Dispose>g__HandleAsyncExceptions|1>d.MoveNext()
+fail: Microsoft.AspNetCore.Components.Server.Circuits.CircuitHost[111]
+      Unhandled exception in circuit '4IOHL4c6XigO5-RSdHNcybVPf8yjR1JE9KO55-F6zgg'.
+      Microsoft.JSInterop.JSDisconnectedException: JavaScript interop calls cannot be issued at this time. This is because the circuit has disconnected and is being disposed.
+         at Microsoft.JSInterop.JSRuntime.InvokeAsync[TValue](Int64 targetInstanceId, String identifier, CancellationToken cancellationToken, Object[] args)
+         at Microsoft.JSInterop.JSRuntime.InvokeAsync[TValue](Int64 targetInstanceId, String identifier, Object[] args)
+         at Microsoft.JSInterop.JSRuntimeExtensions.InvokeVoidAsync(IJSRuntime jsRuntime, String identifier, Object[] args)
+         at Microsoft.JSInterop.Implementation.JSObjectReference.DisposeAsync()
+         at BlazorSample.Components.Pages.CallJs8.System.IAsyncDisposable.DisposeAsync() in /Users/rajaniapple/Desktop/GitHub/CS/macOSarm64/Blazor/Blazor/8.0/BlazorSample_BlazorWebApp/Components/Pages/CallJs8.razor:line 54
+         at Microsoft.AspNetCore.Components.RenderTree.Renderer.<>c__DisplayClass85_0.<<Dispose>g__HandleAsyncExceptions|1>d.MoveNext()
+info: BlazorSample.Components.Pages.BackgroundWork[0]
+      Executing Dispose
+info: BlazorSample.Components.Pages.BackgroundWork[0]
+      Long running work started
+info: BlazorSample.Components.Pages.BackgroundWork[0]
+      Executing Dispose
+info: BlazorSample.Components.Pages.AfterRender[0]
+      OnAfterRender: firstRender = True
+info: BlazorSample.Components.ReferenceChild[0]
+      Received 5 in ChildMethod
+info: BlazorSample.Components.Pages.PrerenderedCounter2[0]
+      currentCount set to 66
+info: BlazorSample.Components.Pages.PrerenderedCounter1[0]
+      currentCount set to 67
+info: BlazorSample.TimerService[0]
+      Started
+info: BlazorSample.TimerService[0]
+      ElapsedCount 1
+info: BlazorSample.Components.Pages.Navigate[0]
+      URL of new location: http://localhost:5285/counter
+info: BlazorSample.TimerService[0]
+      ElapsedCount 2
+info: BlazorSample.TimerService[0]
+      ElapsedCount 3
+info: BlazorSample.TimerService[0]
+      ElapsedCount 4
+info: BlazorSample.TimerService[0]
+      ElapsedCount 5
+info: BlazorSample.TimerService[0]
+      ElapsedCount 6
+info: BlazorSample.TimerService[0]
+      ElapsedCount 7
+fail: BlazorSample.Components.Pages.FileUpload3[0]
+      File: 1 What is Blazor.mp4 Error: Could not find a part of the path '/Users/rajaniapple/Desktop/GitHub/CS/macOSarm64/Blazor/Blazor/8.0/BlazorSample_BlazorWebApp/Development/unsafe_uploads/rfupdfb2.r3s'.
+info: BlazorSample.TimerService[0]
+      ElapsedCount 8
+info: BlazorSample.Components.Pages.FileUpload2[0]
+      11 Validating Form Data with Blazor.mp4 not uploaded (Err: 6): Supplied file with size 30414706 bytes exceeds the maximum of 15360 bytes.
+info: BlazorSample.Components.Pages.FileUpload2[0]
+      11 Validating Form Data with Blazor.mp4 not uploaded (Err: 5)
+info: BlazorSample.TimerService[0]
+      ElapsedCount 9
+info: BlazorSample.TimerService[0]
+      ElapsedCount 10
+info: BlazorSample.TimerService[0]
+      ElapsedCount 11
+info: BlazorSample.TimerService[0]
+      ElapsedCount 12
+info: BlazorSample.TimerService[0]
+      ElapsedCount 13
+info: BlazorSample.TimerService[0]
+      ElapsedCount 14
+info: BlazorSample.TimerService[0]
+      ElapsedCount 15
+info: BlazorSample.TimerService[0]
+      ElapsedCount 16
+info: BlazorSample.TimerService[0]
+      ElapsedCount 17
+info: BlazorSample.TimerService[0]
+      ElapsedCount 18
+info: BlazorSample.Components.Pages.AfterRender[0]
+      OnAfterRender: firstRender = True
+info: BlazorSample.Components.Pages.AfterRender[0]
+      HandleClick called
+info: BlazorSample.Components.Pages.AfterRender[0]
+      OnAfterRender: firstRender = False
+info: BlazorSample.TimerService[0]
+      ElapsedCount 19
+info: BlazorSample.Components.Pages.BackgroundWork[0]
+      Executing Dispose
+info: BlazorSample.Components.Pages.BackgroundWork[0]
+      Long running work started
+warn: Microsoft.AspNetCore.Components.Server.Circuits.RemoteRenderer[100]
+      Unhandled exception rendering component: The CancellationTokenSource has been disposed.
+      System.ObjectDisposedException: The CancellationTokenSource has been disposed.
+         at System.Threading.CancellationTokenSource.get_Token()
+         at BlazorSample.Components.Pages.BackgroundWork.LongRunningWork() in /Users/rajaniapple/Desktop/GitHub/CS/macOSarm64/Blazor/Blazor/8.0/BlazorSample_BlazorWebApp/Components/Pages/BackgroundWork.razor:line 33
+         at Microsoft.AspNetCore.Components.ComponentBase.CallStateHasChangedOnAsyncCompletion(Task task)
+         at Microsoft.AspNetCore.Components.RenderTree.Renderer.GetErrorHandledTask(Task taskToHandle, ComponentState owningComponentState)
+fail: Microsoft.AspNetCore.Components.Server.Circuits.CircuitHost[111]
+      Unhandled exception in circuit 'jcG_LHmYnyGnD3lS65ssRJVskhTDXMYGqxd13_03t-4'.
+      System.ObjectDisposedException: The CancellationTokenSource has been disposed.
+         at System.Threading.CancellationTokenSource.get_Token()
+         at BlazorSample.Components.Pages.BackgroundWork.LongRunningWork() in /Users/rajaniapple/Desktop/GitHub/CS/macOSarm64/Blazor/Blazor/8.0/BlazorSample_BlazorWebApp/Components/Pages/BackgroundWork.razor:line 33
+         at Microsoft.AspNetCore.Components.ComponentBase.CallStateHasChangedOnAsyncCompletion(Task task)
+         at Microsoft.AspNetCore.Components.RenderTree.Renderer.GetErrorHandledTask(Task taskToHandle, ComponentState owningComponentState)
+info: BlazorSample.Components.Pages.BackgroundWork[0]
+      Executing Dispose
+info: BlazorSample.Components.Pages.BackgroundWork[0]
+      Executing Dispose
+info: BlazorSample.Components.Pages.BackgroundWork[0]
+      Long running work started
+warn: Microsoft.AspNetCore.Components.Server.Circuits.RemoteRenderer[100]
+      Unhandled exception rendering component: The CancellationTokenSource has been disposed.
+      System.ObjectDisposedException: The CancellationTokenSource has been disposed.
+         at System.Threading.CancellationTokenSource.get_Token()
+         at BlazorSample.Components.Pages.BackgroundWork.LongRunningWork() in /Users/rajaniapple/Desktop/GitHub/CS/macOSarm64/Blazor/Blazor/8.0/BlazorSample_BlazorWebApp/Components/Pages/BackgroundWork.razor:line 33
+         at Microsoft.AspNetCore.Components.ComponentBase.CallStateHasChangedOnAsyncCompletion(Task task)
+         at Microsoft.AspNetCore.Components.RenderTree.Renderer.GetErrorHandledTask(Task taskToHandle, ComponentState owningComponentState)
+fail: Microsoft.AspNetCore.Components.Server.Circuits.CircuitHost[111]
+      Unhandled exception in circuit 'SmP017Pk3Bcn2X209JylcBtC0DOir3vPOcOy2Zhj9G8'.
+      System.ObjectDisposedException: The CancellationTokenSource has been disposed.
+         at System.Threading.CancellationTokenSource.get_Token()
+         at BlazorSample.Components.Pages.BackgroundWork.LongRunningWork() in /Users/rajaniapple/Desktop/GitHub/CS/macOSarm64/Blazor/Blazor/8.0/BlazorSample_BlazorWebApp/Components/Pages/BackgroundWork.razor:line 33
+         at Microsoft.AspNetCore.Components.ComponentBase.CallStateHasChangedOnAsyncCompletion(Task task)
+         at Microsoft.AspNetCore.Components.RenderTree.Renderer.GetErrorHandledTask(Task taskToHandle, ComponentState owningComponentState)
+info: BlazorSample.Components.Pages.BackgroundWork[0]
+      Executing Dispose
+info: BlazorSample.Components.Pages.BlazorRocks2[0]
+      Initialization code of BlazorRocks2 executed!
+info: BlazorSample.BlazorRocksBase2[0]
+      Initialization code of BlazorRocksBase2 executed!
+^Cinfo: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+rajaniapple@Rajanis-MacBook-Pro BlazorSample_BlazorWebApp % 

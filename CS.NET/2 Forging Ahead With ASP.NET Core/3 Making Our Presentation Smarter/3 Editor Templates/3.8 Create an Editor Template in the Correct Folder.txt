@@ -1,0 +1,10 @@
+3.8 Create an Editor Template in the Correct Folder
+
+Fill in the blanks for the name of the file and what folder to put the file in for it to properly replace the 'String' editor template.
+
+To create an editor template that would be used any time our EditorFor handles a String, we need to place a file named [ ] in the [ ] folder.
+
+
+Answer:
+String.cshtml
+EditorTemplates

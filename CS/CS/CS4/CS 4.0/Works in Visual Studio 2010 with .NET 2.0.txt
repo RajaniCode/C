@@ -1,0 +1,32 @@
+// Works in Visual Studio 2010 with .NET 2.0, however not in Visual Studio 2008 with .NET 2.0
+
+using System;
+
+class Program
+{
+    public int Method(int i, int j = 10, int k = 0)
+    {
+        Console.WriteLine("i = {0},  j = {1}, k = {2}", i, j, k);
+        return i + j + k;
+    }
+
+    public static void Main()
+    {
+        Program pro = new Program();
+        Console.WriteLine(pro.Method(1));
+        Console.WriteLine(pro.Method(1, 2));
+        Console.WriteLine(pro.Method(1, 2, 3));
+        Console.WriteLine(pro.Method(j: 2, i: 1));
+        Console.Read();
+    }
+}
+// Output
+/*
+11
+i = 1,  j = 2, k = 0
+3
+i = 1,  j = 2, k = 3
+6
+i = 1,  j = 2, k = 0
+3 
+*/

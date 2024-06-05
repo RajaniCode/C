@@ -1,0 +1,116 @@
+3.2 Set Our View To Use lists
+
+Let's set up our view to be able to use a List of Equipment objects.
+
+Models/Equipment.cs
+
+using Microsoft.AspNet.Mvc;
+using CharacterSheetApp.Models;
+
+namespace CharacterSheetApp.Models
+{
+  public class Equipment
+  {
+    public string Name;           
+  }
+}
+
+Controllers/HomeController.cs
+
+using Microsoft.AspNet.Mvc;
+using CharacterSheetApp.Models;
+
+namespace CharacterSheetApp.Controllers
+{
+  public class HomeController : Controller
+  {
+    public IActionResult Index()
+    {
+      var model = new CharacterSheetApp.Models.Equipment();
+      model.Name = "Shield";
+      return View("Index", model);
+    }
+
+    public IActionResult Create(string EquipmentName)
+    {
+      var model = new CharacterSheetApp.Models.Equipment();
+      model.Name = EquipmentName;
+      return View("Index", model);
+    }
+  }
+}
+
+Views/Home/Index.cshtml
+
+@model CharacterSheetApp.Models.Equipment
+<h2>Equipment:</h2>
+
+<form asp-action="Create" class="form-inline mbm">
+  <div class="form-group">
+    <input name="EquipmentName" class="form-control" />
+    <input class="btn" type="submit" value="Add Equipment" />
+  </div>
+</form>
+
+<h4>Equipment:</h4>
+
+<div>
+  <ul>
+    <li>
+      <label>@Model.Name</label>
+    </li>
+  </ul>
+</div>
+
+
+1. In our Index.cshtml page, update the @model declaration to be a List of our Equipment objects instead of just a single Equipment object.
+
+Answer:
+Views/Home/Index.cshtml
+
+@model List<CharacterSheetApp.Models.Equipment>
+<h2>Equipment:</h2>
+
+<form asp-action="Create" class="form-inline mbm">
+  <div class="form-group">
+    <input name="EquipmentName" class="form-control" />
+    <input class="btn" type="submit" value="Add Equipment" />
+  </div>
+</form>
+
+<h4>Equipment:</h4>
+
+<div>
+  <ul>
+    <li>
+      <label>@Model.Name</label>
+    </li>
+  </ul>
+</div>
+
+2. Change the contents of the <label> tag inside the <li> so it will contain the Name of each equipment item in the List.
+
+Answer:
+
+@model List<CharacterSheetApp.Models.Equipment>
+<h2>Equipment:</h2>
+
+<form asp-action="Create" class="form-inline mbm">
+  <div class="form-group">
+    <input name="EquipmentName" class="form-control" />
+    <input class="btn" type="submit" value="Add Equipment" />
+  </div>
+</form>
+
+<h4>Equipment:</h4>
+
+<div>
+  <ul>
+    @foreach(var item in Model)
+    {
+      <li>
+        <label>@item.Name</label>
+      </li>
+    }
+  </ul>
+</div>

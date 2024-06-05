@@ -1,0 +1,76 @@
+1.3 Creating a Controller
+
+Now that our View is set up to receive data, we need to send that data from the Controller.
+
+Views/Home/Index.cshtml
+
+@model String
+<h2>Equipment</h2>
+
+<div>
+  <ul>
+    <li>@Model</li>
+  </ul>
+</div>
+
+
+Controllers/HomeController.cs
+
+using Microsoft.AspNet.Mvc;
+using System;
+
+namespace CharacterSheetApp.Controllers
+{
+  public class HomeController : Controller
+  {
+    public IActionResult Index()
+    {
+      
+      return View();
+    }
+  }
+}
+
+
+1. In the Index action, create a variable called name and set it to the value "Shield".
+
+Answer:
+Controllers/HomeController.cs
+
+using Microsoft.AspNet.Mvc;
+using System;
+
+namespace CharacterSheetApp.Controllers
+{
+  public class HomeController : Controller
+  {
+    public IActionResult Index()
+    {
+      var name = "Shield";
+      return View();
+    }
+  }
+}
+
+2. Now pass "Index" as the first parameter, and that string variable as the second parameter on the View.
+
+After that, when you submit your code, the Preview should show you a list with one item named Shield.
+
+Answer:
+Controllers/HomeController.cs
+
+using Microsoft.AspNet.Mvc;
+using System;
+
+namespace CharacterSheetApp.Controllers
+{
+  public class HomeController : Controller
+  {
+    public IActionResult Index()
+    {
+      var name = "Shield";
+      return View("Index", name);
+    }
+  }
+}
+

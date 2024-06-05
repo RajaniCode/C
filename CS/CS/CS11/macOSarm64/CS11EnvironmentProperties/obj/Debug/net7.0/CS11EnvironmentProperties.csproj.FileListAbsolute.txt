@@ -1,0 +1,15 @@
+/Users/rajaniapple/Desktop/Working/CS/CS11/CS11EnvironmentProperties/bin/Debug/net7.0/CS11EnvironmentProperties
+/Users/rajaniapple/Desktop/Working/CS/CS11/CS11EnvironmentProperties/bin/Debug/net7.0/CS11EnvironmentProperties.deps.json
+/Users/rajaniapple/Desktop/Working/CS/CS11/CS11EnvironmentProperties/bin/Debug/net7.0/CS11EnvironmentProperties.runtimeconfig.json
+/Users/rajaniapple/Desktop/Working/CS/CS11/CS11EnvironmentProperties/bin/Debug/net7.0/CS11EnvironmentProperties.dll
+/Users/rajaniapple/Desktop/Working/CS/CS11/CS11EnvironmentProperties/bin/Debug/net7.0/CS11EnvironmentProperties.pdb
+/Users/rajaniapple/Desktop/Working/CS/CS11/CS11EnvironmentProperties/obj/Debug/net7.0/CS11EnvironmentProperties.csproj.AssemblyReference.cache
+/Users/rajaniapple/Desktop/Working/CS/CS11/CS11EnvironmentProperties/obj/Debug/net7.0/CS11EnvironmentProperties.GeneratedMSBuildEditorConfig.editorconfig
+/Users/rajaniapple/Desktop/Working/CS/CS11/CS11EnvironmentProperties/obj/Debug/net7.0/CS11EnvironmentProperties.AssemblyInfoInputs.cache
+/Users/rajaniapple/Desktop/Working/CS/CS11/CS11EnvironmentProperties/obj/Debug/net7.0/CS11EnvironmentProperties.AssemblyInfo.cs
+/Users/rajaniapple/Desktop/Working/CS/CS11/CS11EnvironmentProperties/obj/Debug/net7.0/CS11EnvironmentProperties.csproj.CoreCompileInputs.cache
+/Users/rajaniapple/Desktop/Working/CS/CS11/CS11EnvironmentProperties/obj/Debug/net7.0/CS11EnvironmentProperties.dll
+/Users/rajaniapple/Desktop/Working/CS/CS11/CS11EnvironmentProperties/obj/Debug/net7.0/refint/CS11EnvironmentProperties.dll
+/Users/rajaniapple/Desktop/Working/CS/CS11/CS11EnvironmentProperties/obj/Debug/net7.0/CS11EnvironmentProperties.pdb
+/Users/rajaniapple/Desktop/Working/CS/CS11/CS11EnvironmentProperties/obj/Debug/net7.0/CS11EnvironmentProperties.genruntimeconfig.cache
+/Users/rajaniapple/Desktop/Working/CS/CS11/CS11EnvironmentProperties/obj/Debug/net7.0/ref/CS11EnvironmentProperties.dll

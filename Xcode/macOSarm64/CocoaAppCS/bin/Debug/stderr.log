@@ -1,0 +1,1 @@
+2024-06-05 02:39:33.374 CocoaAppCS[5575:125094] WARNING: Secure coding is automatically enabled for restorable state! However, not on all supported macOS versions of this application. Opt-in to secure coding explicitly by implementing NSApplicationDelegate.applicationSupportsSecureRestorableState:.

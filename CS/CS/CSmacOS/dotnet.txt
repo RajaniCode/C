@@ -1,0 +1,30 @@
+% sudo --version
+% git --version
+% arch
+% pwd
+[
+% dotnet --version
+% export PATH="/Users/rajaniapple/Downloads/Software/CS/SDK/Binaries/dotnet-sdk-6.0.400-osx-arm64":$PATH
+% export PATH=$PATH:"/Users/rajaniapple/Downloads/Software/CS/SDK/Binaries/dotnet-sdk-7.0.100-osx-arm64"
+]
+# /Users/rajaniapple/Downloads/Software/CS/SDK/Installers/dotnet-sdk-6.0.400-osx-arm64.pkg
+# /Users/rajaniapple/Downloads/Software/CS/SDK/Installers/dotnet-sdk-7.0.100-osx-arm64.pk
+% dotnet --version
+
+% mkdir -p "/Users/rajaniapple/Desktop/Working/CS/CS11"
+[
+% rm -rf "/Users/rajaniapple/Desktop/Working/CS/CS11"
+]
+% cd "/Users/rajaniapple/Desktop/Working/CS/CS11"
+
+% pwd
+
+% dotnet new console
+
+% dotnet new sln -n CS11
+% dotnet new sln -n CS12
+
+% dotnet sln CS11.sln add CS11.csproj
+% dotnet sln CS12.sln add CS12.csproj
+
+% dotnet run

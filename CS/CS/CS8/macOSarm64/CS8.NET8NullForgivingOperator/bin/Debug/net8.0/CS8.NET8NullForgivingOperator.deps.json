@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "CS8.NET8NullForgivingOperator/1.0.0": {
+        "runtime": {
+          "CS8.NET8NullForgivingOperator.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "CS8.NET8NullForgivingOperator/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

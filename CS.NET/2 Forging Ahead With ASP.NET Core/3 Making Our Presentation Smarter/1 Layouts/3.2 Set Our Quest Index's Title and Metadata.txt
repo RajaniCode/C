@@ -1,0 +1,234 @@
+3.2 Set Our Quest Index's Title and Metadata
+
+We want our results in search engines to be cleaner, and we can accomplish this by adjusting a page's title and metadata description.
+
+Views/Shared/_Layout.cshtml
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>@ViewData["Title"] - ForgingAhead</title>
+
+  <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+  <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+  @RenderSection("header", required: false)
+</head>
+<body>
+  <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+        </button>
+        <a asp-controller="Home" asp-action="Index" class="navbar-brand">
+          <img src="~/images/forging-ahead-title-small.png" alt="Course Logo" height="25">
+        </a>
+      </div>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li><a asp-controller="Home" asp-action="Index">Home</a></li>
+          <li><a asp-controller="Character" asp-action="Index">Characters</a></li>
+          <li><a asp-controller="Equipment" asp-action="Index">Equipment</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="container body-content">
+    @RenderBody()
+    <hr />
+    <footer>
+      <p>&copy; 2016 - ForgingAhead</p>
+    </footer>
+  </div>
+
+  <script src="~/lib/jquery/dist/jquery.js"></script>
+  <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+  <script src="~/js/site.js" asp-append-version="true"></script>
+
+  @RenderSection("scripts", required: false)
+</body>
+</html>
+
+Views/Quest/Index.cshtml
+
+@model List<ForgingAhead.Models.Quest>
+
+@* add section for metadata here *@
+
+
+
+<h1>
+  Quests
+</h1>
+<p>
+  <a asp-action="Create" asp-controller="Quest">Create new quest</a>
+</p>
+<ul>
+  @foreach(var item in Model)
+  {
+    <li><a asp-action="Details" asp-controller="Quest" asp-route-name="@item.Name">@item.Name</a></li>
+  }
+</ul>
+
+Controllers/QuestController.cs
+
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using System.Collections.Generic;
+using System.Linq;
+
+using ForgingAhead.Models;
+
+namespace ForgingAhead.Controllers
+{
+  public class QuestController : Controller
+  {
+    private readonly ApplicationDbContext _context;
+
+    public QuestController(ApplicationDbContext context)
+    {
+      _context = context;
+    }
+
+    [HttpGet]
+    public IActionResult Create()
+    {
+      return View();
+    }
+
+    [HttpPost]
+    public IActionResult Create(Quest quest)
+    {
+      _context.Quests.Add(quest);
+      _context.SaveChanges();
+
+      return RedirectToAction("Index");
+    }
+
+    public IActionResult Index()
+    {
+      //Set Title Here
+      
+      var model = _context.Quests.ToList();
+      return View(model);
+    }
+
+    public IActionResult Details(string name)
+    {
+      var model = _context.Quests.FirstOrDefault(e => e.Name == name);
+      return View(model);
+    }
+
+    public IActionResult Update(Quest quest)
+    {
+      _context.Entry(quest).State = EntityState.Modified;
+      _context.SaveChanges();
+      return RedirectToAction("Index");
+    }
+
+    public IActionResult Delete(string name)
+    {
+      var quest = _context.Quests.FirstOrDefault(e => e.Name == name);
+      _context.Quests.Remove(quest);
+      _context.SaveChanges();
+      return RedirectToAction("Index");
+    }
+  }
+}
+
+
+1. In our QuestController's Index Action, set the title to be "Quests" using ViewData's 'Title' key.
+
+Answer:
+Controllers/QuestController.cs
+
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using System.Collections.Generic;
+using System.Linq;
+
+using ForgingAhead.Models;
+
+namespace ForgingAhead.Controllers
+{
+  public class QuestController : Controller
+  {
+    private readonly ApplicationDbContext _context;
+
+    public QuestController(ApplicationDbContext context)
+    {
+      _context = context;
+    }
+
+    [HttpGet]
+    public IActionResult Create()
+    {
+      return View();
+    }
+
+    [HttpPost]
+    public IActionResult Create(Quest quest)
+    {
+      _context.Quests.Add(quest);
+      _context.SaveChanges();
+
+      return RedirectToAction("Index");
+    }
+
+    public IActionResult Index()
+    {
+      //Set Title Here
+      ViewData["Title"] = "Quests";
+      var model = _context.Quests.ToList();
+      return View(model);
+    }
+
+    public IActionResult Details(string name)
+    {
+      var model = _context.Quests.FirstOrDefault(e => e.Name == name);
+      return View(model);
+    }
+
+    public IActionResult Update(Quest quest)
+    {
+      _context.Entry(quest).State = EntityState.Modified;
+      _context.SaveChanges();
+      return RedirectToAction("Index");
+    }
+
+    public IActionResult Delete(string name)
+    {
+      var quest = _context.Quests.FirstOrDefault(e => e.Name == name);
+      _context.Quests.Remove(quest);
+      _context.SaveChanges();
+      return RedirectToAction("Index");
+    }
+  }
+}
+
+2. Populate our Layout.cshtml's header section from our Index view with a meta tag whose name attribute is "description" and content attribute is "Lists all quests in ForgingAhead."
+
+Answer:
+Views/Quest/Index.cshtml
+
+@model List<ForgingAhead.Models.Quest>
+
+@section header {
+  <meta name="description" content="Lists all quests in ForgingAhead." />
+}
+
+<h1>
+  Quests
+</h1>
+<p>
+  <a asp-action="Create" asp-controller="Quest">Create new quest</a>
+</p>
+<ul>
+  @foreach(var item in Model)
+  {
+    <li><a asp-action="Details" asp-controller="Quest" asp-route-name="@item.Name">@item.Name</a></li>
+  }
+</ul>

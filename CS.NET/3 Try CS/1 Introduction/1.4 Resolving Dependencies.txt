@@ -1,0 +1,23 @@
+1.4 Resolving Dependencies
+
+Before we can run our application from the command line, we need to resolve the dependencies. Type the dotnet command that will restore our project.
+
+Type help to see the help menu.
+
+​
+$ dotnet restore
+Restoring packages for HelloWorld.csproj...
+Generating MSBuild file /obj/HelloWorld.csproj.nuget.g.props.
+Generating MSBuild file /obj/HelloWorld.csproj.nuget.g.targets.
+Writing lock file to disk. Path: /obj/project.assets.json
+Restore completed in 1.0 sec for HelloWorld.csproj.
+
+NuGet Config files used:
+    /.nuget/NuGet/NuGet.Config
+
+Feeds used:
+    https://api.nuget.org/v3/index.Jason
+
+Success!
+
+$ 

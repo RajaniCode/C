@@ -1,0 +1,5 @@
+/Users/rajaniapple/Desktop/GitHub/CS/CS/CS/CS9/macOSx64/StructTypes/obj/Debug/net5.0/StructTypes.csproj.AssemblyReference.cache
+/Users/rajaniapple/Desktop/GitHub/CS/CS/CS/CS9/macOSx64/StructTypes/obj/Debug/net5.0/StructTypes.GeneratedMSBuildEditorConfig.editorconfig
+/Users/rajaniapple/Desktop/GitHub/CS/CS/CS/CS9/macOSx64/StructTypes/obj/Debug/net5.0/StructTypes.AssemblyInfoInputs.cache
+/Users/rajaniapple/Desktop/GitHub/CS/CS/CS/CS9/macOSx64/StructTypes/obj/Debug/net5.0/StructTypes.AssemblyInfo.cs
+/Users/rajaniapple/Desktop/GitHub/CS/CS/CS/CS9/macOSx64/StructTypes/obj/Debug/net5.0/StructTypes.csproj.CoreCompileInputs.cache

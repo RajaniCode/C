@@ -1,0 +1,117 @@
+# Visual Studio 2022 for Mac - Preferences - Build and Debug - SDK Locations - Apple
+Apple SDK
+Xcode 15.4 found at specified location.
+Location: Application/Xcode.app
+
+# NB
+Xamarin.Mac 9.3.0 does not support a deployment target of 14.0 for macOS (the maximum is 13.3). Please select an older deployment target in your project's Info.plist or upgrade to a newer version of Xamarin.Mac
+
+
+# Visual Studio 2022 for Mac
+• + New 
+
+• Choose a template for your new project
+Mac - App - Cocoa App (Xamarin) C#
+Continue
+
+• Configure your Mac project
+App name: CocoaAppCS
+Organization ID: [com.org]
+[Build ID: com.org.CocoaAppCS]
+Target: macOS Mojave 10.14
+Continue
+
+• Configure your new Cocoa App
+Project name: CocoaAppCS
+Solution name: CocoaAppCS
+Location: [/Users/username/Projects]
+Create
+
+• Run the project
+[Blank Window]
+
+• Right click Main.storyboard and select Open With > Xcode Interface Builder
+
+
+# Xcode
+• Xcode Menu - View - Show Library [ Shortcut ( command + shift + L ) ]
+
+• Xcode Objects
+• Select the Objects(s) and drag the Objects(s) to ViewController
+1. Select Push Button Object and drag it to ViewController [Double Click the Push Button Object and Enter Text viz, "Click for Time"]
+2. Select Label Object and drag it to ViewController [Double Click the Label and Clear the Text "Label" and Expand the Label in ViewController]
+
+• Xcode Side by Side Main.storyboard and ViewController.h
+Click Add Editor on Right [Icon Located on Top Right Corner of the Window]
+Navigate between Main.storyboard and ViewController.h
+
+1. control and drag and drop Push Button Object to ViewController.h below:
+@interface ViewController : NSViewController {
+}
+
+• Push Button Object 
+Select Connection: Action
+Enter Name: PushButtonClicked
+Type: [id]
+Connect
+
+2. control and drag and drop Label Object to ViewController.h below:
+@interface ViewController : NSViewController {
+}
+
+• Label Object 
+Select Connection: [Outlet]
+Enter Name: Label
+Connect
+
+• Save and Close Xcode
+
+
+# Visual Studio 2022 for Mac
+• Check for the following in ViewController.designer.cs [Do not edit]
+• ViewController.designer.cs
+// WARNING
+//
+// This file has been generated automatically by Visual Studio to store outlets and
+// actions made in the UI designer. If it is removed, they will be lost.
+// Manual changes to this file may not be handled correctly.
+//
+using Foundation;
+using System.CodeDom.Compiler;
+
+namespace CocoaAppCS
+{
+	[Register ("ViewController")]
+	partial class ViewController
+	{
+		[Outlet]
+		AppKit.NSTextField Label { get; set; }
+
+		[Action ("PushButtonClicked:")]
+		partial void PushButtonClicked (Foundation.NSObject sender);
+		
+		void ReleaseDesignerOutlets ()
+		{
+			if (Label != null) {
+				Label.Dispose ();
+				Label = null;
+			}
+		}
+	}
+}
+
+• ViewController.designer.cs
+• Add the following event handler to partial class ViewController : NSViewController in namespace CocoaAppCS public
+
+partial void PushButtonClicked(NSObject sender)
+{
+    Label.StringValue = DateTime.Now.ToLongTimeString();
+    // throw new NotImplementedException();
+}
+
+• ViewController.designer.cs
+
+
+• Run the project
+[Window]
+Click the button "Click for Time" to see the time in the label

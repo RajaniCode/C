@@ -1,0 +1,213 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head><link rel="stylesheet" type="text/css" href="description/Combined.css,0:HeaderFooterSprite,0:Header.NonMtps,1:LinkList;/Areas/Centers/Themes/StandardDevCenter/Content:0,/Areas/Epx/Themes/Base/Content:1&amp;amp;hashKey=C9973DA951AE6202C9B348379A1BE49D" xmlns="http://www.w3.org/1999/xhtml" />
+<link type="text/css" rel="stylesheet" xmlns="http://www.w3.org/1999/xhtml" />
+<link rel="stylesheet" type="text/css" href="description/b79636be-b088-48b5-8a8d-c21645d26d2fCombined.css,0:HeaderFooterSprite,0:Footer.NonMtps,1:LinkList;/Areas/Centers/Themes/StandardDevCenter/Content:0,/Areas/Epx/Themes/Base/Content:1&amp;amp;hashKey=F576C687BC536B84D6E5B3246EE39B49" xmlns="http://www.w3.org/1999/xhtml" />
+<link type="text/css" rel="stylesheet" xmlns="http://www.w3.org/1999/xhtml" />
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>What&#39;s New in the .NET Framework 4.5</title>
+        <link href="description/Galleries.css" type="text/css" rel="Stylesheet" /><link href="description/Layout.css" type="text/css" rel="Stylesheet" /><link href="description/Brand.css" type="text/css" rel="Stylesheet" />
+        <link href="description/iframedescription.css" rel="Stylesheet" type="text/css" />
+        <script src="description/offline.js" type="text/javascript"></script>
+        <style type="text/css">
+            #projectInfo {
+                overflow: auto;
+            }
+            #longDesc {
+                clear:both;
+                margin: 25px 0 10px 0;
+            }
+
+            #SampleIndexList{
+                margin-left: 15px;
+            }
+        </style>
+    </head>
+<body>
+    <div id="offlineDescription">
+        <h1>What&#39;s New in the .NET Framework 4.5</h1>
+        <br/>
+        <div id="projectInfo">
+            <div class="section">
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Technologies">Technologies</label>
+                        <div id="Technologies">
+                            Async, Entity Framework Code First, NuGet, HttpClient, WebAPI, Json.NET, Windows Store app
+                        </div>
+                    </div>
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Topics">Topics</label>
+                        <div id="Topics">
+                            REST, Data Access, Windows App, User Experience
+                        </div>
+                    </div>
+                <div class="itemBarLong">
+                    <label for="Platforms">Platforms</label>
+                    <div id="Platforms">
+                        Web, Data, Windows RT
+                    </div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="Requirements">Requirements</label>
+                    <div id="Requirements">
+                        
+                    </div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Primary language</label>
+                    <div id="LastUpdated">en-US</div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Updated</label>
+                    <div id="LastUpdated">9/11/2012</div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="License">License</label>
+                    <div id="License">
+                        <a href="license.rtf">MS-LPL</a></div>
+                </div>
+                <div class="itemBar">
+                    <div class="viewonlinecont">
+                        <a data-link="online" href="http://code.msdn.microsoft.com/Whats-New-in-the-NET-e8d7545c">View this sample online</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+                   
+<script type="text/javascript">
+    function initializePage() {
+        var otherTabClass = 'otherTab';
+        var hiddenPreClass = 'hidden';
+
+        var htmlDecode = function(encodedData) {
+            var decodedData = "";
+            if (encodedData) {
+                var div = document.createElement('div');
+                div.innerHTML = encodedData;
+                decodedData = div.firstChild.nodeValue.replace( /\\r\\n/ig , '\r\n');
+            }
+            return decodedData;
+        };
+                
+        Galleries.iterateElem(Galleries.findElem(null, 'div', 'scriptcode'), function (index, scriptBlock) {
+            var titleElem = Galleries.findElem(scriptBlock, 'div', 'title')[0];
+            var labelElems = Galleries.findElem(titleElem, 'span');
+            if (labelElems.length == 0) {
+                labelElems = titleElem;
+            }
+            var languageSpans = Galleries.findElem(scriptBlock, 'span', 'hidden');
+            var pres = Galleries.findElem(scriptBlock, 'pre');
+            if (languageSpans.length > 0 && pres.length > 1) {
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    var languageSpan = languageSpans[index];
+                            
+                    elem.code = codePre.innerHTML.replace( /(\r(\n)?)|((\r)?\n)/ig , '\\r\\n');
+                            
+                    codePre.className = codePre.className.replace(hiddenPreClass, '');
+                            
+                    languageSpan.parentNode.removeChild(languageSpan);
+                });
+
+                pres = Galleries.findElem(scriptBlock, 'pre');
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    if (index == 0) {
+                        scriptBlock.activeTab = 0;
+                    }
+                    else {
+                        labelSpan.className += otherTabClass;
+                        codePre.className += hiddenPreClass;
+                    }
+                    Galleries.attachEventHandler(labelSpan, 'click', function(e) {
+                        var activeTab = scriptBlock.activeTab;
+                        labelElems[activeTab].className += otherTabClass;
+                        pres[activeTab].className += hiddenPreClass;
+
+                        codePre.className = codePre.className.replace(hiddenPreClass, '');
+                        labelSpan.className = labelSpan.className.replace(otherTabClass, '');
+                        scriptBlock.activeTab = index;
+                    });
+                });
+
+                var preview = Galleries.findElem(scriptBlock, 'div', 'preview');
+                if (preview.length == 0) {
+                    preview.push(pres[pres.length - 1]);
+                }
+                Galleries.iterateElem(preview, function(index, elem) {
+                    elem.parentNode.removeChild(elem);
+                });
+
+                if (window.clipboardData && clipboardData.setData) {
+                    var copyLink = document.createElement('a');
+                    copyLink.href = 'javascript:void(0);';
+                    copyLink.className = 'copyCode';
+                    copyLink.innerHTML = 'Copy code';
+                    Galleries.attachEventHandler(copyLink, 'click', function (e) {
+                        clipboardData.setData("Text", htmlDecode(labelElems[scriptBlock.activeTab].code));
+                        return false;
+                    });
+                    scriptBlock.insertBefore(copyLink, scriptBlock.childNodes[0]);
+                }
+            }
+        });
+    }
+
+    Galleries.onWindowLoad(function(){
+        initializePage();
+    });
+
+</script>
+<div id="longDesc">
+    
+<p>The .NET Framework 4.5 introduces a number of features to help solve the programming problems of today. This sample demonstrates end-to-end how to build a Windows 8 app that connects to a web backend using industry standard REST APIs. If you were at TechEd
+ 2012 in <a href="http://channel9.msdn.com/Events/TechEd/NorthAmerica/2012/DEV331">
+North America</a> or <a href="http://channel9.msdn.com/Events/TechEd/Europe/2012/DEV331">
+Europe</a>, we showed you how to build this sample from scratch. The app itself is a catalog of some features found in the .NET Framework, so you can learn more about .NET simply by exploring the app.</p>
+<p><img id="65931" src="description/Picture0.png" alt="" width="500" height="281"></p>
+<p><img id="65932" src="description/Picture1.png" alt="" width="500" height="281"></p>
+<p><img id="65933" src="description/Picture2.png" alt="" width="500" height="281"></p>
+<h1><span>Building the Sample</span></h1>
+<p>Even though we're providing the <strong>.NET Feature Catalog</strong>&nbsp;sample in its final form,&nbsp;you need to populate the database before running it. To do that:</p>
+<ol>
+<li>Open the <strong>DotnetCatalogSample.sln </strong>solution file in Visual Studio 2012.
+</li><li>Right click on the <strong>WebBackend </strong>project and <strong>Set as StartUp Project</strong>.
+</li><li>Open the <strong>Package Manager Console </strong>(easiest to find via the Quick Launch control via CTRL&#43;Q).
+</li><li>
+<p>In the package manager console, run the following command:</p>
+<pre>Update-Database -ProjectName WebBackend</pre>
+</li><li>Right click on the <strong>DotnetCatalog</strong> project and <strong>Set as StartUp Project</strong>.
+</li><li>Run the app. </li></ol>
+<p><span style="font-size:20px; font-weight:bold">Description</span></p>
+<p><span style="color:#993300"><strong>NOTE: </strong>This sample is slightly revised from what we presented at TechEd 2012.</span></p>
+<p>The&nbsp;sample is best experienced by&nbsp;watching the talk for What's&nbsp;New in .NET 4.5 from TechEd 2012. Click on either of the following to see the presentation given by Brandon Bray or Layla Driscoll respectively.</p>
+<p><a href="http://channel9.msdn.com/Events/TechEd/NorthAmerica/2012/DEV331"><img src="description/DEV331_220.jpg" alt=""></a>&nbsp;<a href="http://channel9.msdn.com/Events/TechEd/Europe/2012/DEV331"><img src="description/bab37b2c-a107-4d67-851e-e420139e4313DEV331_220.jpg" alt=""></a></p>
+<p>The main features&nbsp;we cover&nbsp;in the sample are:</p>
+<ul>
+<li>WebAPI for building REST based web services </li><li>Entity Framework using Code First and migrations </li><li>Windows Store app using the .NET for Windows Store Apps profile </li><li>Async and await to build a fast and interactive user experience </li><li>HttpClient for an easy way to connect to a web service </li><li>NuGet for acquiring the latest libraries, specifically Json.NET </li></ul>
+<h1><span>Source Code Files</span></h1>
+<p>This sample&nbsp;was created with the default project&nbsp;templates for Windows Store Grid App and an ASP.NET&nbsp;MVC 4 Web Application. The files that were edited during the TechEd demo were:</p>
+<ul>
+<li><em>DotnetCatalog/DataModel/FeatureDataSource.cs </em>- used async, HttpClient, and Json deserializing
+</li><li><em>WebBackend/Controllers/FeaturesController.cs</em> - contains the REST APIs for the feature data
+</li><li><em>WebBackend/Controllers/FeaturesSummaryController.cs</em> - contains the REST APIs for the feature summary data
+</li><li><em>WebBackend/Models/Feature.cs </em>- contains the data model for the feature entity
+</li><li><em>WebBackend/Models/FeatureContext.cs</em> - used entity framework </li><li><em>WebBackend/Models/FeatureSummary.cs</em> - contains the data model for the feature summary entity
+</li><li><em>WebBackend/WebAssets</em> - the media and text data transferred from the web backend to the Windows app&nbsp;
+</li></ul>
+<h1>More Information</h1>
+<p>The MSDN topic for <a href="http://msdn.microsoft.com/en-us/library/ms171868.aspx">
+What's New in the .NET Framework 4.5</a> has a complete list of the new functionality. For the latest discussion about .NET, follow the
+<a href="http://blogs.msdn.com/b/dotnet/">.NET Team Blog</a> or reach us&nbsp;on <a href="http://code.msdn.microsoft.com/Whats-New-in-the-NET-e8d7545c/https://twitter.com/dotnet">
+Twitter</a>.</p>
+
+</div>
+
+
+    </div>
+</body>
+</html>

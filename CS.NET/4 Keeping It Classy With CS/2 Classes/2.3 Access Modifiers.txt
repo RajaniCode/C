@@ -1,0 +1,32 @@
+2.3 Access Modifiers
+
+Let's make our Venue class and its contents accessible to other classes.
+
+Venue.cs
+using System;
+
+class Venue
+{
+    string Name;
+
+    void Announce()
+    {
+        Console.WriteLine(Name + " will have several bands playing tonight!");
+    }
+}
+
+Change the access modifier for the Venue class, the Name variable, and the Announce method to make them available to other classes.
+
+Answer
+Venue.cs
+using System;
+
+public class Venue
+{
+    public string Name;
+
+    public void Announce()
+    {
+        Console.WriteLine(Name + " will have several bands playing tonight!");
+    }
+}

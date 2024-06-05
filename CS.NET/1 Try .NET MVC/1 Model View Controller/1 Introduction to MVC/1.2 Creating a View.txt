@@ -1,0 +1,60 @@
+1.2 Creating a View
+
+Let's get started by replacing the static data in our view with some data that will be applied dynamically.
+
+Controllers/HomeController.cs
+
+using Microsoft.AspNet.Mvc;
+using System;
+
+namespace CharacterSheetApp.Controllers
+{
+  public class HomeController : Controller
+  {
+    public IActionResult Index()
+    {
+      return View();
+    }
+  }
+}
+
+Views/Home/Index.cshtml
+
+
+<h2>Equipment</h2>
+
+<div>
+  <ul>
+    <li>Shield</li>
+  </ul>
+</div>
+
+
+1. First, on line 1, set our view's model to be a String.
+
+Answer:
+Views/Home/Index.cshtml
+
+@model String
+<h2>Equipment</h2>
+
+<div>
+  <ul>
+    <li>Shield</li>
+  </ul>
+</div>
+
+2. Next, access that model data passed into our view to replace the hard-coded value Shield.
+
+Answer:
+Views/Home/Index.cshtml
+
+@model String
+<h2>Equipment</h2>
+
+<div>
+  <ul>
+    <li>@Model</li>
+  </ul>
+</div>
+

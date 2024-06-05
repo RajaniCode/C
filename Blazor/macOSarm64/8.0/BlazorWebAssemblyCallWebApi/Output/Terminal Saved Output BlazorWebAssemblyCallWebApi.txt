@@ -1,0 +1,32 @@
+Last login: Mon Apr 29 19:58:52 on ttys000
+rajaniapple@Rajanis-MacBook-Pro ~ % dotnet --version                                                                         
+8.0.204
+rajaniapple@Rajanis-MacBook-Pro ~ % cd /Users/rajaniapple/Desktop/GitHub/CS/macOSarm64/Blazor/Blazor/8.0/BlazorWebAssemblyCallWebApi 
+rajaniapple@Rajanis-MacBook-Pro BlazorWebAssemblyCallWebApi % dotnet build
+MSBuild version 17.9.8+b34f75857 for .NET
+  Determining projects to restore...
+  Restored /Users/rajaniapple/Desktop/GitHub/CS/macOSarm64/Blazor/Blazor/8.0/BlazorWebAssemblyCallWebApi/BlazorTodo/BlazorTodo.csproj (in 191 ms).
+  Restored /Users/rajaniapple/Desktop/GitHub/CS/macOSarm64/Blazor/Blazor/8.0/BlazorWebAssemblyCallWebApi/Backend/Backend.csproj (in 215 ms).
+  Backend -> /Users/rajaniapple/Desktop/GitHub/CS/macOSarm64/Blazor/Blazor/8.0/BlazorWebAssemblyCallWebApi/Backend/bin/Debug/net8.0/Backend.dll
+  BlazorTodo -> /Users/rajaniapple/Desktop/GitHub/CS/macOSarm64/Blazor/Blazor/8.0/BlazorWebAssemblyCallWebApi/BlazorTodo/bin/Debug/net8.0/BlazorTodo.dll
+  BlazorTodo (Blazor output) -> /Users/rajaniapple/Desktop/GitHub/CS/macOSarm64/Blazor/Blazor/8.0/BlazorWebAssemblyCallWebApi/BlazorTodo/bin/Debug/net8.0/wwwroot
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:01.75
+rajaniapple@Rajanis-MacBook-Pro BlazorWebAssemblyCallWebApi % cd BlazorTodo
+rajaniapple@Rajanis-MacBook-Pro BlazorTodo % dotnet run
+Building...
+info: Microsoft.Hosting.Lifetime[14]
+      Now listening on: http://localhost:5170
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: /Users/rajaniapple/Desktop/GitHub/CS/macOSarm64/Blazor/Blazor/8.0/BlazorWebAssemblyCallWebApi/BlazorTodo
+^Cinfo: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+rajaniapple@Rajanis-MacBook-Pro BlazorTodo % 
