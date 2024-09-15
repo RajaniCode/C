@@ -34,5 +34,5 @@ https://developer.mozilla.org/
 https://getbootstrap.com/  
 https://python.org/  
 https://gcc.gnu.org/  
-odata.org  
+[odata.org]  
 https://rules.sonarsource.com/csharp/
