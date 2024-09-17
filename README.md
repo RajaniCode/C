@@ -40,7 +40,7 @@ Credits
 [swagger.io](https://swagger.io/)  
 [postman.com](https://postman.com/)  
 [sharplab.io](https://sharplab.io/)  
-[ource.dot.net](https://source.dot.net/)  
+[source.dot.net](https://source.dot.net/)  
 [referencesource.microsoft.com](https://referencesource.microsoft.com/)  
 [nodatime.org](https://nodatime.org/)  
 [visualstudio.microsoft.com](https://visualstudio.microsoft.com/)  
