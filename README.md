@@ -56,6 +56,8 @@ Credits/ecma-international.org.svg?raw=true)](https://ecma-international.org/)
 [![image](
 Credits/Blazor-dotnet.microsoft.com.svg?raw=true)](https://dotnet.microsoft.com/apps/aspnet/web-apps/blazor/)  
 [![image](
+Credits/webassembly.org.svg?raw=true)](https://webassembly.org/)  
+[![image](
 Credits/getbootstrap.com.svg?raw=true)](https://getbootstrap.com/)  
 [![image](
 Credits/python.org.svg?raw=true)](https://python.org/)  
