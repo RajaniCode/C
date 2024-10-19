@@ -54,7 +54,7 @@ Credits/developer.mozilla.org.svg?raw=true)](https://developer.mozilla.org/)
 [![image](
 Credits/ecma-international.org.svg?raw=true)](https://ecma-international.org/)  
 [![image](
-Credits/Blazor-dotnet.microsoft.com.svg?raw=true)]([https://Blazor-dotnet.microsoft.com/)](https://dotnet.microsoft.com/apps/aspnet/web-apps/blazor/)  
+Credits/Blazor-dotnet.microsoft.com.svg?raw=true)](https://dotnet.microsoft.com/apps/aspnet/web-apps/blazor/)
 [![image](
 Credits/getbootstrap.com.svg?raw=true)](https://getbootstrap.com/)  
 [![image](
