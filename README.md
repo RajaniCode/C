@@ -78,8 +78,6 @@ Credits/linqpad.net.svg?raw=true)](https://linqpad.net/)
 [![image](
 Credits/Eclipse-aCute-projects.eclipse.org.svg?raw=true)](https://projects.eclipse.org/)  
 [![image](
-Credits/Eclipse-aCute-projects.eclipse.org.svg?raw=true)](https://projects.eclipse.org/)  
-[![image](
 Credits/nuget.org.svg?raw=true)](https://nuget.org/)  
 [![image](
 Credits/CS.NET-learn.microsoft.com.svg?raw=true)](https://learn.microsoft.com/)  
