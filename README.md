@@ -80,7 +80,7 @@ Credits/code.visualstudio.com.svg?raw=true)](https://code.visualstudio.com/)
 [![image](
 Credits/jetbrains.com.svg?raw=true)](https://jetbrains.com/)  
 [![image](
-Credits/luentassertions.com.svg?raw=true)](https://fluentassertions.com/)  
+Credits/fluentassertions.com.svg?raw=true)](https://fluentassertions.com/)  
 [![image](
 Credits/omnisharp.net.svg?raw=true)](https://omnisharp.net/)  
 [![image](
