@@ -58,6 +58,8 @@ Credits/developer.mozilla.org.svg?raw=true)](https://developer.mozilla.org/)
 [![image](
 Credits/ecma-international.org.svg?raw=true)](https://ecma-international.org/)  
 [![image](
+Credits/Kendo-UI-progress.com.svg?raw=true)](https://progress.com/)  
+[![image](
 Credits/Blazor-dotnet.microsoft.com.svg?raw=true)](https://dotnet.microsoft.com/apps/aspnet/web-apps/blazor/)  
 [![image](
 Credits/webassembly.org.svg?raw=true)](https://webassembly.org/)  
