@@ -100,7 +100,7 @@ Credits/nuget.org.svg?raw=true)](https://nuget.org/)
 [![image](
 Credits/nunit.org.svg?raw=true)](https://nunit.org/)  
 [![image](
-Credits/xunit.org.svg?raw=true)](https://xunit.org/)  
+Credits/xunit.net.svg?raw=true)](https://xunit.net/)  
 [![image](
 Credits/logging.apache.org.svg?raw=true)](https://logging.apache.org/)  
 [![image](
