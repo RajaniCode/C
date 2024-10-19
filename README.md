@@ -60,6 +60,8 @@ Credits/webassembly.org.svg?raw=true)](https://webassembly.org/)
 [![image](
 Credits/getbootstrap.com.svg?raw=true)](https://getbootstrap.com/)  
 [![image](
+Credits/fsharp.org.svg?raw=true)](https://fsharp.org/)  
+[![image](
 Credits/python.org.svg?raw=true)](https://python.org/)  
 [![image](
 Credits/gcc.gnu.org.svg?raw=true)](https://gcc.gnu.org/)  
