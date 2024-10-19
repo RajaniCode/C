@@ -98,6 +98,16 @@ Credits/Eclipse-aCute-projects.eclipse.org.svg?raw=true)](https://projects.eclip
 [![image](
 Credits/nuget.org.svg?raw=true)](https://nuget.org/)  
 [![image](
+Credits/nunit.org.svg?raw=true)](https://nunit.org/)  
+[![image](
+Credits/xunit.org.svg?raw=true)](https://xunit.org/)  
+[![image](
+Credits/logging.apache.org.svg?raw=true)](https://logging.apache.org/)  
+[![image](
+Credits/nlog-project.org.svg?raw=true)](https://nlog-project.org/)  
+[![image](
+Credits/serilog.net.svg?raw=true)](https://serilog.net/)  
+[![image](
 Credits/CS.NET-learn.microsoft.com.svg?raw=true)](https://learn.microsoft.com/)  
 [![image](
 Credits/Blazor-learn.microsoft.com.svg?raw=true)](https://learn.microsoft.com/aspnet/core/blazor/)  
