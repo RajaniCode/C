@@ -37,6 +37,7 @@ Credits/azure.microsoft.com.svg?raw=true)](https://azure.microsoft.com/)
 Credits/developer.x.com.svg?raw=true)](https://developer.x.com/)  
 [![image](
 Credits/developers.facebook.com.svg?raw=true)](https://developers.facebook.com.com/)  
+[![image](
 Credits/react.dev.svg?raw=true)](https://react.dev/)  
 [![image](
 Credits/angular.dev.svg?raw=true)](https://angular.dev/)  
