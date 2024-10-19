@@ -24,7 +24,7 @@ Credits/dotnet.microsoft.com.svg?raw=true)](https://dotnet.microsoft.com/)
 [![image](
 Credits/developer.apple.com.svg?raw=true)](https://developer.apple.com/)  
 [![image](
-Credits/Xcode-developer.apple.com.svg?raw=true)](https://developer.apple.com/xcode/) 
+Credits/Xcode-developer.apple.com.svg?raw=true)](https://developer.apple.com/xcode/)  
 [![image](
 Credits/mono-project.com.svg?raw=true)](https://mono-project.com/)  
 [![image](
