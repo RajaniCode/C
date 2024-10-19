@@ -108,8 +108,6 @@ Credits/nlog-project.org.svg?raw=true)](https://nlog-project.org/)
 [![image](
 Credits/serilog.net.svg?raw=true)](https://serilog.net/)  
 [![image](
-Credits/CS.NET-learn.microsoft.com.svg?raw=true)](https://learn.microsoft.com/)  
-[![image](
-Credits/Blazor-learn.microsoft.com.svg?raw=true)](https://learn.microsoft.com/aspnet/core/blazor/)  
+Credits/learn.microsoft.com.svg?raw=true)](https://learn.microsoft.com/)  
 [![image](
 Credits/CS-static-code-analysis-rules.sonarsource.com.svg?raw=true)](https://rules.sonarsource.com/csharp/)
