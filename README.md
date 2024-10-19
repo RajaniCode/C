@@ -36,9 +36,9 @@ Credits/azure.microsoft.com.svg?raw=true)](https://azure.microsoft.com/)
 [![image](
 Credits/developer.x.com.svg?raw=true)](https://developer.x.com/)  
 [![image](
-Credits/developers.meta.com.svg?raw=true)](https://developers.meta.com.com/)  
+Credits/developers.meta.com.svg?raw=true)](https://developers.meta.com/)  
 [![image](
-Credits/developers.facebook.com.svg?raw=true)](https://developers.facebook.com.com/)  
+Credits/developers.facebook.com.svg?raw=true)](https://developers.facebook.com/)  
 [![image](
 Credits/react.dev.svg?raw=true)](https://react.dev/)  
 [![image](
