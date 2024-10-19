@@ -90,4 +90,6 @@ Credits/nuget.org.svg?raw=true)](https://nuget.org/)
 [![image](
 Credits/CS.NET-learn.microsoft.com.svg?raw=true)](https://learn.microsoft.com/)  
 [![image](
+Credits/Blazor-learn.microsoft.com.svg?raw=true)](https://learn.microsoft.com/aspnet/core/blazor/)
+[![image](
 Credits/CS-static-code-analysis-rules.sonarsource.com.svg?raw=true)](https://rules.sonarsource.com/csharp/)
