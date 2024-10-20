@@ -19,7 +19,9 @@ CS
 
 Credits
 -------
+org/)  
 [![image](
+Credits/mono-project.com.svg?raw=true)](https://mo[![image](
 Credits/dotnet.microsoft.com.svg?raw=true)](https://dotnet.microsoft.com/)  
 [![image](
 Credits/microsoft.com.svg?raw=true)](https://microsoft.com/)  
@@ -27,6 +29,10 @@ Credits/microsoft.com.svg?raw=true)](https://microsoft.com/)
 Credits/dotnetfoundation.org.svg?raw=true)](https://dotnetfoundation.org/)  
 [![image](
 Credits/mono-project.com.svg?raw=true)](https://mono-project.com/)  
+[![image](
+Credits/monodevelop.com.svg?raw=true)](https://monodevelop.com/)  
+[![image](
+Credits/developer.apple.com.svg?raw=true)](https://developer.apple.com/)  no-project.com/)  
 [![image](
 Credits/monodevelop.com.svg?raw=true)](https://monodevelop.com/)  
 [![image](
