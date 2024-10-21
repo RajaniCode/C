@@ -85,7 +85,8 @@ Credits/nunit.org.svg?raw=true)](https://nunit.org/)
 Credits/xunit.net.svg?raw=true)](https://xunit.net/)  
 [![image](
 Credits/logging.apache.org.svg?raw=true)](https://logging.apache.org/)  
-
+[![image](
+Credits/nlog-project.org.svg?raw=true)](https://nlog-project.org/)  
 [![image](
 Credits/serilog.net.svg?raw=true)](https://serilog.net/)  
 [![image](
