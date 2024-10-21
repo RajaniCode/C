@@ -26,8 +26,7 @@ Credits/microsoft.com.svg?raw=true)](https://microsoft.com/)
 [![image](
 Credits/opensource.microsoft.com.svg?raw=true)](https://opensource.microsoft.com/)  
 [![image](
-Credits/dotnetfoundation.org.svg?raw=true)](https://dotnetfoundation.org/)  [![image](
-Credits/nlog-project.org.svg?raw=true)](https://nlog-project.org/)  
+Credits/dotnetfoundation.org.svg?raw=true)](https://dotnetfoundation.org/)  
 [![image](
 Credits/mono-project.com.svg?raw=true)](https://mono-project.com/)  
 [![image](
