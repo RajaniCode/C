@@ -88,8 +88,6 @@ Credits/logging.apache.org.svg?raw=true)](https://logging.apache.org/)
 [![image](
 Credits/nlog-project.org.svg?raw=true)](https://nlog-project.org/)  
 [![image](
-Credits/nlog-project.org1.svg?raw=true)](https://nlog-project.org/)  
-[![image](
 Credits/serilog.net.svg?raw=true)](https://serilog.net/)  
 [![image](
 Credits/dapper-plus.net.svg?raw=true)](https://dapper-plus.net/)  
