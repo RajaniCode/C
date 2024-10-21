@@ -106,8 +106,6 @@ Credits/jetbrains.com.svg?raw=true)](https://jetbrains.com/)
 [![image](
 Credits/fluentassertions.com.svg?raw=true)](https://fluentassertions.com/)  
 [![image](
-Credits/omnisharp.net.svg?raw=true)](https://omnisharp.net/)  
-[![image](
 Credits/linqpad.net.svg?raw=true)](https://linqpad.net/)  
 [![image](
 Credits/Eclipse-aCute-projects.eclipse.org.svg?raw=true)](https://projects.eclipse.org/)  
