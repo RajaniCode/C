@@ -76,6 +76,8 @@ Credits/fsharp.org.svg?raw=true)](https://fsharp.org/)
 [![image](
 Credits/python.org.svg?raw=true)](https://python.org/)  
 [![image](
+Credits/pypi.org.svg?raw=true)](https://pypi.org/)  
+[![image](
 Credits/gcc.gnu.org.svg?raw=true)](https://gcc.gnu.org/)  
 [![image](
 Credits/nuget.org.svg?raw=true)](https://nuget.org/)  
