@@ -112,6 +112,6 @@ Credits/linqpad.net.svg)](https://linqpad.net/)
 [![image](
 Credits/Eclipse-aCute-projects.eclipse.org.svg)](https://projects.eclipse.org/)  
 [![image](
-Credits/learn.microsoft.com.svg)](https://learn.microsoft.com/)  
+Credits/CS.NET-learn.microsoft.com.svg)](https://learn.microsoft.com/dotnet/)  
 [![image](
 Credits/CS-static-code-analysis-rules.sonarsource.com.svg)](https://rules.sonarsource.com/csharp/)
