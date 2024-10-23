@@ -20,9 +20,9 @@ CS
 Credits
 -------
 [![image](
-Credits/dotnet.microsoft.com.svg)](https://dotnet.microsoft.com/)  
-[![image](
 Credits/microsoft.com.svg)](https://microsoft.com/)  
+[![image](
+Credits/dotnet.microsoft.com.svg)](https://dotnet.microsoft.com/)  
 [![image](
 Credits/opensource.microsoft.com.svg)](https://opensource.microsoft.com/)  
 [![image](
