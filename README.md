@@ -108,11 +108,11 @@ Credits/postman.com.svg)](https://postman.com/)
 Credits/fluentassertions.com.svg)](https://fluentassertions.com/)  
 [![image](
 Credits/linqpad.net.svg)](https://linqpad.net/)<!--[![image](
+Credits/omnisharp.net.svg)](https://omnisharp.net/)  
+[![image](
 Credits/eclipse.org.svg)](https://eclipse.org/)-->  
 [![image](
 Credits/Eclipse-aCute-projects.eclipse.org.svg)](https://projects.eclipse.org/)  
-[![image](
-Credits/omnisharp.net.svg)](https://omnisharp.net/)  
 [![image](
 Credits/jetbrains.com.svg)](https://jetbrains.com/)<!--[![image](
 Credits/dotCover-jetbrains.com.svg)](https://jetbrains.com/dotcover/)  
