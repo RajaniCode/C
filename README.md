@@ -91,7 +91,11 @@ Credits/nuget.org.svg)](https://nuget.org/)
 [![image](
 Credits/nunit.org.svg)](https://nunit.org/)  
 [![image](
+Credits/dapper-plus.net.svg)](https://dapper-plus.net/)  
+[![image](
 Credits/xunit.net.svg)](https://xunit.net/)  
+[![image](
+Credits/fluentassertions.com.svg)](https://fluentassertions.com/)  
 [![image](
 Credits/logging.apache.org.svg)](https://logging.apache.org/)  
 [![image](
@@ -99,13 +103,9 @@ Credits/nlog-project.org.svg)](https://nlog-project.org/)
 [![image](
 Credits/serilog.net.svg)](https://serilog.net/)  
 [![image](
-Credits/dapper-plus.net.svg)](https://dapper-plus.net/)  
-[![image](
 Credits/swagger.io.svg)](https://swagger.io/)  
 [![image](
 Credits/postman.com.svg)](https://postman.com/)  
-[![image](
-Credits/fluentassertions.com.svg)](https://fluentassertions.com/)  
 [![image](
 Credits/linqpad.net.svg)](https://linqpad.net/)<!--[![image](
 Credits/omnisharp.net.svg)](https://omnisharp.net/)  
