@@ -31,7 +31,7 @@ Credits/ASP.NET-Core-dotnet.microsoft.com.svg)](https://dotnet.microsoft.com/app
 [![image](
 Credits/Blazor-dotnet.microsoft.com.svg)](https://dotnet.microsoft.com/apps/aspnet/web-apps/blazor/)  
 [![image](
-Credits/CS .NET-MAUI-dotnet.microsoft.com.svg)](https://dotnet.microsoft.com/apps/maui/)  
+Credits/CS.NET-MAUI-dotnet.microsoft.com.svg)](https://dotnet.microsoft.com/apps/maui/)  
 [![image](
 Credits/webassembly.org.svg)](https://webassembly.org/)  
 [![image](
@@ -128,7 +128,7 @@ Credits/dotPeek-jetbrains.com.svg)](https://www.jetbrains.com/decompiler/)
 [![image](
 Credits/dotTrace-jetbrains.com.svg)](https://www.jetbrains.com/profiler/)  
 [![image](
-Credits/ReSharper-jetbrains.comsvg)](https://jetbrains.com/resharper/)  
+Credits/ReSharper-jetbrains.com.svg)](https://jetbrains.com/resharper/)  
 [![image](
 Credits/Rider-jetbrains.com.svg)](https://jetbrains.com/rider/)  
 
@@ -148,6 +148,6 @@ Credits/ASP.NET-Core-learn.microsoft.com.svg)](https://learn.microsoft.com/aspne
 [![image](
 Credits/Blazor-learn.microsoft.com.svg)](https://learn.microsoft.com/aspnet/core/blazor/)  
 [![image](
-Credits/CS .NET-MAUI-learn.microsoft.com.svg)](https://learn.microsoft.com/dotnet/maui/)  
+Credits/CS.NET-MAUI-learn.microsoft.com.svg)](https://learn.microsoft.com/dotnet/maui/)  
 [![image](
 Credits/CS-static-code-analysis-rules.sonarsource.com.svg)](https://rules.sonarsource.com/csharp/)
