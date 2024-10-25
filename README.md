@@ -88,7 +88,7 @@ Credits/nlog-project.org.svg?raw=true)](https://nlog-project.org/)
 [![image](
 Credits/serilog.net.svg?raw=true)](https://serilog.net/)  
 [![image](
-Credits/elmah.io.svg)](https://elmah.io/) 
+Credits/elmah.io.svg)](https://elmah.io/)  
 [![image](
 Credits/dapper-plus.net.svg?raw=true)](https://dapper-plus.net/)  
 [![image](
