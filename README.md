@@ -88,6 +88,8 @@ Credits/fsharp.org.svg)](https://fsharp.org/)
 [![image](
 Credits/python.org.svg)](https://python.org/)  
 [![image](
+Credits/pypi.org.svg)](https://pypi.org/)  
+[![image](
 Credits/gcc.gnu.org.svg)](https://gcc.gnu.org/)  
 [![image](
 Credits/nuget.org.svg)](https://nuget.org/)  
@@ -116,8 +118,6 @@ Credits/visualstudio.microsoft.com.svg)](https://visualstudio.microsoft.com/)
 [![image](
 Credits/code.visualstudio.com.svg)](https://code.visualstudio.com/)  
 [![image](
-Credits/omnisharp.net.svg)](https://omnisharp.net/)  
-[![image](
 Credits/linqpad.net.svg)](https://linqpad.net/)  
 [![image](
 Credits/Eclipse-aCute-projects.eclipse.org.svg)](https://projects.eclipse.org/)  
@@ -136,6 +136,8 @@ Credits/dotTrace-jetbrains.com.svg)](https://jetbrains.com/profiler/)
 Credits/ReSharper-jetbrains.com.svg)](https://jetbrains.com/resharper/)  
 [![image](
 Credits/Rider-jetbrains.com.svg)](https://jetbrains.com/rider/)  
+[![image](
+Credits/omnisharp.net.svg)](https://omnisharp.net/)  
 
 [![image](
 Credits/referencesource.microsoft.com.svg)](https://referencesource.microsoft.com/)
