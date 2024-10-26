@@ -120,6 +120,8 @@ Credits/code.visualstudio.com.svg)](https://code.visualstudio.com/)
 [![image](
 Credits/linqpad.net.svg)](https://linqpad.net/)  
 [![image](
+Credits/eclipse.org.svg)](https://eclipse.org/)  
+[![image](
 Credits/Eclipse-aCute-projects.eclipse.org.svg)](https://projects.eclipse.org/)  
 [![image](
 Credits/jetbrains.com.svg)](https://jetbrains.com/)  
