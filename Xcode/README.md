@@ -120,10 +120,6 @@ Credits/swagger.io.svg)](https://swagger.io/)
 [![image](
 Credits/postman.com.svg)](https://postman.com/)  
 [![image](
-Credits/visualstudio.microsoft.com.svg)](https://visualstudio.microsoft.com/)  
-[![image](
-Credits/code.visualstudio.com.svg)](https://code.visualstudio.com/)  
-[![image](
 Credits/linqpad.net.svg)](https://linqpad.net/)  
 [![image](
 Credits/eclipse.org.svg)](https://eclipse.org/)  
@@ -147,6 +143,10 @@ Credits/Rider-jetbrains.com.svg)](https://jetbrains.com/rider/)
 [![image](
 Credits/omnisharp.net.svg)](https://omnisharp.net/)  
 
+[![image](
+Credits/code.visualstudio.com.svg)](https://code.visualstudio.com/)  
+[![image](
+Credits/visualstudio.microsoft.com.svg)](https://visualstudio.microsoft.com/)  
 [![image](
 Credits/referencesource.microsoft.com.svg)](https://referencesource.microsoft.com/)
 
