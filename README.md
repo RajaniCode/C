@@ -64,6 +64,10 @@ Credits/developers.meta.com.svg)](https://developers.meta.com/)
 [![image](
 Credits/developers.facebook.com.svg)](https://developers.facebook.com/)  
 [![image](
+Credits/npmjs.com.svg)](https://npmjs.com/)  
+[![image](
+Credits/pnpm.io.svg)](https://pnpm.io/)  
+[![image](
 Credits/react.dev.svg)](https://react.dev/)  
 [![image](
 Credits/angular.dev.svg)](https://angular.dev/)  
