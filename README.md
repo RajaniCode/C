@@ -117,6 +117,8 @@ Credits/postman.com.svg)](https://postman.com/)
 [![image](
 Credits/ubuntu.com.svg)](https://ubuntu.com/)  
 [![image](
+Credits/debian.org.svg)](https://debian.org/)  
+[![image](
 Credits/chromebook.com.svg)](https://chromebook.com/)  
 [![image](
 Credits/linqpad.net.svg)](https://linqpad.net/)  
