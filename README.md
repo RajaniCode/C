@@ -119,7 +119,11 @@ Credits/ubuntu.com.svg)](https://ubuntu.com/)
 [![image](
 Credits/debian.org.svg)](https://debian.org/)  
 [![image](
+Credits/lxde.org.svg)](https://lxde.org/)  
+[![image](
 Credits/chromebook.com.svg)](https://chromebook.com/)  
+[![image](
+Credits/chromium.org.svg)](https://chromium.org/)  
 [![image](
 Credits/linqpad.net.svg)](https://linqpad.net/)  
 [![image](
