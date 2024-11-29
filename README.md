@@ -95,6 +95,12 @@ Credits/gcc.gnu.org.svg)](https://gcc.gnu.org/)
 [![image](
 Credits/nuget.org.svg)](https://nuget.org/)  
 [![image](
+Credits/nhibernate.info.svg)](https://nhibernate.info/)  
+[![image](
+Credits/dapper-plus.net.svg)](https://dapper-plus.net/)  
+[![image](
+Credits/dapr.io.svg)](https://dapr.io/)  
+[![image](
 Credits/nunit.org.svg)](https://nunit.org/)  
 [![image](
 Credits/xunit.net.svg)](https://xunit.net/)  
@@ -108,12 +114,6 @@ Credits/nlog-project.org.svg)](https://nlog-project.org/)
 Credits/serilog.net.svg)](https://serilog.net/)  
 [![image](
 Credits/elmah.io.svg)](https://elmah.io/)  
-[![image](
-Credits/nhibernate.info.svg)](https://nhibernate.info/)  
-[![image](
-Credits/dapper-plus.net.svg)](https://dapper-plus.net/)  
-[![image](
-Credits/dapr.io.svg)](https://dapr.io/)  
 [![image](
 Credits/swagger.io.svg)](https://swagger.io/)  
 [![image](
