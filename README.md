@@ -95,11 +95,11 @@ Credits/gcc.gnu.org.svg)](https://gcc.gnu.org/)
 [![image](
 Credits/nuget.org.svg)](https://nuget.org/)  
 [![image](
-Credits/nhibernate.info.svg)](https://nhibernate.info/)  
+Credits/dapr.io.svg)](https://dapr.io/)  
 [![image](
 Credits/dapper-plus.net.svg)](https://dapper-plus.net/)  
 [![image](
-Credits/dapr.io.svg)](https://dapr.io/)  
+Credits/nhibernate.info.svg)](https://nhibernate.info/)  
 [![image](
 Credits/nunit.org.svg)](https://nunit.org/)  
 [![image](
