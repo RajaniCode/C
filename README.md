@@ -109,6 +109,8 @@ Credits/serilog.net.svg)](https://serilog.net/)
 [![image](
 Credits/elmah.io.svg)](https://elmah.io/)  
 [![image](
+Credits/nhibernate.info.svg)](https://nhibernate.info/)  
+[![image](
 Credits/dapper-plus.net.svg)](https://dapper-plus.net/)  
 [![image](
 Credits/dapr.io.svg)](https://dapr.io/)  
