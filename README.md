@@ -35,6 +35,8 @@ Credits/Blazor-dotnet.microsoft.com.svg)](https://dotnet.microsoft.com/apps/aspn
 [![image](
 Credits/webassembly.org.svg)](https://webassembly.org/)  
 [![image](
+Credits/developer.microsoft.com.svg)](https://developer.microsoft.com/)  
+[![image](
 Credits/opensource.microsoft.com.svg)](https://opensource.microsoft.com/)   
 [![image](
 Credits/dotnetfoundation.org.svg)](https://dotnetfoundation.org/)  
