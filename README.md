@@ -119,6 +119,8 @@ Credits/elmah.io.svg)](https://elmah.io/)
 [![image](
 Credits/dnncommunity.org.svg)](https://dnncommunity.org/)  
 [![image](
+Credits/dnnsoftware.com.svg)](https://dnnsoftware.com/)  
+[![image](
 Credits/swagger.io.svg)](https://swagger.io/)  
 [![image](
 Credits/postman.com.svg)](https://postman.com/)  
