@@ -20,9 +20,6 @@ CS
 Credits
 -------
 [![image](
-Credits/microsoft.com.svg)](https://microsoft.com/)<!--[![image](
-Credits/dotnet.microsoft.com.svg)](https://dotnet.microsoft.com/)-->  
-[![image](
 Credits/CS.NET-dotnet.microsoft.com.svg)](https://dotnet.microsoft.com/)  
 [![image](
 Credits/CS-dotnet.microsoft.com.svg)](https://dotnet.microsoft.com/languages/csharp/)  
@@ -32,10 +29,12 @@ Credits/ASP.NET-Core-dotnet.microsoft.com.svg)](https://dotnet.microsoft.com/app
 Credits/CS.NET-MAUI-dotnet.microsoft.com.svg)](https://dotnet.microsoft.com/apps/maui)  
 [![image](
 Credits/Blazor-dotnet.microsoft.com.svg)](https://dotnet.microsoft.com/apps/aspnet/web-apps/blazor/)  
-[![image](
-Credits/webassembly.org.svg)](https://webassembly.org/)  
+<!--[![image](
+Credits/dotnet.microsoft.com.svg)](https://dotnet.microsoft.com/)-->  
 [![image](
 Credits/developer.microsoft.com.svg)](https://developer.microsoft.com/)  
+[![image](
+Credits/microsoft.com.svg)](https://microsoft.com/)  
 [![image](
 Credits/opensource.microsoft.com.svg)](https://opensource.microsoft.com/)   
 [![image](
@@ -162,6 +161,8 @@ Credits/visualstudio.microsoft.com.svg)](https://visualstudio.microsoft.com/)
 [![image](
 Credits/referencesource.microsoft.com.svg)](https://referencesource.microsoft.com/)<!--[![image](
 Credits/learn.microsoft.com.svg)](https://learn.microsoft.com/)-->  
+[![image](
+Credits/webassembly.org.svg)](https://webassembly.org/)  
 [![image](
 Credits/CS.NET-learn.microsoft.com.svg)](https://learn.microsoft.com/dotnet/)  
 [![image](
