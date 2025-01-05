@@ -28,15 +28,14 @@ Credits/ASP.NET-Core-dotnet.microsoft.com.svg)](https://dotnet.microsoft.com/app
 [![image](
 Credits/CS.NET-MAUI-dotnet.microsoft.com.svg)](https://dotnet.microsoft.com/apps/maui)  
 [![image](
-Credits/Blazor-dotnet.microsoft.com.svg)](https://dotnet.microsoft.com/apps/aspnet/web-apps/blazor/)  
-<!--[![image](
+Credits/Blazor-dotnet.microsoft.com.svg)](https://dotnet.microsoft.com/apps/aspnet/web-apps/blazor/)<!--[![image](
 Credits/dotnet.microsoft.com.svg)](https://dotnet.microsoft.com/)-->  
 [![image](
 Credits/developer.microsoft.com.svg)](https://developer.microsoft.com/)  
 [![image](
 Credits/microsoft.com.svg)](https://microsoft.com/)  
 [![image](
-Credits/opensource.microsoft.com.svg)](https://opensource.microsoft.com/)   
+Credits/opensource.microsoft.com.svg)](https://opensource.microsoft.com/)  
 [![image](
 Credits/dotnetfoundation.org.svg)](https://dotnetfoundation.org/)  
 [![image](
