@@ -28,9 +28,7 @@ Credits/ASP.NET-Core-dotnet.microsoft.com.svg)](https://dotnet.microsoft.com/app
 [![image](
 Credits/CS.NET-MAUI-dotnet.microsoft.com.svg)](https://dotnet.microsoft.com/apps/maui)  
 [![image](
-Credits/Blazor-dotnet.microsoft.com.svg)](https://dotnet.microsoft.com/apps/aspnet/web-apps/blazor/)  
-[![image](
-Credits/fsharp.org.svg)](https://fsharp.org/)<!--[![image](
+Credits/Blazor-dotnet.microsoft.com.svg)](https://dotnet.microsoft.com/apps/aspnet/web-apps/blazor/)<!--[![image](
 Credits/dotnet.microsoft.com.svg)](https://dotnet.microsoft.com/)-->  
 [![image](
 Credits/developer.microsoft.com.svg)](https://developer.microsoft.com/)  
@@ -40,6 +38,8 @@ Credits/microsoft.com.svg)](https://microsoft.com/)
 Credits/opensource.microsoft.com.svg)](https://opensource.microsoft.com/)  
 [![image](
 Credits/dotnetfoundation.org.svg)](https://dotnetfoundation.org/)  
+[![image](
+Credits/fsharp.org.svg)](https://fsharp.org/)  
 [![image](
 Credits/mono-project.com.svg)](https://mono-project.com/)  
 [![image](
@@ -166,8 +166,6 @@ Credits/learn.microsoft.com.svg)](https://learn.microsoft.com/)-->
 Credits/CS.NET-learn.microsoft.com.svg)](https://learn.microsoft.com/dotnet/)  
 [![image](
 Credits/CS-learn.microsoft.com.svg)](https://learn.microsoft.com/dotnet/csharp/)  
-[![image](
-Credits/FS-learn.microsoft.com.svg)](https://learn.microsoft.com/dotnet/fsharp/)  
 [![image](
 Credits/ASP.NET-Core-learn.microsoft.com.svg)](https://learn.microsoft.com/aspnet/)  
 [![image](
