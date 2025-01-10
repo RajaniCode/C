@@ -13,9 +13,11 @@ CS
 
 - ASP.NET Core SignalR
 
-- Entity Framework Core
+- F#
 
 - Blazor
+
+- Entity Framework Core
 
 Credits
 -------
@@ -23,12 +25,17 @@ Credits
 Credits/CS.NET-dotnet.microsoft.com.svg)](https://dotnet.microsoft.com/)  
 [![image](
 Credits/CS-dotnet.microsoft.com.svg)](https://dotnet.microsoft.com/languages/csharp/)  
+<!--[![image](
+Credits/CS.NETdotnet.microsoft.com.svg)](https://dotnet.microsoft.com/languages/csharp/)-->  
 [![image](
 Credits/ASP.NET-Core-dotnet.microsoft.com.svg)](https://dotnet.microsoft.com/apps/aspnet/)  
 [![image](
-Credits/CS.NET-MAUI-dotnet.microsoft.com.svg)](https://dotnet.microsoft.com/apps/maui)  
+Credits/FS-dotnet.microsoft.com.svg)](https://dotnet.microsoft.com/languages/fsharp/)<!--[![image](
+Credits/FS.NET-dotnet.microsoft.com.svg)](https://dotnet.microsoft.com/languages/fsharp/)-->  
 [![image](
-Credits/Blazor-dotnet.microsoft.com.svg)](https://dotnet.microsoft.com/apps/aspnet/web-apps/blazor/)<!--[![image](
+Credits/Blazor-dotnet.microsoft.com.svg)](https://dotnet.microsoft.com/apps/aspnet/web-apps/blazor/)  
+[![image](
+Credits/CS.NET-MAUI-dotnet.microsoft.com.svg)](https://dotnet.microsoft.com/apps/maui)<!--[![image](
 Credits/dotnet.microsoft.com.svg)](https://dotnet.microsoft.com/)-->  
 [![image](
 Credits/developer.microsoft.com.svg)](https://developer.microsoft.com/)  
@@ -165,14 +172,17 @@ Credits/learn.microsoft.com.svg)](https://learn.microsoft.com/)-->
 [![image](
 Credits/CS.NET-learn.microsoft.com.svg)](https://learn.microsoft.com/dotnet/)  
 [![image](
-Credits/CS-learn.microsoft.com.svg)](https://learn.microsoft.com/dotnet/csharp/)  
+Credits/CS-learn.microsoft.com.svg)](https://learn.microsoft.com/dotnet/csharp/)<!--[![image](
+Credits/CSlearn.microsoft.com.svg)](https://learn.microsoft.com/dotnet/csharp/)-->  
 [![image](
 Credits/ASP.NET-Core-learn.microsoft.com.svg)](https://learn.microsoft.com/aspnet/)  
 [![image](
-Credits/CS.NET-MAUI-learn.microsoft.com.svg)](https://learn.microsoft.com/dotnet/maui/)  
+Credits/FS-learn.microsoft.com.svg)](https://learn.microsoft.com/dotnet/fsharp/)  
+[![image](
+Credits/FS.NET-learn.microsoft.com.svg)](https://learn.microsoft.com/dotnet/fsharp/)  
 [![image](
 Credits/Blazor-learn.microsoft.com.svg)](https://learn.microsoft.com/aspnet/core/blazor/)  
 [![image](
-Credits/FS-learn.microsoft.com.svg)](https://learn.microsoft.com/dotnet/fsharp/)  
+Credits/CS.NET-MAUI-learn.microsoft.com.svg)](https://learn.microsoft.com/dotnet/maui/)  
 [![image](
 Credits/CS-static-code-analysis-rules.sonarsource.com.svg)](https://rules.sonarsource.com/csharp/)
