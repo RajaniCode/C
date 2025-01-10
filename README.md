@@ -24,8 +24,7 @@ Credits
 [![image](
 Credits/CS.NET-dotnet.microsoft.com.svg)](https://dotnet.microsoft.com/)  
 [![image](
-Credits/CS-dotnet.microsoft.com.svg)](https://dotnet.microsoft.com/languages/csharp/)  
-<!--[![image](
+Credits/CS-dotnet.microsoft.com.svg)](https://dotnet.microsoft.com/languages/csharp/)<!--[![image](
 Credits/CS.NETdotnet.microsoft.com.svg)](https://dotnet.microsoft.com/languages/csharp/)-->  
 [![image](
 Credits/ASP.NET-Core-dotnet.microsoft.com.svg)](https://dotnet.microsoft.com/apps/aspnet/)  
@@ -177,9 +176,8 @@ Credits/CSlearn.microsoft.com.svg)](https://learn.microsoft.com/dotnet/csharp/)-
 [![image](
 Credits/ASP.NET-Core-learn.microsoft.com.svg)](https://learn.microsoft.com/aspnet/)  
 [![image](
-Credits/FS-learn.microsoft.com.svg)](https://learn.microsoft.com/dotnet/fsharp/)  
-[![image](
-Credits/FS.NET-learn.microsoft.com.svg)](https://learn.microsoft.com/dotnet/fsharp/)  
+Credits/FS-learn.microsoft.com.svg)](https://learn.microsoft.com/dotnet/fsharp/)<!--[![image](
+Credits/FS.NET-learn.microsoft.com.svg)](https://learn.microsoft.com/dotnet/fsharp/)-->  
 [![image](
 Credits/Blazor-learn.microsoft.com.svg)](https://learn.microsoft.com/aspnet/core/blazor/)  
 [![image](
