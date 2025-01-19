@@ -1,0 +1,226 @@
+
+###########################################################################################################################
+
+# .NET Multi-platform App UI app # C#
+
+###########################################################################################################################
+***************************************************************************************************************************
+# Download and install the .NET SDK. After the download completes, launch the download to begin the install.
+
+# Download .NET 9 SDK Arm64 (Apple Silicon) 
+% wget https://download.visualstudio.microsoft.com/download/pr/96489126-b9ba-414a-a2d0-d8c5b61a22be/fe047e117e9cc43738ba2222f4769da2/dotnet-sdk-9.0.102-osx-arm64.pkg
+
+# Download and install VS Code
+% wget https://code.visualstudio.com/sha/download?build=stable&os=darwin-arm64
+***************************************************************************************************************************
+
+# VS Code # Terminal
+
+***************************************************************************************************************************
+# Type: MAUI # Select: .NET MAUI
+# Open VS Code and select the Extensions button in VS Code's Activity Bar to the left. Type MAUI in the search bar, select .NET MAUI, and then select the Install button on the .NET MAUI extension page.
+# This extension comes with the C# Dev Kit and the C# extensions, which are required for the .NET MAUI extension to run.
+
+% mkdir -p Desktop/MAUI && cd Desktop/MAUI
+
+% sudo dotnet workload install maui
+[
+Welcome to .NET 9.0!
+---------------------
+SDK Version: 9.0.102
+
+Telemetry
+---------
+The .NET tools collect usage data in order to help us improve your experience. It is collected by Microsoft and shared with the community. You can opt-out of telemetry by setting the DOTNET_CLI_TELEMETRY_OPTOUT environment variable to '1' or 'true' using your favorite shell.
+
+Read more about .NET CLI Tools telemetry: https://aka.ms/dotnet-cli-telemetry
+
+----------------
+Installed an ASP.NET Core HTTPS development certificate.
+To trust the certificate, run 'dotnet dev-certs https --trust'
+Learn about HTTPS: https://aka.ms/dotnet-https
+
+----------------
+Write your first app: https://aka.ms/dotnet-hello-world
+Find out what's new: https://aka.ms/dotnet-whats-new
+Explore documentation: https://aka.ms/dotnet-docs
+Report issues and find source on GitHub: https://github.com/dotnet/core
+Use 'dotnet --help' to see available commands or visit: https://aka.ms/dotnet-cli
+--------------------------------------------------------------------------------------
+Checking the state of installed workloads...
+
+Successfully installed workload(s) .
+]
+
+[
+% sudo dotnet workload update
+]
+% dotnet workload list
+[
+Installed Workload Id      Manifest Version      Installation Source
+--------------------------------------------------------------------
+android                    35.0.24/9.0.100       SDK 9.0.100        
+maui                       9.0.14/9.0.100        SDK 9.0.100        
+wasm-tools                 9.0.1/9.0.100         SDK 9.0.100        
+
+Use `dotnet workload search` to find additional workloads to install.
+]
+***************************************************************************************************************************
+
+# Install Xcode
+
+***************************************************************************************************************************
+# To build .NET MAUI apps, you'll also need:
+# Latest version of Xcode
+https://developer.apple.com/xcode/
+[
+https://apps.apple.com/us/app/xcode/id497799835?mt=12/
+]
+
+# Install the Xcode command line developer tools by running the following command:
+% xcode-select --install
+[
+xcode-select: note: Command line tools are already installed. Use "Software Update" in System Settings or the softwareupdate command line interface to install updates
+]
+***************************************************************************************************************************
+
+# Create your app
+
+***************************************************************************************************************************
+# Create a new .NET MAUI app
+# Open the command palette in VS Code by pressing CMD+SHIFT+P.
+# Type .NET: to see the commands you can run with C# Dev Kit!
+# Find and select .NET: New Project to create a new .NET project.
+# Select .NET MAUI App.
+# Choose the folder location you'd like to save your project.
+# Name the project CSMauiApp in the command palette when prompted.
+
+# Under the Solution Explorer, select MainPage.xaml. This file contains the markup that describes the structure and layout of the user interface elements in your MAUI application.
+***************************************************************************************************************************
+
+# Run your app
+
+***************************************************************************************************************************
+# Deploy the .NET MAUI application # My Mac Apple MacBook Pro
+
+# In the bottom right of the VS Code window, you should see curly braces in the Status Bar. Click on the curly braces, and you should see My Mac selected as the default debug target.
+
+# In the running app, select the Click me button a few times and observe that the count of the number of button clicks is incremented: .NET MAUI app!
+
+***************************************************************************************************************************
+
+# Edit your code
+
+***************************************************************************************************************************
+# Go back to the MainPage.xaml file in VS Code and leave the app running.
+# Currently, the Text of the second Label on line 17 is set to say Hello, World! as shown in the following code:
+# MainPage.xaml
+    Text="Hello, World!" 
+    Style="{StaticResource Headline}"
+    SemanticProperties.HeadingLevel="Level1"  />
+# Update the text to read Hola, .NET MAUI!:
+# MainPage.xaml
+    Text="Hello, .NET MAUI!" 
+    Style="{StaticResource Headline}"
+    SemanticProperties.HeadingLevel="Level1"  /> 
+The app UI updates automatically as you make changes.
+***************************************************************************************************************************
+
+# Run on mobile device # iPhone 16 Pro Max
+
+***************************************************************************************************************************
+# Close the .NET MAUI application you had running and return to VS Code.
+# Click on the curly braces in the bottom right of the VS Code window in the Status Bar and select Debug Target.
+# Scroll down and select: iPhone 16 Pro Max
+
+# You should now see iOS: iPhone 16 Pro Max as the new debug target.
+
+# To run the app, click the Run and Debug icon in the VS Code Activity Bar. Then click Run and Debug.
+
+# Your application will build and deploy to the iPhone simulator. Please note this may take a minute, it is virtually turning on an iPhone!
+***************************************************************************************************************************
+
+# Xcode app # iOS Simulator
+
+***************************************************************************************************************************
+# iPhone 16 Pro Max
+$HOME/Projects/RajanimacOSiOSSwift
+***************************************************************************************************************************
+
+# Android Studio app # Android Emulator
+
+***************************************************************************************************************************
+# API 35 ("VanillaIceCream"; Android 15.0)
+$HOME/AndroidStudioProjects/RajanimacOSAndroid
+***************************************************************************************************************************
+
+.NET MAUI: Configure Android
+
+***************************************************************************************************************************
+
+IMPORTANT:
+- If you are sharing the Android SDK location with Android Studio, the recommended way to install/update the SDK and accept licenses is by using Android Studio.
+ 
+ACTION REQUIRED:
+✗- Android SDK - Ensure that the required Android SDK components are installed: "platform-tools" "cmdline-tools/12.0".
+	1. Install the Android SDK components:
+		- From the command palette, choose '.NET MAUI: Configure Android', select 'How to configure Android', and follow the instructions.
+		- Alternatively, you can try installing the components by opening a Terminal, navigating to directory '/Users/rajaniapple/Library/Android/sdk/cmdline-tools/5.0/bin' and then running: './sdkmanager "platform-tools" "cmdline-tools;12.0"'. Then, from the command palette, choose '.NET MAUI: Configure Android', and 'Refresh Android environment'.
+Take into account that the .NET MAUI Android SDK recommends specific component versions and if you decide to not use them the building and debugging may not work well.
+ 
+SUGGESTION:
+- Android SDK - There are optional Android SDK components required for emulator usage that we recommend to installed/upgraded: "system-images/android-35/google_apis/arm64-v8a".
+	1. Install the Android SDK components:
+		- From the command palette, choose '.NET MAUI: Configure Android', select 'How to configure Android', and follow the instructions.
+		- Alternatively, you can try installing the components by opening a Terminal, navigating to directory '/Users/rajaniapple/Library/Android/sdk/cmdline-tools/5.0/bin' and then running: './sdkmanager "system-images;android-35;google_apis;arm64-v8a"'. Then, from the command palette, choose '.NET MAUI: Configure Android', and 'Refresh Android environment'.
+***************************************************************************************************************************
+
+% cd /Users/rajaniapple/Library/Android/sdk/cmdline-tools/5.0/bin
+% ./sdkmanager "system-images;android-35;google_apis;arm64-v8a"
+
+***************************************************************************************************************************
+
+ACTION REQUIRED:
+✗- Android SDK - Ensure that the required Android SDK components are installed: "platform-tools" "cmdline-tools/12.0".
+	1. Install the Android SDK components:
+		- From the command palette, choose '.NET MAUI: Configure Android', select 'How to configure Android', and follow the instructions.
+		- Alternatively, you can try installing the components by opening a Terminal, navigating to directory '/Users/rajaniapple/Library/Android/sdk/cmdline-tools/5.0/bin' and then running: './sdkmanager "platform-tools" "cmdline-tools;12.0"'. Then, from the command palette, choose '.NET MAUI: Configure Android', and 'Refresh Android environment'.
+Take into account that the .NET MAUI Android SDK recommends specific component versions and if you decide to not use them the building and debugging may not work well.
+ 
+***************************************************************************************************************************
+
+% cd /Users/rajaniapple/Library/Android/sdk/cmdline-tools/5.0/bin
+% ./sdkmanager "platform-tools" "cmdline-tools;12.0"
+
+***************************************************************************************************************************
+
+ANDROID ENVIRONMENT STATUS: 1/16/2025, 8:48:00 PM
+ 
+Here is the status of your Android development environment:
+ 
+Required components:
+ 
+	✓ Java SDK - INSTALLED (version '17.0.2')
+		- Path: '/Users/rajaniapple/Downloads/Software/OpenJDK/JDK17.0.2/jdk-17.0.2.jdk/Contents/Home' (VSCode settings)
+
+	✓ Android SDK - INSTALLED
+		- Path: '/Users/rajaniapple/Library/Android/sdk' (Workload)
+ 
+		✓ platforms/android-35 - INSTALLED (version '2')
+		✓ build-tools/35.0.0 - INSTALLED (version '35.0.0')
+		✓ platform-tools - INSTALLED (version '35.0.2')
+		✓ cmdline-tools/12.0 - INSTALLED (version '12.0')
+ 
+Optional components:
+ 
+	✗ Android Virtual Device (AVD) - INCOMPLETE (Required for emulator usage)
+		- AVD Path: '/Users/rajaniapple/.android/avd'
+		- AVD devices - NOT DETECTED
+ 
+		✓ emulator - INSTALLED (version '35.3.11')
+		✓ system-images/android-35/google_apis/arm64-v8a - INSTALLED (version '8')
+ 
+IMPORTANT:
+- If you are sharing the Android SDK location with Android Studio, the recommended way to install/update the SDK and accept licenses is by using Android Studio.
+***************************************************************************************************************************
+###########################################################################################################################
