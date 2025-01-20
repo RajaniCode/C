@@ -196,7 +196,7 @@ Credits/CS.NET-MAUI-learn.microsoft.com.svg)](https://learn.microsoft.com/dotnet
 [![image](
 Credits/WinUI-learn.microsoft.com.svg)](https://learn.microsoft.com/windows/apps/)  
 [![image](
-Credits/CS.NET-Game-Dev-dotnet.microsoft.com)](https://learn.microsoft.com/gaming/<!--[![image](
+Credits/CS.NET-Game-Dev-dotnet.microsoft.com.svg)](https://learn.microsoft.com/gaming/<!--[![image](
 Credits/learn.microsoft.com.svg)](https://learn.microsoft.com/)-->  
 [![image](
 Credits/CS-static-code-analysis-rules.sonarsource.com.svg)](https://rules.sonarsource.com/csharp/)
