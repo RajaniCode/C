@@ -46,7 +46,7 @@ Credits/dotnetfoundation.org.svg)](https://dotnetfoundation.org/)
 [![image](
 Credits/fsharp.org.svg)](https://fsharp.org/)  
 [![image](
-Credits/CS.NET-MAUI-dotnet.microsoft.com.svg)](https://dotnet.microsoft.com/apps/maui/)  
+Credits/CS.NET-MAUI-dotnet.microsoft.com.svg)](https://developer.microsoft.com/en-us/windows/)  
 [![image](
 Credits/WinUI-developer.microsoft.com.svg)](https://developer.microsoft.com/)<!--[![image](
 Credits/dotnet.microsoft.com.svg)](https://dotnet.microsoft.com/)-->  
