@@ -46,9 +46,9 @@ Credits/dotnetfoundation.org.svg)](https://dotnetfoundation.org/)
 [![image](
 Credits/fsharp.org.svg)](https://fsharp.org/)  
 [![image](
-Credits/CS.NET-MAUI-dotnet.microsoft.com.svg)](https://developer.microsoft.com/en-us/windows/)  
+Credits/CS.NET-MAUI-dotnet.microsoft.com.svg)](https://dotnet.microsoft.com/apps/maui/)  
 [![image](
-Credits/WinUI-developer.microsoft.com.svg)](https://developer.microsoft.com/)<!--[![image](
+Credits/WinUI-developer.microsoft.com.svg)](https://developer.microsoft.com/windows/develop/)<!--[![image](
 Credits/dotnet.microsoft.com.svg)](https://dotnet.microsoft.com/)-->  
 [![image](
 Credits/swift.org.svg)](https://swift.org/)  
@@ -192,7 +192,9 @@ Credits/FS.NET-learn.microsoft.com.svg)](https://learn.microsoft.com/dotnet/fsha
 [![image](
 Credits/Blazor-learn.microsoft.com.svg)](https://learn.microsoft.com/aspnet/core/blazor/)  
 [![image](
-Credits/CS.NET-MAUI-learn.microsoft.com.svg)](https://learn.microsoft.com/dotnet/maui/)<!--[![image](
+Credits/CS.NET-MAUI-learn.microsoft.com.svg)](https://learn.microsoft.com/dotnet/maui/)  
+[![image](
+Credits/WinUI-learn.microsoft.com.svg)](https://learn.microsoft.com/windows/apps/)<!--[![image](
 Credits/learn.microsoft.com.svg)](https://learn.microsoft.com/)-->  
 [![image](
 Credits/CS-static-code-analysis-rules.sonarsource.com.svg)](https://rules.sonarsource.com/csharp/)
