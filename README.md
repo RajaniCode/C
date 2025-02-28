@@ -66,7 +66,7 @@ Credits/opentelemetry.io.svg)](https://opentelemetry.io/)
 [![image](
 Credits/WinUI-developer.microsoft.com.svg)](https://developer.microsoft.com/windows/develop/)  
 [![image](
-Credits/CS.NET-Game-Dev-learn.microsoft.com.svg)](https://dotnet.microsoft.com/apps/games/)<!--[![image](
+Credits/CS.NET-Game-Dev-dotnet.microsoft.com.svg)](https://dotnet.microsoft.com/apps/games/)<!--[![image](
 Credits/dotnet.microsoft.com.svg)](https://dotnet.microsoft.com/)-->  
 [![image](
 Credits/fsharp.org.svg)](https://fsharp.org/)  
@@ -206,7 +206,7 @@ Credits/FS.NET-learn.microsoft.com.svg)](https://learn.microsoft.com/dotnet/fsha
 [![image](
 Credits/WinUI-learn.microsoft.com.svg)](https://learn.microsoft.com/windows/apps/)  
 [![image](
-Credits/CS.NET-Game-Dev-dotnet.microsoft.com.svg)](https://learn.microsoft.com/gaming/)  
+Credits/CS.NET-Game-Dev-learn.microsoft.com.svg)](https://learn.microsoft.com/gaming/)  
 [![image](
 Credits/aka.ms.svg)](https://aka.ms/msbuild/)<!--[![image](
 Credits/learn.microsoft.com.svg)](https://learn.microsoft.com/)-->  
