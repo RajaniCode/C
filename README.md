@@ -91,7 +91,7 @@ Credits/nodejs.org.svg)](https://nodejs.org/)
 [![image](
 Credits/npmjs.com.svg)](https://npmjs.com/)  
 [![image](
-Credits/expressjs.com.svg)](https://expressjs.com/) 
+Credits/expressjs.com.svg)](https://expressjs.com/)  
 [![image](
 Credits/react.dev.svg)](https://react.dev/)  
 [![image](
@@ -202,6 +202,8 @@ Credits/opencontainers.org.svg)](https://opencontainers.org/)
 Credits/opentelemetry.io.svg)](https://opentelemetry.io/)  
 [![image](
 Credits/openssl.org.svg)](https://openssl.org/)  
+[![image](
+Credits/openssl-foundation.org.svg)](https://openssl-foundation.org/)  
 [![image](
 Credits/CS.NET-learn.microsoft.com.svg)](https://learn.microsoft.com/dotnet/)  
 [![image](
