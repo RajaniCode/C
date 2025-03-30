@@ -23,12 +23,18 @@ Credits/CS.NET-dotnet.microsoft.com.svg)](https://dotnet.microsoft.com/)
 Credits/CS-dotnet.microsoft.com.svg)](https://dotnet.microsoft.com/languages/csharp/)<!--[![image](
 Credits/CS.NETdotnet.microsoft.com.svg)](https://dotnet.microsoft.com/languages/csharp/)-->  
 [![image](
-Credits/ASP.NET-Core-dotnet.microsoft.com.svg)](https://dotnet.microsoft.com/apps/aspnet/)  
+Credits/ASP.NET-Core-dotnet.microsoft.com.svg)](https://dotnet.microsoft.com/apps/aspnet/) 
+ [![image](
+Credits/Blazor-dotnet.microsoft.com.svg)](https://dotnet.microsoft.com/apps/aspnet/web-apps/blazor/)  
+[![image](
+Credits/CS.NET-MAUI-dotnet.microsoft.com.svg)](https://dotnet.microsoft.com/apps/maui/)  
+[![image](
+Credits/ASP.NET-Core APIs-dotnet.microsoft.com.svg)](https://dotnet.microsoft.com/apps/aspnet/apis/)  
+[![image](
+Credits/SignalR-dotnet.microsoft.com.svg)](https://dotnet.microsoft.com/apps/aspnet/signalr/)  
 [![image](
 Credits/FS-dotnet.microsoft.com.svg)](https://dotnet.microsoft.com/languages/fsharp/)<!--[![image](
 Credits/FS.NET-dotnet.microsoft.com.svg)](https://dotnet.microsoft.com/languages/fsharp/)-->  
-[![image](
-Credits/Blazor-dotnet.microsoft.com.svg)](https://dotnet.microsoft.com/apps/aspnet/web-apps/blazor/)  
 [![image](
 Credits/developer.microsoft.com.svg)](https://developer.microsoft.com/)  
 [![image](
@@ -37,8 +43,6 @@ Credits/microsoft.com.svg)](https://microsoft.com/)
 Credits/opensource.microsoft.com.svg)](https://opensource.microsoft.com/)  
 [![image](
 Credits/dotnetfoundation.org.svg)](https://dotnetfoundation.org/)  
-[![image](
-Credits/CS.NET-MAUI-dotnet.microsoft.com.svg)](https://dotnet.microsoft.com/apps/maui/)  
 [![image](
 Credits/developer.android.com.svg)](https://developer.android.com/)  
 [![image](
@@ -152,13 +156,7 @@ Credits/swagger.io.svg)](https://swagger.io/)
 [![image](
 Credits/postman.com.svg)](https://postman.com/)  
 [![image](
-Credits/ubuntu.com.svg)](https://ubuntu.com/)  
-[![image](
-Credits/debian.org.svg)](https://debian.org/)  
-[![image](
-Credits/lxde.org.svg)](https://lxde.org/)  
-[![image](
-Credits/chromebook.com.svg)](https://chromebook.com/)  
+Credits/chromeos.google.svg)](https://chromeos.google/)  
 [![image](
 Credits/chromium.org.svg)](https://chromium.org/)  
 [![image](
@@ -184,6 +182,10 @@ Credits/Rider-jetbrains.com.svg)](https://jetbrains.com/rider/)
 Credits/omnisharp.net.svg)](https://omnisharp.net/)-->  
 [![image](
 Credits/code.visualstudio.com.svg)](https://code.visualstudio.com/)  
+[![image](
+Credits/vscode.dev.svg)](https://vscode.dev/)  
+[![image](
+Credits/marketplace.visualstudio.com.svg)](https://marketplace.visualstudio.com/)  
 [![image](
 Credits/visualstudio.microsoft.com.svg)](https://visualstudio.microsoft.com/)  
 [![image](
@@ -216,6 +218,12 @@ Credits/Blazor-learn.microsoft.com.svg)](https://learn.microsoft.com/aspnet/core
 [![image](
 Credits/CS.NET-MAUI-learn.microsoft.com.svg)](https://learn.microsoft.com/dotnet/maui/)  
 [![image](
+Credits/XAML-learn.microsoft.com.svg)](https://learn.microsoft.com/dotnet/maui/xaml/)  
+[![image](
+Credits/ASP.NET-Core APIs-learn.microsoft.com.svg)](https://learn.microsoft.com/aspnet/core/fundamentals/minimal-apis/)  
+[![image](
+Credits/SignalR-learn.microsoft.com.svg)](https://learn.microsoft.com/aspnet/core/signalr/)  
+[![image](
 Credits/CS.NET-Aspire-learn.microsoft.com.svg)](https://learn.microsoft.com/dotnet/aspire/)  
 [![image](
 Credits/FS-learn.microsoft.com.svg)](https://learn.microsoft.com/dotnet/fsharp/)<!--[![image](
@@ -225,7 +233,11 @@ Credits/WinUI-learn.microsoft.com.svg)](https://learn.microsoft.com/windows/apps
 [![image](
 Credits/CS.NET-Game-Dev-learn.microsoft.com.svg)](https://learn.microsoft.com/gaming/)-->    
 [![image](
-Credits/aka.ms.svg)](https://aka.ms/msbuild/)<!--[![image](
+Credits/Entity-Framework-Core-learn.microsoft.com.svg)](https://learn.microsoft.com/ef/core/)  
+[![image](
+Credits/ADO.NET-learn.microsoft.com.svg)](https://learn.microsoft.com/dotnet/framework/data/adonet/)<!--[![image](
 Credits/learn.microsoft.com.svg)](https://learn.microsoft.com/)-->  
+[![image](
+Credits/aka.ms.svg)](https://aka.ms/msbuild/)  
 [![image](
 Credits/CS-static-code-analysis-rules.sonarsource.com.svg)](https://rules.sonarsource.com/csharp/)
