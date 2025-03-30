@@ -28,8 +28,7 @@ Credits/ASP.NET-Core-dotnet.microsoft.com.svg)](https://dotnet.microsoft.com/app
 Credits/Blazor-dotnet.microsoft.com.svg)](https://dotnet.microsoft.com/apps/aspnet/web-apps/blazor/)  
 [![image](
 Credits/CS.NET-MAUI-dotnet.microsoft.com.svg)](https://dotnet.microsoft.com/apps/maui/)  
-[![image](
-Credits/ASP.NET-Core APIs-dotnet.microsoft.com.svg)](https://dotnet.microsoft.com/apps/aspnet/apis/)  
+[![image](Credits/ASP.NET-Core APIs-dotnet.microsoft.com.svg)](https://dotnet.microsoft.com/apps/aspnet/apis/)  
 [![image](
 Credits/SignalR-dotnet.microsoft.com.svg)](https://dotnet.microsoft.com/apps/aspnet/signalr/)  
 [![image](
@@ -219,8 +218,7 @@ Credits/Blazor-learn.microsoft.com.svg)](https://learn.microsoft.com/aspnet/core
 Credits/CS.NET-MAUI-learn.microsoft.com.svg)](https://learn.microsoft.com/dotnet/maui/)  
 [![image](
 Credits/XAML-learn.microsoft.com.svg)](https://learn.microsoft.com/dotnet/maui/xaml/)  
-[![image](
-Credits/ASP.NET-Core APIs-learn.microsoft.com.svg)](https://learn.microsoft.com/aspnet/core/fundamentals/minimal-apis/)  
+[![image](Credits/ASP.NET-Core APIs-learn.microsoft.com.svg)](https://learn.microsoft.com/aspnet/core/fundamentals/minimal-apis/)  
 [![image](
 Credits/SignalR-learn.microsoft.com.svg)](https://learn.microsoft.com/aspnet/core/signalr/)  
 [![image](
