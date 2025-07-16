@@ -1,0 +1,28 @@
+Last login: Thu Feb 13 23:35:27 on ttys000
+rajaniapple@Rajanis-MacBook-Pro ~ % curl -L "https://localhost:17038/login?t=1e5211a8def7af312c52858089f910d2"
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <base href="/">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="_content/Microsoft.FluentUI.AspNetCore.Components/css/reboot.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/highlight.css">
+    <link rel="stylesheet" href="Aspire.Dashboard.styles.css">
+
+    <!--Blazor:{"type":"server","key":{"locationHash":"77D12F14A8105320B1AAED6AE7E689DA0EC4483270A645E84079EAA0FFDF550D:5","formattedComponentKey":""},"sequence":0,"descriptor":"CfDJ8NGaauOHTQ1FmD6YqfH4MXpdqMNxBjKpmQG3iakTtlWS8JM30z/zZaqgJeU8mKqctSDA7dyUJpiOvstkX5g5NZnaLQuwEJJ2BcWtet07k9szWQ/7ERYx6UT3g09KVemNisWZftGx5T9TYMKQkE32jc4PO52zNf90zOV6y4GBHu8c0/flr6EBENfFhBxPjhixYBGZft0ppO/J2C2p0i4JQ5s\u002BMFyETKsCbLoBV8N9s3AkmEhsaNGuVHTbA3/bbeCZa6f63lsUaiMgWyYLWkyd4heggvcVVrjd5p4LUE4XeuGuFqQymjSZUyN9nqcZjV01w5d5kai9r/DLCy/m0xcgZ9BOGJL\u002ByGqsZVqGeG5otthplY24sO85CIqH0uAS4zGZelMfBPLZDwbtvZGKeyJrljSxK45JW7TyJhNg2U0pAFVhr1\u002BG0BgSBuRGjOS00g9g1T89a\u002BZS7GmZbRXQ2KZKVizoVlYc/TXSbF4puizR77wBGMW8TQcQIXTd26Dvo01rHp9kRvcwRyP29jRco7pa6eRZaSorOUEyxcsv0qTwIg7xf4bMzoyKEHp4hzlWmEzAZyrxtsu2l6ctOnDfBFBG2aw="}-->
+    
+    <style>@media (prefers-color-scheme: dark) {
+            body {
+                background-color: #272727;
+            }
+        }
+    </style></head>
+
+<body class="before-upgrade"><!--Blazor:{"type":"server","key":{"locationHash":"A3DBAED230774A6FE95C8476F0F9A18557AFBBA6F1AABF3952C879C56B8878FC:11","formattedComponentKey":""},"sequence":1,"descriptor":"CfDJ8NGaauOHTQ1FmD6YqfH4MXowmiQK\u002BPTIkP7kHPE4hL6gWPKv40N8aWvWM4eyUzIBf4wPYVXfEEEN42D\u002B/f5YarjPAY48JX5ob1nAal8pGVYJBPctIFNorzwL8TIcDFPzDpA9odswGegZVe4svgDwx72rKnIjhig7V4sdqMxPAsTQeeg2rFJ\u002B2P2JQB2/1T74tI/waPbzfc8tjVkUjr3VIYVa\u002BldrmhT3TnTxnXU8I/A0L60kgwWThTn7LDHTm4ZBnUd3/ySDpuTvGF3EyTW8vcnBWrwlErTPeB4JjlMOcWHYG4GliPTZ\u002BhNt7LnsCXSLDIbiexTfWCM44V9\u002BntRRsaw2BopgDHL44OL5yc0Z\u002BuyWUhYXpOsPlinodSoKlhzBKdPnLm3hvRSVK\u002BJDN9RrVIpE7fmeN35E7QiNdjhOwGHxUKne3qE0E206K/f8VTs\u002BGGwDia9NFpk8eQm\u002BEz/bVxTWQqukLiGYiyAKOt73ti704ntK9nW\u002B1Pfgj3\u002Bmin5oq7OoaXXgW8K07TjsNuwBhDLH/xwp6E38863KJLEGnS8f"}-->
+    <script src="_framework/blazor.web.js"></script>
+    <script src="js/app.js"></script>
+
+    <script src="js/app-theme.js" type="module"></script>
+    <script src="_content/Microsoft.FluentUI.AspNetCore.Components/Microsoft.FluentUI.AspNetCore.Components.lib.module.js" type="module"></script></body></html><!--Blazor-Web-Initializers:Ww0KICAiX2NvbnRlbnQvTWljcm9zb2Z0LkZsdWVudFVJLkFzcE5ldENvcmUuQ29tcG9uZW50cy9NaWNyb3NvZnQuRmx1ZW50VUkuQXNwTmV0Q29yZS5Db21wb25lbnRzLmxpYi5tb2R1bGUuanMiDQpd--><!--Blazor-Server-Component-State:CfDJ8NGaauOHTQ1FmD6YqfH4MXrJFge/4JANDYFat2SHmcIjHC35zXOk6NTsTjKXBj4vpONSCoyvtkxlQg1CZ+Ga47FLWNdSC+Rn7ZRXE6LBz8wdidEVbO9GKctET7XbJ6N7kEVv3rzOBueogiwjIPQijPJ8odqw75x3S1dPx+ky/wQIWZC/7lmXwiAj+TaZ9awjqt3u5aHd6SK0sJ9x+M9PNVv4Vv++dhFBgVWyQJZESbvNTP+6fI+no3fTgzHnqBIGDbbD5PqZipFlkP0xbeF/UTr8TT6gZfPcecjqNrhypqN3/dlfODA/dPe5MnuoMBexjr5CE1Q304CCnFBIbi7gweTuAJNKUcHJ4FEKoF1eKW061na4qnQvRlxCyFY/T+Hy2l4ftHvISAS8EYWyHgBm005AMy2ZeWWnFmmiSURMvzSUT11MLVTJhtx9BbTHMSRKga8TZp/ZSRETrTUY8V1g6avU8sgfMVKKO//QV+oCvc+6cONCDIahbOkFx1Yqwz/92BpgGAXM0Yl7OroCh8jXOOXHmR0CtLsydzRPiQ0PIx0M-->%                                       rajaniapple@Rajanis-MacBook-Pro ~ % open "https://localhost:17038/login?t=1e5211a8def7af312c52858089f910d2"
+rajaniapple@Rajanis-MacBook-Pro ~ % 

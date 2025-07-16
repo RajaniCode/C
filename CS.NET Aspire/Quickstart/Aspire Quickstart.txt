@@ -1,0 +1,22 @@
+
+% mkdir -p Quickstart
+
+% cd Quickstart
+
+% dotnet --version
+
+% dotnet new install Aspire.ProjectTemplates
+
+% dotnet new aspire-starter --use-redis-cache --output AspireSample
+
+% dotnet dev-certs https --trust
+
+% dotnet run --project AspireSample/AspireSample.AppHost
+
+[
+https://localhost:17038/login?t=1e5211a8def7af312c52858089f910d2
+]
+ 
+# Terminal New Window # curl # open
+% curl -L "https://localhost:17038/login?t=1e5211a8def7af312c52858089f910d2"
+% open "https://localhost:17038/login?t=1e5211a8def7af312c52858089f910d2"

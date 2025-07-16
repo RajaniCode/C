@@ -1,0 +1,156 @@
+Last login: Thu Feb 13 22:46:29 on ttys000
+rajaniapple@Rajanis-MacBook-Pro ~ % sw_vers                                                                                    
+ProductName:		macOS
+ProductVersion:		15.1
+BuildVersion:		24B83
+rajaniapple@Rajanis-MacBook-Pro ~ % arch                                                                                       
+arm64
+rajaniapple@Rajanis-MacBook-Pro ~ % cd $HOME/Desktop/GitHub/Hybrid-1/CS/CS.NET-Aspire                                          
+rajaniapple@Rajanis-MacBook-Pro CS.NET-Aspire % mkdir -p Quickstart
+rajaniapple@Rajanis-MacBook-Pro CS.NET-Aspire % cd Quickstart
+rajaniapple@Rajanis-MacBook-Pro Quickstart % dotnet --version
+9.0.200
+rajaniapple@Rajanis-MacBook-Pro Quickstart % dotnet new install Aspire.ProjectTemplates
+The following template packages will be installed:
+   Aspire.ProjectTemplates
+
+Success: Aspire.ProjectTemplates::9.0.0 installed the following templates:
+Template Name                      Short Name              Language  Tags                                                   
+---------------------------------  ----------------------  --------  -------------------------------------------------------
+.NET Aspire App Host               aspire-apphost          [C#]      Common/.NET Aspire/Cloud                               
+.NET Aspire Empty App              aspire                  [C#]      Common/.NET Aspire/Cloud/Web/Web API/API/Service       
+.NET Aspire Service Defaults       aspire-servicedefaults  [C#]      Common/.NET Aspire/Cloud/Web/Web API/API/Service       
+.NET Aspire Starter App            aspire-starter          [C#]      Common/.NET Aspire/Blazor/Web/Web API/API/Service/Cloud
+.NET Aspire Test Project (MSTest)  aspire-mstest           [C#]      Common/.NET Aspire/Cloud/Web/Web API/API/Service/Test  
+.NET Aspire Test Project (NUnit)   aspire-nunit            [C#]      Common/.NET Aspire/Cloud/Web/Web API/API/Service/Test  
+.NET Aspire Test Project (xUnit)   aspire-xunit            [C#]      Common/.NET Aspire/Cloud/Web/Web API/API/Service/Test  
+
+rajaniapple@Rajanis-MacBook-Pro Quickstart % dotnet new aspire-starter --use-redis-cache --output AspireSample
+The template ".NET Aspire Starter App" was created successfully.
+This template contains technologies from parties other than Microsoft, see https://aka.ms/dotnet/aspire/third-party-notices for details.
+
+Processing post-creation actions...
+Restoring /Users/rajaniapple/Desktop/GitHub/Hybrid-1/CS/CS.NET-Aspire/Quickstart/AspireSample/AspireSample.sln:
+Restore succeeded.
+Restoring /Users/rajaniapple/Desktop/GitHub/Hybrid-1/CS/CS.NET-Aspire/Quickstart/AspireSample/AspireSample.AppHost/AspireSample.AppHost.csproj:
+Restore succeeded.
+Restoring /Users/rajaniapple/Desktop/GitHub/Hybrid-1/CS/CS.NET-Aspire/Quickstart/AspireSample/AspireSample.ServiceDefaults/AspireSample.ServiceDefaults.csproj:
+Restore succeeded.
+Restoring /Users/rajaniapple/Desktop/GitHub/Hybrid-1/CS/CS.NET-Aspire/Quickstart/AspireSample/AspireSample.ApiService/AspireSample.ApiService.csproj:
+Restore succeeded.
+Restoring /Users/rajaniapple/Desktop/GitHub/Hybrid-1/CS/CS.NET-Aspire/Quickstart/AspireSample/AspireSample.Web/AspireSample.Web.csproj:
+Restore succeeded.
+
+
+rajaniapple@Rajanis-MacBook-Pro Quickstart % dotnet dev-certs https --trust
+Trusting the HTTPS development certificate was requested. If the certificate is not already trusted we will run the following command:
+'security add-trusted-cert -p basic -p ssl -k <<login-keychain>> <<certificate>>'
+This command might prompt you for your password to install the certificate on the keychain. To undo these changes: 'security remove-trusted-cert <<certificate>>'
+
+Successfully trusted the existing HTTPS certificate.
+rajaniapple@Rajanis-MacBook-Pro Quickstart % dotnet run --project AspireSample/AspireSample.AppHost
+Using launch settings from AspireSample/AspireSample.AppHost/Properties/launchSettings.json...
+Building...
+info: Aspire.Hosting.DistributedApplication[0]
+      Aspire version: 9.0.0+01ed51919f8df692ececce51048a140615dc759d
+info: Aspire.Hosting.DistributedApplication[0]
+      Distributed application starting.
+info: Aspire.Hosting.DistributedApplication[0]
+      Application host directory is: /Users/rajaniapple/Desktop/GitHub/Hybrid-1/CS/CS.NET-Aspire/Quickstart/AspireSample/AspireSample.AppHost
+crit: Aspire.Hosting.Dcp.DcpHostService[0]
+      Container runtime 'docker' was found but appears to be unhealthy. Ensure that Docker is running and that the Docker daemon is accessible. If Resource Saver mode is enabled, containers may not run. For more information, visit: https://docs.docker.com/desktop/use-desktop/resource-saver/
+info: Aspire.Hosting.DistributedApplication[0]
+      Now listening on: https://localhost:17038
+info: Aspire.Hosting.DistributedApplication[0]
+      Login to the dashboard at https://localhost:17038/login?t=1e5211a8def7af312c52858089f910d2
+fail: Aspire.Hosting.Dashboard.Microsoft.AspNetCore.Server.Kestrel[0]
+      Unexpected exception in TimingPipeFlusher.FlushAsync.
+      System.IO.IOException: The encryption operation failed, see inner exception.
+       ---> System.ComponentModel.Win32Exception (14): Bad address
+         --- End of inner exception stack trace ---
+         at System.Net.Security.SslStream.WriteSingleChunk[TIOAdapter](ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+         at System.Net.Security.SslStream.WriteAsyncInternal[TIOAdapter](ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+         at System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start[TStateMachine](TStateMachine& stateMachine)
+         at System.IO.Pipelines.StreamPipeWriter.FlushAsyncInternal(Boolean writeToStream, ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+         at System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start[TStateMachine](TStateMachine& stateMachine)
+         at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.PipeWriterHelpers.TimingPipeFlusher.FlushAsync(MinDataRate minRate, Int64 count, IHttpOutputAborter outputAborter, CancellationToken cancellationToken)
+         at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http2.Http2FrameWriter.WriteGoAwayAsync(Int32 lastStreamId, Http2ErrorCode errorCode)
+         at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http2.Http2Connection.ProcessRequestsAsync[TContext](IHttpApplication`1 application)
+         at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+         at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext(Thread threadPoolThread)
+         at System.Threading.ThreadPoolWorkQueue.Dispatch()
+         at System.Threading.PortableThreadPool.WorkerThread.WorkerThreadStart()
+         at System.Threading.Thread.StartCallback()
+      --- End of stack trace from previous location ---
+         at System.Net.Security.SslStream.WriteAsyncInternal[TIOAdapter](ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+         at System.IO.Pipelines.StreamPipeWriter.FlushAsyncInternal(Boolean writeToStream, ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+         at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+         at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.PipeWriterHelpers.ConcurrentPipeWriter.FlushAsyncAwaited(ValueTask`1 flushTask, CancellationToken cancellationToken)
+         at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.PipeWriterHelpers.TimingPipeFlusher.TimeFlushAsyncAwaited(ValueTask`1 pipeFlushTask, MinDataRate minRate, IHttpOutputAborter outputAborter, CancellationToken cancellationToken)
+fail: Aspire.Hosting.Dashboard.Microsoft.AspNetCore.Server.Kestrel[0]
+      Unhandled exception while processing 0HNACB548O5M6.
+      System.IO.IOException: The encryption operation failed, see inner exception.
+       ---> System.ComponentModel.Win32Exception (14): Bad address
+         --- End of inner exception stack trace ---
+         at System.Net.Security.SslStream.WriteSingleChunk[TIOAdapter](ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+         at System.Net.Security.SslStream.WriteAsyncInternal[TIOAdapter](ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+         at System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start[TStateMachine](TStateMachine& stateMachine)
+         at System.IO.Pipelines.StreamPipeWriter.FlushAsyncInternal(Boolean writeToStream, ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+         at System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start[TStateMachine](TStateMachine& stateMachine)
+         at System.IO.Pipelines.StreamPipeWriter.FlushAsyncInternal(Boolean writeToStream, ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+         at System.IO.Pipelines.StreamPipeWriter.CompleteAsync(Exception exception)
+         at System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start[TStateMachine](TStateMachine& stateMachine)
+         at System.IO.Pipelines.StreamPipeWriter.CompleteAsync(Exception exception)
+         at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.DuplexPipeStreamAdapter`1.DisposeAsync()
+         at System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start[TStateMachine](TStateMachine& stateMachine)
+         at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.DuplexPipeStreamAdapter`1.DisposeAsync()
+         at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+         at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.ExecutionContextCallback(Object s)
+         at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+         at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext(Thread threadPoolThread)
+         at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext()
+         at System.Threading.Tasks.AwaitTaskContinuation.RunOrScheduleAction(IAsyncStateMachineBox box, Boolean allowInlining)
+         at System.Threading.Tasks.Task.RunContinuations(Object continuationObject)
+         at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.SetExistingTaskResult(Task`1 task, TResult result)
+         at System.Runtime.CompilerServices.AsyncTaskMethodBuilder.SetResult()
+         at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.HttpConnection.ProcessRequestsAsync[TContext](IHttpApplication`1 httpApplication)
+         at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.ExecutionContextCallback(Object s)
+         at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+         at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext(Thread threadPoolThread)
+         at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext()
+         at System.Threading.Tasks.AwaitTaskContinuation.RunOrScheduleAction(IAsyncStateMachineBox box, Boolean allowInlining)
+         at System.Threading.Tasks.Task.RunContinuations(Object continuationObject)
+         at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.SetExistingTaskResult(Task`1 task, TResult result)
+         at System.Runtime.CompilerServices.AsyncTaskMethodBuilder.SetResult()
+         at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http2.Http2Connection.ProcessRequestsAsync[TContext](IHttpApplication`1 application)
+         at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+         at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext(Thread threadPoolThread)
+         at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext()
+         at System.Threading.Tasks.AwaitTaskContinuation.RunOrScheduleAction(IAsyncStateMachineBox box, Boolean allowInlining)
+         at System.Threading.Tasks.Task.RunContinuations(Object continuationObject)
+         at System.Threading.Tasks.Task`1.TrySetResult(TResult result)
+         at System.Threading.Tasks.UnwrapPromise`1.TrySetFromTask(Task task, Boolean lookForOce)
+         at System.Threading.Tasks.UnwrapPromise`1.Invoke(Task completingTask)
+         at System.Threading.Tasks.Task.RunContinuations(Object continuationObject)
+         at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.SetExistingTaskResult(Task`1 task, TResult result)
+         at System.Runtime.CompilerServices.AsyncTaskMethodBuilder.SetResult()
+         at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http2.Http2FrameWriter.WriteToOutputPipe()
+         at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+         at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext(Thread threadPoolThread)
+         at System.Threading.ThreadPoolWorkQueue.Dispatch()
+         at System.Threading.PortableThreadPool.WorkerThread.WorkerThreadStart()
+         at System.Threading.Thread.StartCallback()
+      --- End of stack trace from previous location ---
+         at System.Net.Security.SslStream.WriteAsyncInternal[TIOAdapter](ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+         at System.IO.Pipelines.StreamPipeWriter.FlushAsyncInternal(Boolean writeToStream, ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+         at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+         at System.IO.Pipelines.StreamPipeWriter.CompleteAsync(Exception exception)
+         at System.IO.Pipelines.StreamPipeWriter.CompleteAsync(Exception exception)
+         at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.DuplexPipeStreamAdapter`1.DisposeAsync()
+         at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+         at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+         at Aspire.Dashboard.Authentication.Connection.ConnectionTypeMiddleware.OnConnectionAsync(ConnectionContext context) in /_/src/Aspire.Dashboard/Authentication/Connection/ConnectionTypeMiddleware.cs:line 27
+         at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.KestrelConnection`1.ExecuteAsync()
+^Cinfo: Aspire.Hosting.DistributedApplication[0]
+      Distributed application started. Press Ctrl+C to shut down.
+rajaniapple@Rajanis-MacBook-Pro Quickstart % 
